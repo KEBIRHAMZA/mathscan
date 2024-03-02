@@ -60,11 +60,37 @@
     height: 61px;
 }
 
+.statistics-content{
+    margin-left: 50px;
+}
+
+.first{
+    margin-top: 20px;
+}
+
+
 @media only screen and (max-width: 600px) {
     .container {
         height: 380px;
         width: 370px;
     }
-    .container .inner-container {
+    .statistics-content{
+        margin-left: 30px;
+    }
+    .first{
+        margin-top: 35px;
+    }
+    .container .number {
+        font-weight: bold;
+        font-size: 40px;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        margin-left: -45px;
+    }
+    .container .description {
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        margin-left: -45px;
+        margin-top: -10px;
     }
 }
