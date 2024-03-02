@@ -5,12 +5,14 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Hero from "../components/hero"
+import Statistique from "../components/statistique"
 
 
 
 const IndexPage = () => (
   <Layout>
     <Hero/>
+    <Statistique/>
   </Layout>
 )
 

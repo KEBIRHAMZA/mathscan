@@ -1,0 +1,70 @@
+.container {
+    background-color: #0C92BE;
+    width: 1000px;
+    height: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 60px 60px 0 0;
+}
+
+.container img {
+    width: 37px;
+}
+
+.container .inner-container {
+    margin-top: -10px;
+}
+
+.container .number {
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: -30px;
+}
+
+.container .description {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: -30px;
+    margin-top: -10px;
+}
+
+.container .image-container-certificate {
+    background-color: #FBDE00;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 58px;
+    height: 61px;
+}
+
+.container .image-container-student {
+    background-color: #FE8C00;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 58px;
+    height: 61px;
+}
+
+.container .image-container-teacher {
+    background-color: #FF64B1;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 58px;
+    height: 61px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        height: 380px;
+        width: 370px;
+    }
+    .container .inner-container {
+    }
+}
