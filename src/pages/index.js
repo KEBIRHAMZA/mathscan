@@ -9,6 +9,7 @@ import Statistique from "../components/statistique"
 import Caracteristiques from "../components/caracteristiques"
 import Testimonials from "../components/temoignage"
 import Video from "../components/video"
+import Ecole from "../components/ecole"
 
 
 
@@ -19,6 +20,7 @@ const IndexPage = () => (
     <Caracteristiques/>
     <Testimonials/>
     <Video/>
+    <Ecole/>
   </Layout>
 )
 
