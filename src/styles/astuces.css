@@ -1,20 +1,20 @@
 *{
     font-family:'Montserrat', sans-serif !important 
 }
-.image-for-school{
+.image-for-astuces{
     max-width: 500px;
     height: auto;
     margin-left: 50px;
 }
 
-.conatiner-for-school{
+.conatiner-for-astuces{
     margin: 200px;
     margin-top: 30px;
     width: 1200px;
     margin-left: 180px;
 }
 
-.titre-for-school{
+.titre-for-astuces{
     font-size: 26px;
     font-weight: 400;
     color: #FF64B1;
@@ -22,7 +22,7 @@
     font-family: 'Montserrat', sans-serif !important;
 }
 
-.titre-two-school{
+.titre-two-astuces{
     font-size: 38px !important;
     font-weight: 500;
     line-height: 1.2;
@@ -30,7 +30,7 @@
     color:#212529
 }
 
-.btn-school{
+.btn-astuces{
     font-size: 14px;
     padding: 11px 21px 13px 18px !important;
     border-radius: 8px;
@@ -40,7 +40,7 @@
     font-family: 'Montserrat', sans-serif !important;
 }
 
-.text-school{
+.text-astuces{
     color: rgb(108, 108, 125);
     font-family: 'DM Sans', sans-serif;
     font-size: 18px;
@@ -49,15 +49,23 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .conatiner-for-school {
+    .conatiner-for-astuces {
         margin-right: 0;
         margin-left: 0; 
         margin-top: -80px;
         width: 300px; 
     }
-    .image-for-school{
-        max-width: 800px;
+    .titre-two-astuces{
+        font-size: 38px !important;
+        font-weight: 500;
+        line-height: 1.2;
+        margin-bottom: 15px;
+        margin-top: -100px;
+        color: #212529;
+    }
+    .image-for-astuces{
+        max-width: 500px;
         height: auto;
-        margin-left: 0;
+        margin-left: -30px;
     }
 }
