@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Hero from "../components/hero"
 import Statistique from "../components/statistique"
+import Caracteristiques from "../components/caracteristiques"
 
 
 
@@ -13,6 +14,7 @@ const IndexPage = () => (
   <Layout>
     <Hero/>
     <Statistique/>
+    <Caracteristiques/>
   </Layout>
 )
 
