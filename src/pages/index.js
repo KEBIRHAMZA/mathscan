@@ -7,6 +7,8 @@ import Seo from "../components/seo"
 import Hero from "../components/hero"
 import Statistique from "../components/statistique"
 import Caracteristiques from "../components/caracteristiques"
+import Testimonials from "../components/temoignage"
+import Video from "../components/video"
 
 
 
@@ -15,6 +17,8 @@ const IndexPage = () => (
     <Hero/>
     <Statistique/>
     <Caracteristiques/>
+    <Testimonials/>
+    <Video/>
   </Layout>
 )
 
