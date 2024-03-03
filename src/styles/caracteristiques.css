@@ -1,7 +1,3 @@
-.grid {
-    display: grid;
-}
-
 .cards-position{
     margin-left: -250px;
 }
@@ -11,7 +7,7 @@
     color: #0C92BE;
     font-weight: 400;
     font-family: 'Montserrat', sans-serif !important;
-    font-weight: lighter;
+    font-weight: bolder;
 }
 
 .titre-two {
@@ -19,18 +15,23 @@
     line-height: 50px;
 }
 
+.titre-three{
+    color: rgb(108, 117, 125);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+}
+
 span {
     color: rgba(13, 202, 240, 1);
 }
 
 .container-caracteristiques {
-    margin-left: auto;
     margin-right: auto;
     padding: 20px;
     display: flex;
     align-items: center; 
     justify-content: center; 
-    margin: 200px;
+    margin: 300px;
     margin-top: 70px; 
 }
 
@@ -39,31 +40,19 @@ span {
     padding: 20px; 
 }
 
-.card {
-    width: 250px;
-    height: 200px; 
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-left: 250px;
-    margin-right: 250px;
-    transition: height 0.3s ease; 
-}
-
-
-
 .hidden-content{
     display: none;
     top: 50%;
     left: 50%;
 }
+
 .hover-content {
     display: none;
     top: 50%;
     left: 50%;
 }
 
-.card:hover .hidden-content {
+.cards:hover .hidden-content {
     display: block;
     top: 50%;
     left: 50%; 
@@ -74,50 +63,102 @@ span {
     justify-content: center;
 }
 
-.card:hover .displays-content {
+.cards:hover .displays-content {
     display: none; 
     top: 50%;
     left: 50%;
 }
 
+.cards{
+    width: 300px;
+    margin-left: 250px;
+    height: 300px;
+}
 
+.card{
+    width: 40px;
+}
+
+.cards:hover .hidden-content{
+    display: block;
+}
+
+.cards:hover .shoen-content{
+    display: none;
+}
+
+.shoen-content{
+    font-weight: bold;
+}
+
+.cards:hover{
+    height: 350px;
+}
+
+.hidden-content{
+    display: none;
+}
+
+.image-icon{
+    width: 47px;
+}
+
+.text-container{
+    width: 1500px;
+}
+
+.cards-container{
+    width: 1300px;
+}
 
 @media only screen and (max-width: 600px) {
-    .grid-cols-2 {
-        grid-template-columns: 1fr; 
-    }
     .container-caracteristiques {
-        flex-direction: column; 
-        align-items: stretch; 
+      margin: 50px auto; /* Adjust margin for better mobile layout */
+      display: block; /* Change display to block for stacking cards */
     }
-    .container-caracteristiques > div {
-        padding: 10px;
+  
+    .container-caracteristiques > div:not(.text-container) {
+      width: auto; /* Set width to auto for better responsiveness */
+      padding: 10px; /* Adjust padding for better mobile layout */
     }
-    .card {
-        height: auto; 
-        width: 300px;
-        margin-left: 500px;
-        align-items: center; 
+  
+    .cards {
+      width: 300px; /* Make cards full width on mobile */
+      margin-left: 0; /* Remove left margin on mobile */
+      margin-bottom: 20px; /* Add bottom margin for spacing between cards */
+      height: auto; /* Make height auto to adjust based on content */
     }
-    .text-container {
-        margin-bottom: 20px; 
+  
+    .cards-position {
+      margin-left: auto; /* Center cards horizontally on mobile */
+      margin-right: auto;
     }
-    .container-caracteristiques {
-        margin-top: 620px; 
-        margin-left: auto;
-        margin-right: auto;
-        padding: 20px;
-        display: flex;
-        align-items: center; 
-        justify-content: center; 
+  
+    .titre-one {
+      font-size: 18px; /* Decrease font size for better mobile readability */
     }
-    
-    .container-caracteristiques {
-        margin: 2px;
-        margin-top: 70px; 
+  
+    .titre-two {
+      font-size: 24px; /* Decrease font size for better mobile readability */
+      line-height: 32px; /* Adjust line height for better mobile layout */
     }
-    .images-icon{
-        top: 50%;
-        left: 50%;
+  
+    .image-icon {
+      width: 40px; /* Decrease icon size for better mobile layout */
     }
-}
+  
+    .hidden-content,
+    .shoen-content {
+      font-size: 14px; /* Decrease font size for better mobile readability */
+    }
+    .cards-position {
+        display: block; 
+        width: 320px;
+        margin-left: -120px;/* Change display to block for stacking cards */
+    }
+    .text-container{
+        margin-left: -120px;
+        width: 350px;
+    }
+  }
+  
