@@ -55,4 +55,9 @@
         margin-top: -80px;
         width: 300px; 
     }
+    .image-for-school{
+        max-width: 800px;
+        height: auto;
+        margin-left: 0;
+    }
 }
