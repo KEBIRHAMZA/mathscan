@@ -1,6 +1,4 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -11,6 +9,8 @@ import Testimonials from "../components/temoignage"
 import Video from "../components/video"
 import Ecole from "../components/ecole"
 import Astuces from "../components/astuces"
+import Partner from "../components/partner"
+import Media from "../components/media"
 
 
 
@@ -23,6 +23,8 @@ const IndexPage = () => (
     <Video/>
     <Ecole/>
     <Astuces/>
+    <Partner/>
+    <Media/>
   </Layout>
 )
 
