@@ -20,19 +20,18 @@ const users = [
   <StaticImage src="../images/media-icons/24h.png" alt="Flowbite Logo" style={{ width:"125px" }}/>,
 ];
 
-// margin-bottom: -20px;
-//     margin-top: 200px;
+
 
 const Media = () => {
   return (
     <div className="container-media my-24 mx-auto md:px-6">
       <section className="mb-32 text-center">
-        <h2 style={{ fontSize:"36px",color:"#3E3E3E",marginBottom:"300px",marginBottom:"-20px",marginTop:"200px" }} className="mb-16 text-3xl font-bold">
+        <h2 className="titre-media mb-16 text-3xl font-bold">
         Dans les médias
         </h2>
         <div className="grid px-4 md:grid-cols-2 lg:grid-cols-5">
           {users.map((user, index) => (
-            <div key={index} style={{ marginTop:'100px' }} className="mx-auto mb-12 lg:mb-0">
+            <div key={index} className="media-ic mx-auto mb-12 lg:mb-0">
               {user}
             </div>
           ))}
