@@ -107,7 +107,7 @@ export default function Footer() {
     </div>
   </div>
   <div className="top-footer sm:flex sm:items-center sm:justify-between">
-      <span className="copyright text-sm sm:text-center dark:text-gray-400">
+      <span className="copyright">
         Copyright © 2022 Mathscan
       </span>
       <div className="social-media flex mt-4 space-x-6 sm:justify-center sm:mt-0">
@@ -117,7 +117,7 @@ export default function Footer() {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-7 w-7"
+            className="h-7 w-7 social-media-icons"
             fill="currentColor"
             style={{ color: "white" }}
             viewBox="0 0 24 24"
@@ -132,7 +132,7 @@ export default function Footer() {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-7 w-7"
+            className="h-7 w-7 social-media-icons"
             fill="currentColor"
             style={{ color: "white" }}
             viewBox="0 0 24 24"
@@ -146,7 +146,7 @@ export default function Footer() {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-7 w-7"
+            className="h-7 w-7 social-media-icons"
             fill="currentColor"
             style={{ color: "white" }}
             viewBox="0 0 24 24"
@@ -160,7 +160,7 @@ export default function Footer() {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-7 w-7"
+            className="h-7 w-7 social-media-icons"
             fill="currentColor"
             style={{ color: "white" }}
             viewBox="0 0 24 24"
@@ -176,7 +176,7 @@ export default function Footer() {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-7 w-7"
+            className="h-7 w-7 social-media-icons"
             fill="currentColor"
             style={{ color: "white" }}
             viewBox="0 0 24 24"
