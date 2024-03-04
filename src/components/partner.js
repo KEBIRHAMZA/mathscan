@@ -25,6 +25,15 @@ const Partner = () => {
             </div>
           ))}
         </div>
+        <a
+              href="#"
+              className="btn-partner"
+              style={{ 
+                backgroundColor: '#0dcaf0'
+              }}
+          >
+          Créer mon compte
+          </a>
       </section>
     </div>
   );

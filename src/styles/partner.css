@@ -1,3 +1,21 @@
 .container-partner{
     margin-top: -150px;
 }
+
+.btn-partner{
+    font-size: 14px;
+    padding: 11px 21px 13px 18px !important;
+    border-radius: 8px;
+    display: inline-block;
+    font-weight: 400;
+    border-color: #0dcaf0;
+    background-color: #0dcaf0;
+    line-height: 1.5;
+    text-decoration: none;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    color: #FFF !important;
+    font-family: 'Montserrat';
+    box-sizing: border-box;
+    margin-top: 50px;
+}
