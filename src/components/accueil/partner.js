@@ -1,13 +1,13 @@
 import React from 'react';
-import '../styles/partner.css'
+import '../../styles/accueil-styles/partner.css'
 import { StaticImage } from 'gatsby-plugin-image';
 
 const users = [
-  <StaticImage src="../images/partner-icons/kaizen.png" alt="Flowbite Logo" style={{ width:'99px',marginTop:"-10px" }}/>,
-  <StaticImage src="../images/partner-icons/mowatana.png" alt="Flowbite Logo" style={{ width:'142px',marginTop:"-10px" }}/>,
-  <StaticImage src="../images/partner-icons/jamiati.png" alt="Flowbite Logo" style={{ width:'169px',marginTop:"15px" }}/>,
-  <StaticImage src="../images/partner-icons/elbilia.png" alt="Flowbite Logo" style={{ width:'105px' }}/>,
-  <StaticImage src="../images/partner-icons/tijari.png" alt="Flowbite Logo" style={{ width:'177px' }}/>,
+  <StaticImage src="../../images/accueil-images/partner-icons/kaizen.png" alt="Flowbite Logo" style={{ width:'99px',marginTop:"-10px" }}/>,
+  <StaticImage src="../../images/accueil-images/partner-icons/mowatana.png" alt="Flowbite Logo" style={{ width:'142px',marginTop:"-10px" }}/>,
+  <StaticImage src="../../images/accueil-images/partner-icons/jamiati.png" alt="Flowbite Logo" style={{ width:'169px',marginTop:"15px" }}/>,
+  <StaticImage src="../../images/accueil-images/partner-icons/elbilia.png" alt="Flowbite Logo" style={{ width:'105px' }}/>,
+  <StaticImage src="../../images/accueil-images/partner-icons/tijari.png" alt="Flowbite Logo" style={{ width:'177px' }}/>,
 ];
 
 const Partner = () => {

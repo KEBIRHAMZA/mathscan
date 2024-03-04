@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import '../styles/video.css'
+import '../../styles/accueil-styles/video.css'
 
 // Handler hook for when Outside click dropdown close
 let useClickOutside = (handler) => {

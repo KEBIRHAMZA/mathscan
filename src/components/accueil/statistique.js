@@ -1,6 +1,6 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
-import '../styles/statistique.css'; // Import CSS file
+import '../../styles/accueil-styles/statistique.css'; // Import CSS file
 
 export default function Statistique() {
 
@@ -11,7 +11,7 @@ export default function Statistique() {
                     <div className="grid grid-cols-3 gap-4">
                         <div className="image-container-certificate">
                             <StaticImage
-                                src="../images/certificate-icon.png"
+                                src="../../images/accueil-images/certificate-icon.png"
                                 alt="Flowbite Logo"
                             />
                         </div>
@@ -27,7 +27,7 @@ export default function Statistique() {
                     <div className="grid grid-cols-3 gap-4">
                         <div className="image-container-student">
                             <StaticImage
-                                src="../images/student-icon.png"
+                                src="../../images/accueil-images/student-icon.png"
                                 alt="Flowbite Logo"
                             />
                         </div>
@@ -43,7 +43,7 @@ export default function Statistique() {
                     <div className="grid grid-cols-3 gap-4">
                         <div className="image-container-teacher">
                             <StaticImage
-                                src="../images/teacher-icon.png"
+                                src="../../images/accueil-images/teacher-icon.png"
                                 alt="Flowbite Logo"
                             />
                         </div>

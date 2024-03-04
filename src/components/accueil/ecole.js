@@ -1,6 +1,6 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
-import '../styles/ecole.css'
+import '../../styles/accueil-styles/ecole.css'
 
 export default function Ecole() {
   return (
@@ -31,7 +31,7 @@ export default function Ecole() {
                 </div>
             <div className="">
                 <StaticImage
-                    src="../images/for-schools.png"
+                    src="../../images/accueil-images/for-schools.png"
                     alt="Flowbite Logo"
                     className='image-for-school'
                 />

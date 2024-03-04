@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/caracteristiques.css';
+import '../../styles/accueil-styles/caracteristiques.css';
 import { StaticImage } from "gatsby-plugin-image"
 
 export default function Caracteristiques() {
@@ -19,7 +19,7 @@ export default function Caracteristiques() {
         <div className="grid gap-4 grid-cols-2 cards-position">
           <div className="card" >
             <DynamicComponent
-                iconUrl={<StaticImage className='image-icon' src="../images/intelligent-icon.png" alt="Intelligent Icon" />}
+                iconUrl={<StaticImage className='image-icon' src="../../images/accueil-images/intelligent-icon.png" alt="Intelligent Icon" />}
                 iconAlt="Icon Alt Text"
                 showen="Diagnostic intelligent des lacunes"
                 hiden="Un diagnostic rapide, précis, dynamique et factuel qui identifie les lacunes cumulées au fil des années à un niveau granulaire."
@@ -29,7 +29,7 @@ export default function Caracteristiques() {
           </div>
           <div className="card">
             <DynamicComponent
-                iconUrl={<StaticImage className='image-icon' src="../images/phone-icon.png" alt="Phone Icon" />}
+                iconUrl={<StaticImage className='image-icon' src="../../images/accueil-images/phone-icon.png" alt="Phone Icon" />}
                 iconAlt="Icon Alt Text"
                 showen="Remédiation personnalisée des lacunes"
                 hiden="Une remédiation rapide de toutes les lacunes identifiées afin d’aider les élèves à maitriser les nouveaux acquis grâce à un feedback personnalisé."
@@ -39,7 +39,7 @@ export default function Caracteristiques() {
           </div>
           <div className="card">
             <DynamicComponent 
-                iconUrl={<StaticImage className='image-icon' src="../images/time-icon.png" alt="Time Icon" />}
+                iconUrl={<StaticImage className='image-icon' src="../../images/accueil-images/time-icon.png" alt="Time Icon" />}
                 iconAlt="Icon Alt Text"
                 showen="Auto-évaluation en libre accès"
                 hiden="Un accès complet à des activités d’autovaluation et d’apprentissage par chapitre et par capacité couvrant tous le programme de l’année."
@@ -49,7 +49,7 @@ export default function Caracteristiques() {
           </div>
           <div className="card">
             <DynamicComponent
-                iconUrl={<StaticImage className='image-icon' src="../images/repport-icon.png" alt="Report Icon" />}
+                iconUrl={<StaticImage className='image-icon' src="../../images/accueil-images/repport-icon.png" alt="Report Icon" />}
                 iconAlt="Icon Alt Text"
                 showen="Suivi via des rapports instantanées"
                 hiden="Des rapports instantanés vous donnent des informations précises et pertinentes sur le progrés de votre enfant."

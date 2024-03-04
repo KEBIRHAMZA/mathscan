@@ -1,6 +1,6 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
-import '../styles/astuces.css'
+import '../../styles/accueil-styles/astuces.css'
 
 export default function Astuces() {
   return (
@@ -11,7 +11,7 @@ export default function Astuces() {
             <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="">
                 <StaticImage
-                    src="../images/ebook.png"
+                    src="../../accueil-images/images/ebook.png"
                     alt="Flowbite Logo"
                     className='image-for-astuces'
                 />

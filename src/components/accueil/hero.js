@@ -28,7 +28,7 @@ export default function Hero() {
                     </div>
                     <div className="lg:w-1/2 lg:pl-12 mt-8 lg:mt-0">
                         <StaticImage
-                            src="../images/header.png"
+                            src="../../images/accueil-images/header.png"
                             alt="Flowbite Logo"
                             className="max-w-full"
                         />

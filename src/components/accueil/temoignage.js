@@ -2,7 +2,7 @@
 
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import '../styles/temoignage.css'
+import '../../styles/accueil-styles/temoignage.css'
 
 const Testimonial = ({ name, role, imageSrc, content }) => (
   <div className="mb-12 md:mb-0">
@@ -33,19 +33,19 @@ const Testimonials = () => (
       <Testimonial
         name="Maman de J.A"
         role="2ème année college"
-        imageSrc={<StaticImage className='image-icon' src="../images/maman-revieww.png" alt="Intelligent Icon" />}
+        imageSrc={<StaticImage className='image-icon' src="../../images/accueil-images/maman-revieww.png" alt="Intelligent Icon" />}
         content="J'ai la joie de vous annoncer que la note de ma fille J. est passée de 9/20 à 17/20 et cela grâce à Mathscan. Merci à l'équipe pour tous ses efforts. Maman de J. A. 2ème année collège."
       />
       <Testimonial
         name="Maman de J.A"
         role="2ème année college"
-        imageSrc={<StaticImage className='image-icon' src="../images/maman-revieww.png" alt="Intelligent Icon" />}
+        imageSrc={<StaticImage className='image-icon' src="../../images/accueil-images/maman-revieww.png" alt="Intelligent Icon" />}
         content="J'ai la joie de vous annoncer que la note de ma fille J. est passée de 9/20 à 17/20 et cela grâce à Mathscan. Merci à l'équipe pour tous ses efforts. Maman de J. A. 2ème année collège."
       />
       <Testimonial
         name="Maman de J.A"
         role="2ème année college"
-        imageSrc={<StaticImage className='image-icon' src="../images/maman-revieww.png" alt="Intelligent Icon" />}
+        imageSrc={<StaticImage className='image-icon' src="../../images/accueil-images/maman-revieww.png" alt="Intelligent Icon" />}
         content="J'ai la joie de vous annoncer que la note de ma fille J. est passée de 9/20 à 17/20 et cela grâce à Mathscan. Merci à l'équipe pour tous ses efforts. Maman de J. A. 2ème année collège."
       />
     </div>

@@ -14,7 +14,7 @@ export default function Navbar() {
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-5">
         <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <StaticImage
-            src="../images/logo.png"
+            src="../../images/accueil-images/logo.png"
             alt="Flowbite Logo"
             className="h-8"
             style={{ 

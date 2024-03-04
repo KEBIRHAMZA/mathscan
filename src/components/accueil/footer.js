@@ -1,6 +1,6 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
-import '../styles/footer.css'
+import '../../styles/accueil-styles/footer.css'
 import { Link } from 'gatsby'
 
 export default function Footer() {
@@ -11,7 +11,7 @@ export default function Footer() {
       <div className="mb-6 md:mb-0">
         <a href="https://flowbite.com" className="flex items-center">
                 <StaticImage
-                    src="../images/new-logo-light.png"
+                    src="../../images/accueil-images/new-logo-light.png"
                     alt="Flowbite Logo"
                     className='logo-footer'
                 />
@@ -28,7 +28,7 @@ export default function Footer() {
           <ul className="dark:text-gray-400">
             <li>
                 <StaticImage
-                    src="../images/footer-icons/icon-map.png"
+                    src="../../images/accueil-images/footer-icons/icon-map.png"
                     alt="Flowbite Logo"
                     style={{ 
                         width: "24px"
@@ -38,7 +38,7 @@ export default function Footer() {
             </li>
             <li>
                 <StaticImage
-                    src="../images/footer-icons/icon-mail.png"
+                    src="../../images/accueil-images/footer-icons/icon-mail.png"
                     alt="Flowbite Logo"
                     style={{ 
                         width: "24px"
@@ -48,7 +48,7 @@ export default function Footer() {
             </li>
             <li>
                 <StaticImage
-                    src="../images/footer-icons/icon-phone.png"
+                    src="../../images/accueil-images/footer-icons/icon-phone.png"
                     alt="Flowbite Logo"
                     style={{ 
                         width: "24px"
@@ -58,7 +58,7 @@ export default function Footer() {
             </li>
             <li>
                 <StaticImage
-                    src="../images/footer-icons/icons-whatsapp.png"
+                    src="../../images/accueil-images/footer-icons/icons-whatsapp.png"
                     alt="Flowbite Logo"
                     style={{ 
                         width: "20px",
