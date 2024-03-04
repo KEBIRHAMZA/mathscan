@@ -4,9 +4,19 @@
  * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/
  */
 
-/**
- * @type {import('gatsby').GatsbySSR['onRenderBody']}
- */
-exports.onRenderBody = ({ setHtmlAttributes }) => {
-  setHtmlAttributes({ lang: `en` })
-}
+ import React from 'react';
+ import { IntlProvider } from 'gatsby-plugin-intl';
+ 
+ /**
+  * @type {import('gatsby').GatsbySSR['onRenderBody']}
+  */
+ export const onRenderBody = ({ setHtmlAttributes }) => {
+   setHtmlAttributes({ lang: `en` })
+ }
+ 
+ export const wrapRootElement = ({ element }) => (
+   <IntlProvider>
+     {element}
+   </IntlProvider>
+ );
+ 

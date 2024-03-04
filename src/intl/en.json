@@ -1,0 +1,19 @@
+{
+
+    "componentNavbar" : "---------------------------navbar------------------------",
+
+    "home": "Home",
+    "parents": "Parents",
+    "pricing": "Pricing",
+    "signIn": "Sign In",
+    "createAccount": "Create Account",
+
+    "componentHero" : "---------------------------hero------------------------",
+
+    "heroTitle": "Make Math Fun Again",
+    "heroDescription": "Platform powered by artificial intelligence, for fast, intuitive, and effective math learning.",
+    "primary": "Primary",
+    "middleSchool": "Middle School",
+    "highSchool": "High School",
+    "createAccountButton": "Create My Account"
+}

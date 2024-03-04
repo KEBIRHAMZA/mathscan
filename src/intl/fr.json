@@ -1,0 +1,21 @@
+{
+
+
+    "componentNavbar" : "---------------------------navbar------------------------",
+
+    "home": "Accueil",
+    "parents": "Parents",
+    "pricing": "Tarifs",
+    "signIn": "Se connecter",
+    "createAccount": "Créer mon compte",
+
+    "componentHero" : "---------------------------hero------------------------",
+
+    "heroTitle": "Rendre les mathématiques amusantes à nouveau",
+    "heroDescription": "Plateforme propulsée par l'intelligence artificielle, pour un apprentissage rapide, intuitif et efficace des mathématiques.",
+    "primary": "Primaire",
+    "middleSchool": "Collège",
+    "highSchool": "Lycée",
+    "createAccountButton": "Créer mon compte"
+
+}
