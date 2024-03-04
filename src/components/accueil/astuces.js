@@ -11,7 +11,7 @@ export default function Astuces() {
             <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="">
                 <StaticImage
-                    src="../../accueil-images/images/ebook.png"
+                    src="../../images/accueil-images/ebook.png"
                     alt="Flowbite Logo"
                     className='image-for-astuces'
                 />
