@@ -107,7 +107,7 @@ export default function Footer() {
     </div>
   </div>
   <div className="top-footer sm:flex sm:items-center sm:justify-between">
-      <span className="copyright">
+      <span className="copyright text-sm sm:text-center dark:text-gray-400">
         Copyright © 2022 Mathscan
       </span>
       <div className="social-media flex mt-4 space-x-6 sm:justify-center sm:mt-0">
