@@ -86,7 +86,25 @@
     "titreone" : "Faites",
     "exceller": "exceller",
     "titretwo": "votre enfant en mathématiques",
-    "textparents" : "Nous avons aidé plus de 16000 élèves à apprendre les mathématiques grâce à notre système d’intelligence artificielle."
+    "textparents" : "Nous avons aidé plus de 16000 élèves à apprendre les mathématiques grâce à notre système d’intelligence artificielle.",
+
+    "componentcardsparent": "---------------------------cardsparent------------------------",
+
+    "titrecardsone" : "Rejoignez",
+    "spanCards": "les milliers de parents ",
+    "titrecardstwo" : "qui ont choisi Mathscan",
+
+    "card1" : "Un accompagnement différencié",
+    "desc1" : "En concordance avec le cursus scolaire de votre enfant, tenant compte de son niveau réel et de son rythme d’apprentissage, sur la base d’un diagnostic intégral de l’ensemble de ses lacunes",
+
+    "card2" : "Une méthode personnalisée",
+    "desc2" : "La remédiation sur mesure, l’apprentissage adaptatif et la lutte contre l’oubli qui sont propulsés par l’intelligence Artificielle, à travers un programme 100% personnalisé",
+
+    "card3" : "Un développement de l’autonomie",
+    "desc3" : "Et de la confiance de votre enfant, et lui permettre de renouer avec les mathématiques et d’améliorer ses notes sans plus avoir à apprendre les exercices par coeur",
+
+    "card4" : "Un faible coût",
+    "desc4" : "Vous serez également en mesure de connaÎtre le niveau réel de votre enfant et de mesurer son progrès à tout moment et en temps réel. Le tout à très faible coût en comparaison au soutien scolaire traditionnel"
 
 
 }
