@@ -1,0 +1,16 @@
+.pricing-container{
+    margin-bottom: 600px;
+}
+
+.pricing-parent{
+    margin-bottom: 800px;
+}
+
+@media only screen and (max-width: 600px) {
+    .pricing-container{
+        margin-bottom: 400px;
+    }
+    .pricing-parent{
+        margin-bottom: 1297px;
+    }
+}
