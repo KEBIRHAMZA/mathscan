@@ -79,7 +79,14 @@
     "lienUtiles": "Liens utiles",
     "diagnostique": "Diagnostic gratuit",
     "contacter": "Nous contacter",
-    "politique": "Politique de confidentialité"
+    "politique": "Politique de confidentialité",
+
+    "componentparents": "---------------------------parents------------------------",
+
+    "titreone" : "Faites",
+    "exceller": "exceller",
+    "titretwo": "votre enfant en mathématiques",
+    "textparents" : "Nous avons aidé plus de 16000 élèves à apprendre les mathématiques grâce à notre système d’intelligence artificielle."
 
 
 }
