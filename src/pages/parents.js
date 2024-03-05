@@ -6,7 +6,10 @@ import Seo from "../components/seo"
 import Exceller from '../components/parents-component/exceller'
 import Astuces from "../components/accueil/astuces"
 import Cardsparent from '../components/parents-component/cardsparent'
-
+import Testimonials from "../components/accueil/temoignage"
+import Video from "../components/accueil/video"
+import Partner from "../components/accueil/partner"
+import Media from '../components/accueil/media'
 
 
 export default function Parents() {
@@ -15,6 +18,10 @@ export default function Parents() {
       <Exceller/>
       <Astuces/>
       <Cardsparent/>
+      <Testimonials/>
+      <Video/>
+      <Partner/>
+      <Media/>
     </Layout>
   )
 }

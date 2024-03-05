@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import '../../styles/accueil-styles/video.css'
+import {Link} from 'gatsby'
 
 // Handler hook for when Outside click dropdown close
 let useClickOutside = (handler) => {
@@ -19,7 +20,6 @@ let useClickOutside = (handler) => {
   });
   return domNode;
 };
-// Handler hook for when Outside click dropdown close End Code====>>
 
 const Video = () => {
   const [videoOpen, setvideoOpen] = useState(false);
@@ -45,7 +45,7 @@ const Video = () => {
                 className={`absolute left-0 top-0 z-10 flex h-full w-full items-center justify-center bg-primary bg-opacity-90`}
               >
                 <a
-                  href="/#"
+                  style={{ cursor:'pointer' }}
                   onClick={() => setvideoOpen(true)}
                   className="absolute z-20 flex h-20 w-20 items-center justify-center rounded-full bg-white text-primary dark:bg-dark-2 dark:text-white md:h-[100px] md:w-[100px]"
                 >
