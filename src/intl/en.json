@@ -15,5 +15,69 @@
     "primary": "Primary",
     "middleSchool": "Middle School",
     "highSchool": "High School",
-    "createAccountButton": "Create My Account"
+    "createAccountButton": "Create My Account",
+
+    "componentStatistique": "---------------------------statistic------------------------",
+    "exercises": "Exercises and Fun Math Problems",
+    "research": "Years of Research and 200 Publications",
+    "distinctions": "National and International Distinctions",
+    "year": "years",
+
+    "componentCaracteristiques": "---------------------------characteristics------------------------",
+
+    "title": "For Parents and Students",
+    "improvementOne": "An improvement of",
+    "to" : "to",
+    "improvementTwo":"in level after two months of use",
+    "progress": "Guaranteed rapid progress in mathematics with less effort and frustration",
+    "intelligentDiagnostic": "Intelligent Gap Diagnosis",
+    "intelligentDiagnosticDescription": "A quick, accurate, dynamic, and factual diagnosis that identifies cumulative gaps over the years at a granular level.",
+    "personalizedRemediation": "Personalized Gap Remediation",
+    "personalizedRemediationDescription": "Quick remediation of all identified gaps to help students master new skills through personalized feedback.",
+    "selfAssessment": "Free Access Self-Assessment",
+    "selfAssessmentDescription": "Full access to self-assessment and learning activities by chapter and by ability covering the entire year's curriculum.",
+    "instantReports": "Tracking via Instant Reports",
+    "instantReportsDescription": "Instant reports give you accurate and relevant information about your child's progress.",
+
+    "componentTestimonials": "---------------------------testimonials------------------------",
+
+    "titleTestimonials": "Testimonials",
+    "testimonialOneName": "Mother of J.A.",
+    "testimonialOneRole": "2nd year college",
+    "testimonialOneContent": "I am delighted to announce that my daughter J.'s grade has improved from 9/20 to 17/20 thanks to Mathscan. Thanks to the team for all their efforts. Mother of J.A. 2nd year college.",
+
+    "componentecole": "---------------------------ecole------------------------",
+
+    "schoolSectionTitle": "For Schools and Teachers",
+    "schoolSectionSubtitle": "Save more than",
+    "schoolSectionHours": "6 hours",
+    "schoolSectionSubtitlePart2": "for each assignment or assessment",
+    "schoolSectionDescription1": "Instant tracking of students' progress (individually or by class) and better time management.",
+    "schoolSectionDescription2": "Automation of assessment in all its forms and detailed real-time reporting for differentiated student support.",
+    "schoolSectionButton": "Use Mathscan in my school",
+
+    "componentastuces": "---------------------------astuces------------------------",
+
+    "tipsSectionTitle": "5 Tips to Help Your Child Excel in Math",
+    "tipsSectionSubtitle": "A free ebook for parents and children who want to learn some tips.",
+    "tipsSectionButton": "Download my guide",
+
+    "componentpartners": "---------------------------partners------------------------",
+
+    "partnersSectionTitle": "They Trust Us",
+
+    "componentmedia": "---------------------------media------------------------",
+
+    "media" : "In the media",
+
+    "componentfooter": "---------------------------footer------------------------",
+
+    "textfooter": "MATHSCAN is the only platform in the French-speaking and Arabic-speaking world, allowing the identification and remediation of gaps, the fight against forgetting and learning powered by Artificial Intelligence.",
+    "nousCantacter": "Contact us",
+    "address": "N°2, RUE ANNABIA, SECTOR 11, HAY RIAD, RABAT",
+    "lienUtiles": "Useful links",
+    "diagnostique": "Free diagnosis",
+    "contacter": "Contact us",
+    "politique": "Privacy Policy"
+
 }

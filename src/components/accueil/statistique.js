@@ -1,8 +1,12 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
-import '../../styles/accueil-styles/statistique.css'; // Import CSS file
+import '../../styles/accueil-styles/statistique.css';
+import { useIntl } from 'gatsby-plugin-intl'; // Import useIntl hook
+ // Import CSS file
 
 export default function Statistique() {
+
+    const intl = useIntl();
 
     return (
         <div className='container'>
@@ -17,7 +21,7 @@ export default function Statistique() {
                         </div>
                         <div className="col-span-2 inner-container">
                             <span className="number">60K+</span> <br/>
-                            <p className="description">Exercices et problèmes mathématiques ludiques</p>
+                            <p className="description">{intl.formatMessage({ id: "exercises" })}</p>
                         </div>
                     </div>
                 </div>
@@ -32,8 +36,8 @@ export default function Statistique() {
                             />
                         </div>
                         <div className="col-span-2 inner-container">
-                            <span className="number">15ans+</span> <br/>
-                            <p className="description">De recherche et 200 publications</p>
+                            <span className="number">15{intl.formatMessage({ id: "year" })}</span> <br/>
+                            <p className="description">{intl.formatMessage({ id: "research" })}</p>
                         </div>
                     </div>
                 </div>
@@ -49,7 +53,7 @@ export default function Statistique() {
                         </div>
                         <div className="col-span-2 inner-container">
                             <span className="number">5</span> <br/>
-                            <p className="description">Distinctions nationales et internationales</p>
+                            <p className="description">{intl.formatMessage({ id: "distinctions" })}</p>
                         </div>
                     </div>
                 </div>

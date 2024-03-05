@@ -1,6 +1,7 @@
 // Testimonials.js
 
 import React from "react"
+import { useIntl } from "gatsby-plugin-intl"
 import { StaticImage } from "gatsby-plugin-image"
 import '../../styles/accueil-styles/temoignage.css'
 
@@ -24,32 +25,33 @@ const Testimonial = ({ name, role, imageSrc, content }) => (
   </div>
 )
 
-const Testimonials = () => (
-  <div className="container-temoignage mx-auto text-center md:max-w-xl lg:max-w-3xl">
-    <h3 className="title-temoignage md:block mb-6 text-3xl font-bold text-neutral-800 dark:text-neutral-200">Témoignages</h3>
-    <p className="mb-6 pb-2 md:mb-12 md:pb-0">
-    </p>
-    <div className="grid gap-6 text-center md:grid-cols-3 lg:gap-12">
-      <Testimonial
-        name="Maman de J.A"
-        role="2ème année college"
-        imageSrc={<StaticImage className='image-icon' src="../../images/accueil-images/maman-revieww.png" alt="Intelligent Icon" />}
-        content="J'ai la joie de vous annoncer que la note de ma fille J. est passée de 9/20 à 17/20 et cela grâce à Mathscan. Merci à l'équipe pour tous ses efforts. Maman de J. A. 2ème année collège."
-      />
-      <Testimonial
-        name="Maman de J.A"
-        role="2ème année college"
-        imageSrc={<StaticImage className='image-icon' src="../../images/accueil-images/maman-revieww.png" alt="Intelligent Icon" />}
-        content="J'ai la joie de vous annoncer que la note de ma fille J. est passée de 9/20 à 17/20 et cela grâce à Mathscan. Merci à l'équipe pour tous ses efforts. Maman de J. A. 2ème année collège."
-      />
-      <Testimonial
-        name="Maman de J.A"
-        role="2ème année college"
-        imageSrc={<StaticImage className='image-icon' src="../../images/accueil-images/maman-revieww.png" alt="Intelligent Icon" />}
-        content="J'ai la joie de vous annoncer que la note de ma fille J. est passée de 9/20 à 17/20 et cela grâce à Mathscan. Merci à l'équipe pour tous ses efforts. Maman de J. A. 2ème année collège."
-      />
+const Testimonials = () => {
+  const intl = useIntl()
+  return (
+    <div className="container-temoignage mx-auto text-center md:max-w-xl lg:max-w-3xl">
+      <h3 className="title-temoignage md:block mb-6 text-3xl font-bold text-neutral-800 dark:text-neutral-200">{intl.formatMessage({ id: "titleTestimonials" })}</h3>
+      <div className="grid gap-6 text-center md:grid-cols-3 lg:gap-12">
+        <Testimonial
+          name={intl.formatMessage({ id: "testimonialOneName" })}
+          role={intl.formatMessage({ id: "testimonialOneRole" })}
+          imageSrc={<StaticImage className='image-icon' src="../../images/accueil-images/maman-revieww.png" alt="Intelligent Icon" />}
+          content={intl.formatMessage({ id: "testimonialOneContent" })}
+        />
+        <Testimonial
+          name={intl.formatMessage({ id: "testimonialOneName" })}
+          role={intl.formatMessage({ id: "testimonialOneRole" })}
+          imageSrc={<StaticImage className='image-icon' src="../../images/accueil-images/maman-revieww.png" alt="Intelligent Icon" />}
+          content={intl.formatMessage({ id: "testimonialOneContent" })}
+        />
+        <Testimonial
+          name={intl.formatMessage({ id: "testimonialOneName" })}
+          role={intl.formatMessage({ id: "testimonialOneRole" })}
+          imageSrc={<StaticImage className='image-icon' src="../../images/accueil-images/maman-revieww.png" alt="Intelligent Icon" />}
+          content={intl.formatMessage({ id: "testimonialOneContent" })}
+        />
+      </div>
     </div>
-  </div>
-)
+  )
+}
 
 export default Testimonials

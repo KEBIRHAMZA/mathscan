@@ -1,8 +1,11 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import '../../styles/accueil-styles/ecole.css'
+import { useIntl } from 'gatsby-plugin-intl';
 
 export default function Ecole() {
+  const intl = useIntl();
+
   return (
     <>
     <section className="mb-40 conatiner-for-school">
@@ -11,22 +14,22 @@ export default function Ecole() {
             <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="mt-12 lg:mt-0">
                 <h1 className='titre-for-school'>
-                    Pour les écoles et enseignants
+                    {intl.formatMessage({ id: "schoolSectionTitle" })}
                 </h1>
                 <p className='titre-two-school'>
-                    Gain de plus de <span style={{ color : '#FF64B1' }}>6 heures</span> à chaque devoir ou évaluation
+                    {intl.formatMessage({ id: "schoolSectionSubtitle" })} <span style={{ color : '#FF64B1' }}>{intl.formatMessage({ id: "schoolSectionHours" })}</span> {intl.formatMessage({ id: "schoolSectionSubtitlePart2" })}
                 </p>
                 <p className='text-school'>
-                    Suivi instantané de la progression des élèves (individuellement ou par classe) et une meilleure gestion du temps. 
+                    {intl.formatMessage({ id: "schoolSectionDescription1" })}
                 </p>
                 <p className='text-school'>
-                    Automatisation de l’évaluation sous toutes ses formes et reportings détaillés en temps réel pour un accompagnement différencié des élèves.
+                    {intl.formatMessage({ id: "schoolSectionDescription2" })}
                 </p>
                 <a
                     href="#"
                     className="btn-school"
                 >
-                Utiliser Mathscan dans mon école
+                {intl.formatMessage({ id: "schoolSectionButton" })}
                 </a>
                 </div>
             <div className="">
@@ -41,6 +44,5 @@ export default function Ecole() {
         </div>
     </section>
     </>
-
   )
 }

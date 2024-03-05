@@ -16,6 +16,70 @@
     "primary": "Primaire",
     "middleSchool": "Collège",
     "highSchool": "Lycée",
-    "createAccountButton": "Créer mon compte"
+    "createAccountButton": "Créer mon compte",
+
+    "componentStatistique": "---------------------------statistique------------------------",
+
+    "exercises": "Exercices et problèmes mathématiques ludiques",
+    "research": "Années de recherche et 200 publications",
+    "distinctions": "Distinctions nationales et internationales",
+    "year": "ans",
+
+    "componentCaracteristiques": "---------------------------caractéristiques------------------------",
+    "title": "Pour les parents et les étudiants",
+    "improvementOne": "Une amélioration de",
+    "to": "à",
+    "improvementTwo": "niveau après deux mois d'utilisation",
+    "progress": "Progrès rapide garanti en mathématiques avec moins d'efforts et de frustration",
+    "intelligentDiagnostic": "Diagnostic intelligent des lacunes",
+    "intelligentDiagnosticDescription": "Un diagnostic rapide, précis, dynamique et factuel qui identifie les lacunes cumulées au fil des années à un niveau granulaire.",
+    "personalizedRemediation": "Remédiation personnalisée des lacunes",
+    "personalizedRemediationDescription": "Une remédiation rapide de toutes les lacunes identifiées afin d'aider les élèves à maîtriser les nouvelles compétences grâce à un retour d'information personnalisé.",
+    "selfAssessment": "Auto-évaluation en libre accès",
+    "selfAssessmentDescription": "Un accès complet aux activités d'auto-évaluation et d'apprentissage par chapitre et par capacité couvrant l'ensemble du programme de l'année.",
+    "instantReports": "Suivi via des rapports instantanés",
+    "instantReportsDescription": "Des rapports instantanés vous donnent des informations précises et pertinentes sur la progression de votre enfant.",
+
+    "componentTestimonials": "---------------------------témoignages------------------------",
+    "titleTestimonials": "Témoignages",
+    "testimonialOneName": "Maman de J.A.",
+    "testimonialOneRole": "2ème année collège",
+    "testimonialOneContent": "J'ai la joie de vous annoncer que la note de ma fille J. est passée de 9/20 à 17/20 et cela grâce à Mathscan. Merci à l'équipe pour tous ses efforts. Maman de J. A. 2ème année collège.",
+
+
+    "componentecole": "---------------------------ecole------------------------",
+
+    "schoolSectionTitle": "Pour les écoles et enseignants",
+    "schoolSectionSubtitle": "Gain de plus de",
+    "schoolSectionHours": "6 heures",
+    "schoolSectionSubtitlePart2": "à chaque devoir ou évaluation",
+    "schoolSectionDescription1": "Suivi instantané de la progression des élèves (individuellement ou par classe) et une meilleure gestion du temps.",
+    "schoolSectionDescription2": "Automatisation de l’évaluation sous toutes ses formes et reportings détaillés en temps réel pour un accompagnement différencié des élèves.",
+    "schoolSectionButton": "Utiliser Mathscan dans mon école",
+
+    "componentastuces": "---------------------------astuces------------------------",
+
+    "tipsSectionTitle": "5 Astuces pour aider votre enfant à exceller en math",
+    "tipsSectionSubtitle": "Un ebook gratuit pour les parents et les enfants qui souhaitent savoir quelques astuces.",
+    "tipsSectionButton": "Télecharger mon guide",
+
+    "componentpartners": "---------------------------partners------------------------",
+
+    "partnersSectionTitle": "Ils nous font confiance",
+
+    "componentmedia": "---------------------------media------------------------",
+
+    "media" : "Dans les médias",
+
+    "componentfooter": "---------------------------footer------------------------",
+
+    "textfooter": "MATHSCAN est I'unique plateforme dans le monde francophone et arabophone, permettant i'dentification et la remédiation aux lacunes, la lutte contre l'oubli et l'apprentissage propulsée par l’Intelligence artificielle.",
+    "nousCantacter": "Nous contacter",
+    "address": "N°2, RUE ANNABIA, SECTEUR 11, HAY RIAD, RABAT",
+    "lienUtiles": "Liens utiles",
+    "diagnostique": "Diagnostic gratuit",
+    "contacter": "Nous contacter",
+    "politique": "Politique de confidentialité"
+
 
 }

@@ -1,17 +1,22 @@
 import React from 'react';
-import '../../styles/accueil-styles/caracteristiques.css';
 import { StaticImage } from "gatsby-plugin-image"
+import { useIntl } from 'gatsby-plugin-intl';
+import '../../styles/accueil-styles/caracteristiques.css';
 
 export default function Caracteristiques() {
+  const intl = useIntl();
+
   return (
     <div className="container-caracteristiques grid gap-2 grid-cols-2" style={{ marginLeft:"100px"}}>
       <div className="text-container">
         <div>
-          <p className='titre-one'>Pour les parents et étudiants</p> <br />
-          <p className='titre-two'>Une amélioration de <span>30%</span> à <span>40%</span> du niveau après deux mois d’utilisation</p> <br />
-          <p className='titre-three'>Un progrès rapide garanti en mathématiques avec moins d’efforts et de frustration</p> <br/>
+          <p className='titre-one'>{intl.formatMessage({ id: "title" })}</p> <br />
+          <p className='titre-two'>
+            {intl.formatMessage({ id: "improvementOne" })} <span>30%</span> {intl.formatMessage({ id: "to" })} <span>40%</span> {intl.formatMessage({ id: "improvementTwo" })}
+          </p> <br />
+          <p className='titre-three'>{intl.formatMessage({ id: "progress" })}</p> <br/>
           <a href="#" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">
-              Créer mon compte
+              {intl.formatMessage({ id: "createAccountButton" })}
           </a>
         </div>
       </div>
@@ -20,9 +25,8 @@ export default function Caracteristiques() {
           <div className="card" >
             <DynamicComponent
                 iconUrl={<StaticImage className='image-icon' src="../../images/accueil-images/intelligent-icon.png" alt="Intelligent Icon" />}
-                iconAlt="Icon Alt Text"
-                showen="Diagnostic intelligent des lacunes"
-                hiden="Un diagnostic rapide, précis, dynamique et factuel qui identifie les lacunes cumulées au fil des années à un niveau granulaire."
+                showen={intl.formatMessage({ id: "intelligentDiagnostic" })}
+                hiden={intl.formatMessage({ id: "intelligentDiagnosticDescription" })}
                 buttonText="Read the docs"
                 buttonLink="#"
             />
@@ -30,9 +34,8 @@ export default function Caracteristiques() {
           <div className="card">
             <DynamicComponent
                 iconUrl={<StaticImage className='image-icon' src="../../images/accueil-images/phone-icon.png" alt="Phone Icon" />}
-                iconAlt="Icon Alt Text"
-                showen="Remédiation personnalisée des lacunes"
-                hiden="Une remédiation rapide de toutes les lacunes identifiées afin d’aider les élèves à maitriser les nouveaux acquis grâce à un feedback personnalisé."
+                showen={intl.formatMessage({ id: "personalizedRemediation" })}
+                hiden={intl.formatMessage({ id: "personalizedRemediationDescription" })}
                 buttonText="Read the docs"
                 buttonLink="#"
             />
@@ -40,9 +43,8 @@ export default function Caracteristiques() {
           <div className="card">
             <DynamicComponent 
                 iconUrl={<StaticImage className='image-icon' src="../../images/accueil-images/time-icon.png" alt="Time Icon" />}
-                iconAlt="Icon Alt Text"
-                showen="Auto-évaluation en libre accès"
-                hiden="Un accès complet à des activités d’autovaluation et d’apprentissage par chapitre et par capacité couvrant tous le programme de l’année."
+                showen={intl.formatMessage({ id: "selfAssessment" })}
+                hiden={intl.formatMessage({ id: "selfAssessmentDescription" })}
                 buttonText="Read the docs"
                 buttonLink="#"
             />
@@ -50,9 +52,8 @@ export default function Caracteristiques() {
           <div className="card">
             <DynamicComponent
                 iconUrl={<StaticImage className='image-icon' src="../../images/accueil-images/repport-icon.png" alt="Report Icon" />}
-                iconAlt="Icon Alt Text"
-                showen="Suivi via des rapports instantanées"
-                hiden="Des rapports instantanés vous donnent des informations précises et pertinentes sur le progrés de votre enfant."
+                showen={intl.formatMessage({ id: "instantReports" })}
+                hiden={intl.formatMessage({ id: "instantReportsDescription" })}
                 buttonText="Read the docs"
                 buttonLink="#"
             />

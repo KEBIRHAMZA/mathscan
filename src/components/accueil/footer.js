@@ -2,14 +2,18 @@ import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import '../../styles/accueil-styles/footer.css'
 import { Link } from 'gatsby'
+import {useIntl } from 'gatsby-plugin-intl'
 
 export default function Footer() {
+
+  const intl = useIntl();
+
   return (
     <footer className="footer-container p-4 bg-white sm:p-6 dark:bg-gray-800">
   <div className="mx-auto max-w-screen-xl">
     <div className="content-container md:flex md:justify-between">
       <div className="mb-6 md:mb-0">
-        <a href="https://flowbite.com" className="flex items-center">
+        <a href="#" className="flex items-center">
                 <StaticImage
                     src="../../images/accueil-images/new-logo-light.png"
                     alt="Flowbite Logo"
@@ -17,13 +21,13 @@ export default function Footer() {
                 />
         </a>
         <div className='text-desc'>
-        MATHSCAN est I'unique plateforme dans le monde francophone et arabophone, permettant i'dentification et la remédiation aux lacunes, la lutte contre l'oubli et l'apprentissage propulsée par l’Intelligence artificielle.
+        {intl.formatMessage({ id: 'textfooter' })}
         </div>
       </div>
       <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-2">
         <div class='contacter'>
           <h2 className="titres-footer mb-6 text-sm font-semibold uppercase dark:text-white">
-            Nous contacter
+          {intl.formatMessage({ id: 'contacter' })}
           </h2>
           <ul className="dark:text-gray-400">
             <li>
@@ -34,7 +38,7 @@ export default function Footer() {
                         width: "24px"
                      }}
                 />
-              N°2, RUE ANNABIA, SECTEUR 11, HAY RIAD, RABAT
+              {intl.formatMessage({ id: 'address' })}
             </li>
             <li>
                 <StaticImage
@@ -70,35 +74,35 @@ export default function Footer() {
         </div>
         <div class='liens-footer'>
           <h2 className="titres-footer mb-6 text-sm font-semibold uppercase dark:text-white">
-            Liens utiles
+          {intl.formatMessage({ id: 'lienUtiles' })}
           </h2>
           <ul className=" dark:text-gray-400">
             <li>
               <Link
                 href="#"
               >
-                Diagnostic gratuit
+                {intl.formatMessage({ id: 'diagnostique' })}
               </Link>
             </li>
             <li>
               <Link
                 href="#"
               >
-                Se connecter
+                {intl.formatMessage({ id: 'signIn' })}
               </Link>
             </li>
             <li>
               <Link
                 href="#"
               >
-                Nous contacter
+                {intl.formatMessage({ id: 'contacter' })}
               </Link>
             </li>
             <li>
               <Link
                 href="#"
               >
-                Politique de confidentialité
+                {intl.formatMessage({ id: 'politique' })}
               </Link>
             </li>
           </ul>

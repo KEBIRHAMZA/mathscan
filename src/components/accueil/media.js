@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../styles/accueil-styles/media.css'
 import { StaticImage } from 'gatsby-plugin-image';
+import { useIntl } from 'gatsby-plugin-intl';
 
 const users = [
   <StaticImage src="../../images/accueil-images/media-icons/manara.png" alt="Flowbite Logo" style={{ width:"100px" }} />,
@@ -23,11 +24,12 @@ const users = [
 
 
 const Media = () => {
+  const intl = useIntl();
   return (
     <div className="container-media my-24 mx-auto md:px-6">
       <section className="mb-32 text-center">
         <h2 className="titre-media mb-16 text-3xl font-bold">
-        Dans les médias
+        {intl.formatMessage({ id: 'media' })}
         </h2>
         <div className="grid px-4 md:grid-cols-2 lg:grid-cols-5">
           {users.map((user, index) => (
