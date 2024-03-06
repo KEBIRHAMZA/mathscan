@@ -144,7 +144,16 @@
     "infocard44" : "Accès à la préparation des concours (à partir du tronc commun)",
     "infocard55" : "Accès à la préparation des tests internationaux",
     "infocard66" : "Accès à la préparation des olympiades",
-    "buttincard2" : "M'informer"
-    
+    "buttincard2" : "M'informer",
 
+
+    "componentconnection": "---------------------------connection------------------------",
+
+    "connection" : "Connection",
+    "input1" : "Adresse email ou nom d'utilisateur",
+    "input2" : "Mot de passe",
+    "lientBesoin" : "Besoin d'un compte ?",
+    "lientCreer" : "Créer un compte",
+    "buttonconnecter" : "Se connecter"
+    
 }

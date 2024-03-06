@@ -142,6 +142,15 @@
     "infocard44" : "Access to competitive exam preparation (from the common core)",
     "infocard55" : "Access to international test preparation",
     "infocard66" : "Access to preparation for the Olympics",
-    "buttincard2" : "Inform me"
+    "buttincard2" : "Inform me",
+
+    "componentconnection": "---------------------------connection------------------------",
+
+    "connection" : "Sign in",
+    "input1" : "Email address or username",
+    "input2" : "Password",
+    "lientBesoin" : "Need an account ?",
+    "lientCreer" : "Create an account",
+    "buttonconnecter" : "Sign in"
 
 }
