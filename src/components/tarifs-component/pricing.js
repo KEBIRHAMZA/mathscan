@@ -1,7 +1,11 @@
 import React from 'react'
 import '../../styles/tarifs-styles/pricing.css'
+import { useIntl } from 'gatsby-plugin-intl'; 
 
 export default function Pricing() {
+
+  const intl = useIntl();
+
   return (
     <div className="pricing-parent">
   <div style={{ 
@@ -9,14 +13,14 @@ export default function Pricing() {
    }} className="pricing-container mt-24 container space-y-12 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-8">
     <div className="relative p-8  border border-gray-200 rounded-2xl shadow-sm flex flex-col">
       <div className="flex-1">
-        <h3 className="text-xl font-semibold ">Fondamental</h3>
+        <h3 className="text-xl font-semibold ">{intl.formatMessage({ id: 'fondamantal' })}</h3>
         <p className="mt-4 flex items-baseline ">
-          <p className="text-5xl font-extrabold tracking-tight">45 dh</p>
-          <p className="ml-1 text-xl font-semibold">/mois (annuel)</p>
+          <p className="text-5xl font-extrabold tracking-tight">{intl.formatMessage({ id: 'price1' })}</p>
+          <p className="ml-1 text-xl font-semibold">{intl.formatMessage({ id: 'descprice1' })}</p>
         </p>
         <p className="mt-4 flex items-baseline ">
-          <p className="text-5xl font-extrabold tracking-tight">90 dh</p>
-          <p className="ml-1 text-xl font-semibold">/mois (mensuel)</p>
+          <p className="text-5xl font-extrabold tracking-tight">{intl.formatMessage({ id: 'price2' })}</p>
+          <p className="ml-1 text-xl font-semibold">{intl.formatMessage({ id: 'descprice2' })}</p>
         </p>
         <ul role="list" className="mt-6 space-y-6">
           <li className="flex">
@@ -35,7 +39,7 @@ export default function Pricing() {
             >
               <polyline points="20 6 9 17 4 12" />
             </svg>
-            <p className="ml-3 ">Diagnostic integral et granulaire des lacunes de toutes les thématiques</p>
+            <p className="ml-3 ">{intl.formatMessage({ id: 'infocard1' })}</p>
           </li>
           <li className="flex">
             <svg
@@ -53,7 +57,7 @@ export default function Pricing() {
             >
               <polyline points="20 6 9 17 4 12" />
             </svg>
-            <p className="ml-3 ">Remédiation des lacunes de toutes les thématiques</p>
+            <p className="ml-3 ">{intl.formatMessage({ id: 'infocard2' })}</p>
           </li>
           <li className="flex">
             <svg
@@ -71,7 +75,7 @@ export default function Pricing() {
             >
               <polyline points="20 6 9 17 4 12" />
             </svg>
-            <p className="ml-3 ">Accés à tous les chapitres et tout le programme</p>
+            <p className="ml-3 ">{intl.formatMessage({ id: 'infocard3' })}</p>
           </li>
           <li className="flex">
             <svg
@@ -89,7 +93,7 @@ export default function Pricing() {
             >
               <polyline points="20 6 9 17 4 12" />
             </svg>
-            <p className="ml-3 ">Révision par thème et par chapitre</p>
+            <p className="ml-3 ">{intl.formatMessage({ id: 'infocard4' })}</p>
           </li>
           <li className="flex">
             <svg
@@ -107,7 +111,7 @@ export default function Pricing() {
             >
               <polyline points="20 6 9 17 4 12" />
             </svg>
-            <p className="ml-3 ">Accès à la progression des examens</p>
+            <p className="ml-3 ">{intl.formatMessage({ id: 'infocard5' })}</p>
           </li>
           <li className="flex">
             <svg
@@ -125,7 +129,7 @@ export default function Pricing() {
             >
               <polyline points="20 6 9 17 4 12" />
             </svg>
-            <p className="ml-3 ">Suivi de la progression par rapport au programme scolaire</p>
+            <p className="ml-3 ">{intl.formatMessage({ id: 'infocard6' })}</p>
           </li>
           <li className="flex">
             <svg
@@ -143,7 +147,7 @@ export default function Pricing() {
             >
               <polyline points="20 6 9 17 4 12" />
             </svg>
-            <p className="ml-3 ">Accès au rapport de progression par thème et au rapport global</p>
+            <p className="ml-3 ">{intl.formatMessage({ id: 'infocard7' })}</p>
           </li>
         </ul>
       </div>
@@ -151,16 +155,16 @@ export default function Pricing() {
         className="bg-emerald-50 text-emerald-700 hover:bg-emerald-100 mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium"
         href="/auth/login"
       >
-        Acheter
+        {intl.formatMessage({ id: 'buttoncard1' })}
       </a>
     </div>
     <div className="relative p-8  border border-gray-200 rounded-2xl shadow-sm flex flex-col">
       <div className="flex-1">
-        <h3 className="text-xl font-semibold ">Excellence</h3>
+        <h3 className="text-xl font-semibold ">{intl.formatMessage({ id: 'exellence' })}</h3>
         <p className="absolute top-0 py-1.5 px-4 bg-emerald-500 text-white rounded-full text-xs font-semibold uppercase tracking-wide  transform -translate-y-1/2">
-            Bientôt disponible
+        {intl.formatMessage({ id: 'desccard2' })}
         </p>
-        <p className="mt-6 ">En plus de ce qu’il y’a dans le plan fondamental</p>
+        <p className="mt-6 ">{intl.formatMessage({ id: 'titrecard2' })}</p>
         <ul role="list" className="mt-6 space-y-6">
           <li className="flex">
             <svg
@@ -178,7 +182,7 @@ export default function Pricing() {
             >
               <polyline points="20 6 9 17 4 12" />
             </svg>
-            <p className="ml-3 ">Suivi individualisé et personnalisé quotidien par un prof de math</p>
+            <p className="ml-3 ">{intl.formatMessage({ id: 'infocard11' })}</p>
           </li>
           <li className="flex">
             <svg
@@ -196,7 +200,7 @@ export default function Pricing() {
             >
               <polyline points="20 6 9 17 4 12" />
             </svg>
-            <p className="ml-3 ">Participation à tous les ateliers d’accompagnement</p>
+            <p className="ml-3 ">{intl.formatMessage({ id: 'infocard22' })}</p>
           </li>
           <li className="flex">
             <svg
@@ -214,7 +218,7 @@ export default function Pricing() {
             >
               <polyline points="20 6 9 17 4 12" />
             </svg>
-            <p className="ml-3 ">Participation à tous les ateliers sur l’usage des maths dans la vie réelle</p>
+            <p className="ml-3 ">{intl.formatMessage({ id: 'infocard33' })}</p>
           </li>
           <li className="flex">
             <svg
@@ -232,7 +236,7 @@ export default function Pricing() {
             >
               <polyline points="20 6 9 17 4 12" />
             </svg>
-            <p className="ml-3 ">Accès à la préparation des concours (à partir du tronc commun)</p>
+            <p className="ml-3 ">{intl.formatMessage({ id: 'infocard44' })}</p>
           </li>
           <li className="flex">
             <svg
@@ -250,7 +254,7 @@ export default function Pricing() {
             >
               <polyline points="20 6 9 17 4 12" />
             </svg>
-            <p className="ml-3 ">Accès à la préparation des tests internationaux</p>
+            <p className="ml-3 ">{intl.formatMessage({ id: 'infocard55' })}</p>
           </li>
           <li className="flex">
             <svg
@@ -268,7 +272,7 @@ export default function Pricing() {
             >
               <polyline points="20 6 9 17 4 12" />
             </svg>
-            <p className="ml-3 ">Accès à la préparation des olympiades</p>
+            <p className="ml-3 ">{intl.formatMessage({ id: 'infocard66' })}</p>
           </li>
         </ul>
       </div>
@@ -276,7 +280,7 @@ export default function Pricing() {
         className="bg-emerald-500 text-white  hover:bg-emerald-600 mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium"
         href="/auth/login"
       >
-        M'informer
+        {intl.formatMessage({ id: 'buttincard2' })}
       </a>
     </div>
   </div>

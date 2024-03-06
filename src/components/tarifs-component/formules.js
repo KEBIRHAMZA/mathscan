@@ -1,8 +1,12 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import '../../styles/tarifs-styles/formules.css'
+import { useIntl } from 'gatsby-plugin-intl'; // Import useIntl hook
 
 export default function Formules() {
+
+    const intl = useIntl(); 
+
   return (
     <section className="mb-40 conatiner-for-school">
         <div className="px-6 py-12 text-center dark:bg-neutral-900 md:px-12 lg:text-left">
@@ -10,23 +14,20 @@ export default function Formules() {
             <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="text-tarifs mt-12 lg:mt-0">
                 <p className='titre-two-school'>
-                Découvrez les differentes <span>formules mathscan</span>
+                {intl.formatMessage({ id: 'titrformule' })} <span>{intl.formatMessage({ id: 'spanformule' })}</span>
                 </p>
                 <p className='text-school'>
-                Nos formules sont adaptées à tous les budgets. Initiez votre enfant vers l’excellence en mathématiques à partir de zéro dirhams.
+                {intl.formatMessage({ id: 'textformule' })}
                 </p>
                 <a href="#" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">
-                    Tester Mathscan
+                {intl.formatMessage({ id: 'buttonformule' })}
                 </a>
             </div>
-            <div style={{ marginLeft:"160px" }} className="images-container">
+            <div className="images-container-pricing">
                 <StaticImage
                     src="../../images/tarifs-images/pricing-cover.png"
                     alt="Flowbite Logo"
                     className='images-pricing'
-                    style={{ 
-                        width:"300px"
-                     }}
                 />
             </div>
             </div>

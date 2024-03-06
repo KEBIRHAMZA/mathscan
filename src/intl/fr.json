@@ -111,6 +111,40 @@
     "titrformule": "Découvrez les differentes",
     "spanformule": "formules mathscan",
     "textformule": "Nos formules sont adaptées à tous les budgets. Initiez votre enfant vers l’excellence en mathématiques à partir de zéro dirhams.",
-    "buttonformule": "Tester Mathscan"
+    "buttonformule": "Tester Mathscan",
+
+
+    
+    "componentpricing": "---------------------------pricing------------------------",
+
+    "fondamantal" : "Fondamental",
+
+    "price1" : "45 dh",
+    "descprice1" : "/mois (annuel)",
+    "price2" : "90 dh",
+    "descprice2" : "/mois (mensuel)",
+
+    "infocard1":"Diagnostic integral et granulaire des lacunes de toutes les thématiques",
+    "infocard2":"Remédiation des lacunes de toutes les thématiques",
+    "infocard3":"Accés à tous les chapitres et tout le programme",
+    "infocard4":"Révision par thème et par chapitre",
+    "infocard5":"Accès à la progression des examens",
+    "infocard6":"Suivi de la progression par rapport au programme scolaire",
+    "infocard7":"Accès au rapport de progression par thème et au rapport global",
+    "buttoncard1":"Acheter",
+
+
+    "exellence" : "Excellence",
+    "desccard2" : "Bientôt disponible",
+    "titrecard2" : "En plus de ce qu’il y’a dans le plan fondamental",
+
+    "infocard11" : "Suivi individualisé et personnalisé quotidien par un prof de math",
+    "infocard22" : "Participation à tous les ateliers d’accompagnement",
+    "infocard33" : "Participation à tous les ateliers sur l’usage des maths dans la vie réelle",
+    "infocard44" : "Accès à la préparation des concours (à partir du tronc commun)",
+    "infocard55" : "Accès à la préparation des tests internationaux",
+    "infocard66" : "Accès à la préparation des olympiades",
+    "buttincard2" : "M'informer"
+    
 
 }

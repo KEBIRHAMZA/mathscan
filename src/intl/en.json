@@ -111,6 +111,37 @@
     "titrformule": "Discover the different",
     "spanformule": "mathscan formulas",
     "textformule": "Our packages are suitable for all budgets. Initiate your child towards excellence in mathematics from zero dirhams.",
-    "buttonformule": "Test Mathscan"
+    "buttonformule": "Test Mathscan",
+
+    "componentpricing": "---------------------------pricing------------------------",
+
+    "fondamantal" : "Fundamental",
+
+    "price1" : "45 dh",
+    "descprice1" : "/month (annual)",
+    "price2" : "90 dh",
+    "descprice2" : "/month (monthly)",
+
+    "infocard1":"Comprehensive and granular diagnosis of gaps in all themes",
+    "infocard2":"Remediation of gaps in all themes",
+    "infocard3":"Access to all chapters and the entire program",
+    "infocard4":"Revision by theme and chapter",
+    "infocard5":"Access to exam progress",
+    "infocard6":"Monitoring progress against the school curriculum",
+    "infocard7":"Access to the progress report by theme and the overall report",
+    "buttoncard1":"Buy",
+
+
+    "exellence" : "Excellency",
+    "desccard2" : "Coming soon",
+    "titrecard2" : "In addition to what is in the fundamental plan",
+
+    "infocard11" : "Individualized and personalized daily monitoring by a math teacher",
+    "infocard22" : "Participation in all support workshops",
+    "infocard33" : "Participation in all workshops on the use of maths in real life",
+    "infocard44" : "Access to competitive exam preparation (from the common core)",
+    "infocard55" : "Access to international test preparation",
+    "infocard66" : "Access to preparation for the Olympics",
+    "buttincard2" : "Inform me"
 
 }
