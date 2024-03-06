@@ -154,6 +154,34 @@
     "input2" : "Mot de passe",
     "lientBesoin" : "Besoin d'un compte ?",
     "lientCreer" : "Créer un compte",
-    "buttonconnecter" : "Se connecter"
-    
+    "buttonconnecter" : "Se connecter",
+
+    "componentinscription": "---------------------------inscription------------------------",
+
+    "inscription": "Inscription",
+    "inputIn1":"Votre nom d'utilisateur",
+    "inputIn2":"Votre Prénom",
+    "inputIn3":"Votre Nom",
+    "inputIn4":"Votre Email",
+    "inputIn5":"Genre",
+        "genre1":"Homme",
+        "genre2":"Femme",
+    "inputIn6":"Niveau Scolaire",
+        "niveau1" : "1 éme annèe primaire",
+        "niveau2" : "2 éme annèe primaire",
+        "niveau3" : "3 éme annèe primaire",
+        "niveau4" : "4 éme annèe primaire",
+        "niveau5" : "5 éme annèe primaire",
+        "niveau6" : "6 éme annèe primaire",
+        "niveau7" : "Tronc Commun",
+        "niveau8" : "1 ére annèe BAC Sc Math",
+        "niveau9" : "2 éme annèe BAC Sc Math",
+        "niveau10" : "1 éme annèe BAC Sc Ex",
+        "niveau11" : "2 éme annèe BAC PC ou SVT",
+    "inputIn7" : "Mot de passe",
+    "inputIn8" : "Confirmer le mot de passe",
+    "question" : "Vous avez déjà un compte?",
+    "lienInscription" : "Se connecter",
+    "buttonInscription" : "S'inscrire"
+ 
 }
