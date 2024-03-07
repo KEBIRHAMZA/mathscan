@@ -1,22 +1,26 @@
-/**
- * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/
- */
+import React from 'react';
+import { IntlProvider } from 'gatsby-plugin-intl';
+import { Helmet } from 'react-helmet';
 
- import React from 'react';
- import { IntlProvider } from 'gatsby-plugin-intl';
- 
- /**
-  * @type {import('gatsby').GatsbySSR['onRenderBody']}
-  */
- export const onRenderBody = ({ setHtmlAttributes }) => {
-   setHtmlAttributes({ lang: `en` })
- }
- 
- export const wrapRootElement = ({ element }) => (
-   <IntlProvider>
-     {element}
-   </IntlProvider>
- );
- 
+/**
+ * @type {import('gatsby').GatsbySSR['onRenderBody']}
+ */
+export const onRenderBody = ({ setHeadComponents, setHtmlAttributes }) => {
+  setHtmlAttributes({ lang: `en` });
+
+  // Google Fonts link for 'Montserrat'
+  setHeadComponents([
+    <Helmet key="helmet">
+      <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet"
+      />
+    </Helmet>
+  ]);
+};
+
+export const wrapRootElement = ({ element }) => (
+  <IntlProvider>
+    {element}
+  </IntlProvider>
+);
