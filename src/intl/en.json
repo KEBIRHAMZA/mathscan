@@ -178,6 +178,20 @@
     "inputIn8": "Confirm Password",
     "question": "Already have an account?",
     "lienInscription": "Log In",
-    "buttonInscription": "Sign Up"
+    "buttonInscription": "Sign Up",
+
+    "componentContacter": "---------------------------Contacter------------------------",
+
+    "titreContacter": "Contact us",
+    "incontacter1" : "First name",
+    "incontacter2" : "E-mail address",
+    "incontacter3" : "Phone",
+    "incontacter4" : "Subject",
+    "incontacter5" : "Message",
+    "buttonContacter" : "Send the message",
+    "phcontacter1" : "Your first name",
+    "phcontacter2" : "Your phone number",
+    "phcontacter3" : "The subject of your message",
+    "phcontacter4" : "Your message"
 
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import '../../styles/parents-styles/exceller.css'
 import { useIntl } from 'gatsby-plugin-intl'; // Import useIntl hook
-
+import { Link } from 'gatsby';
 
 
 export default function Exceller() {
@@ -21,9 +21,9 @@ export default function Exceller() {
                 <p className='text-school'>
                  {intl.formatMessage({ id: 'textparents' })}
                 </p>
-                <a href="#" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">
+                <Link to="/inscription" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">
                     {intl.formatMessage({ id: "createAccountButton" })}
-                </a>
+                </Link>
                 </div>
             <div className="">
                 <StaticImage

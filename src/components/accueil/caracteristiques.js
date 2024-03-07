@@ -2,6 +2,7 @@ import React from 'react';
 import { StaticImage } from "gatsby-plugin-image"
 import { useIntl } from 'gatsby-plugin-intl';
 import '../../styles/accueil-styles/caracteristiques.css';
+import { Link } from 'gatsby';
 
 export default function Caracteristiques() {
   const intl = useIntl();
@@ -15,9 +16,9 @@ export default function Caracteristiques() {
             {intl.formatMessage({ id: "improvementOne" })} <span>30%</span> {intl.formatMessage({ id: "to" })} <span>40%</span> {intl.formatMessage({ id: "improvementTwo" })}
           </p> <br />
           <p className='titre-three'>{intl.formatMessage({ id: "progress" })}</p> <br/>
-          <a href="#" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">
+          <Link to='/inscription' className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">
               {intl.formatMessage({ id: "createAccountButton" })}
-          </a>
+          </Link>
         </div>
       </div>
       <div className='cards-container'>

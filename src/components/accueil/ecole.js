@@ -2,6 +2,7 @@ import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import '../../styles/accueil-styles/ecole.css'
 import { useIntl } from 'gatsby-plugin-intl';
+import { Link } from 'gatsby';
 
 export default function Ecole() {
   const intl = useIntl();
@@ -25,12 +26,12 @@ export default function Ecole() {
                 <p className='text-school'>
                     {intl.formatMessage({ id: "schoolSectionDescription2" })}
                 </p>
-                <a
-                    href="#"
+                <Link
+                    to="/"
                     className="btn-school"
                 >
                 {intl.formatMessage({ id: "schoolSectionButton" })}
-                </a>
+                </Link>
                 </div>
             <div className="">
                 <StaticImage

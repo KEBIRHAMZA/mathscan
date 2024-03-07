@@ -1,7 +1,8 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import '../../styles/tarifs-styles/formules.css'
-import { useIntl } from 'gatsby-plugin-intl'; // Import useIntl hook
+import { useIntl } from 'gatsby-plugin-intl'; 
+import { Link } from 'gatsby';
 
 export default function Formules() {
 
@@ -19,9 +20,9 @@ export default function Formules() {
                 <p className='text-school'>
                 {intl.formatMessage({ id: 'textformule' })}
                 </p>
-                <a href="#" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">
+                <Link to="/inscription" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">
                 {intl.formatMessage({ id: 'buttonformule' })}
-                </a>
+                </Link>
             </div>
             <div className="images-container-pricing">
                 <StaticImage

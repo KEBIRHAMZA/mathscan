@@ -182,6 +182,21 @@
     "inputIn8" : "Confirmer le mot de passe",
     "question" : "Vous avez déjà un compte?",
     "lienInscription" : "Se connecter",
-    "buttonInscription" : "S'inscrire"
+    "buttonInscription" : "S'inscrire",
+
+
+    "componentContacter": "---------------------------Contacter------------------------",
+
+    "titreContacter": "Contactez-nous",
+    "incontacter1" : "Prénom",
+    "incontacter2" : "Adresse Email",
+    "incontacter3" : "Téléphone",
+    "incontacter4" : "Sujet",
+    "incontacter5" : "Message",
+    "buttonContacter" : "Envoyer le message",
+    "phcontacter1" : "Votre prénom",
+    "phcontacter2" : "Votre numéro de téléphone",
+    "phcontacter3" : "L'objet de votre message",
+    "phcontacter4" : "Votre message"
  
 }

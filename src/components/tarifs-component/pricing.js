@@ -1,6 +1,7 @@
 import React from 'react'
 import '../../styles/tarifs-styles/pricing.css'
 import { useIntl } from 'gatsby-plugin-intl'; 
+import { Link } from 'gatsby';
 
 export default function Pricing() {
 
@@ -151,12 +152,12 @@ export default function Pricing() {
           </li>
         </ul>
       </div>
-      <a
+      <Link
         className="bg-emerald-50 text-emerald-700 hover:bg-emerald-100 mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium"
-        href="/auth/login"
+        to="/connection"
       >
         {intl.formatMessage({ id: 'buttoncard1' })}
-      </a>
+      </Link>
     </div>
     <div className="relative p-8  border border-gray-200 rounded-2xl shadow-sm flex flex-col">
       <div className="flex-1">

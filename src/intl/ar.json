@@ -179,8 +179,19 @@
     "inputIn8": "تأكيد كلمة المرور",
     "question": "هل لديك حساب ؟",
     "lienInscription": "تسجيل الدخول",
-    "buttonInscription": "إنشاء حساب"
+    "buttonInscription": "إنشاء حساب",
 
+    "componentContacter": "---------------------------Contacter------------------------",
 
-
+    "titreContacter": "اتصل بنا",
+    "incontacter1" : "الاسم الأول",
+    "incontacter2" : "البريد الإلكتروني",
+    "incontacter3" : "هاتف",
+    "incontacter4" : "موضوع",
+    "incontacter5" : "رسالة",
+    "buttonContacter" : "أرسل الرسالة",
+    "phcontacter1" : "اسمك الأول",
+    "phcontacter2" : "رقم الهاتف",
+    "phcontacter3" : "موضوع رسالتك",
+    "phcontacter4" : "رسالتك"
 }

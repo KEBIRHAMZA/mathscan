@@ -2,6 +2,7 @@ import React from 'react';
 import '../../styles/accueil-styles/partner.css';
 import { StaticImage } from 'gatsby-plugin-image';
 import { useIntl } from 'gatsby-plugin-intl';
+import { Link } from 'gatsby';
 
 const Partner = () => {
   const intl = useIntl();
@@ -28,13 +29,13 @@ const Partner = () => {
             </div>
           ))}
         </div>
-        <a
-          href="#"
+        <Link
+          to="/inscription"
           className="btn-partner"
           style={{ backgroundColor: '#0dcaf0' }}
         >
           {intl.formatMessage({ id: 'createAccountButton' })}
-        </a>
+        </Link>
       </section>
     </div>
   );
