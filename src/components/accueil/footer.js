@@ -1,107 +1,121 @@
-import React from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
-import { Link } from 'gatsby';
-import { useIntl } from 'gatsby-plugin-intl';
+import React from 'react'
+import { StaticImage } from 'gatsby-plugin-image'
 import '../../styles/accueil-styles/footer.css'
+import { Link } from 'gatsby'
+import {useIntl } from 'gatsby-plugin-intl'
 
 export default function Footer() {
-  const intl = useIntl();
 
-  // Determine the text direction based on the locale
-  const direction = intl.locale === 'ar' ? 'rtl' : 'ltr';
+  const intl = useIntl();
 
   return (
     <footer className="footer-container p-4 bg-white sm:p-6 dark:bg-gray-800">
-      <div dir={direction} className="mx-auto max-w-screen-xl">
-        <div className="content-container md:flex md:justify-between">
-          <div className="mb-6 md:mb-0">
-            <Link to="/" className="flex items-center">
-              <StaticImage
-                src="../../images/accueil-images/new-logo-light.png"
-                alt="Logo"
-                className='logo-footer'
-              />
-            </Link>
-            <div className='text-desc'>
-              {intl.formatMessage({ id: 'textfooter' })}
-            </div>
-          </div>
-          <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-2">
-            <div className='contacter'>
-              <h2 className="titres-footer mb-6 text-sm font-semibold uppercase dark:text-white">
-                {intl.formatMessage({ id: 'contacter' })}
-              </h2>
-              <ul className="dark:text-gray-400">
-                <li>
-                  <StaticImage
-                      src="../../images/accueil-images/footer-icons/icon-map.png"
-                      alt="Location Icon"
-                      style={{ width: "24px" }}
-                  />
-                  {intl.formatMessage({ id: 'address' })}
-                </li>
-                <li>
-                  <StaticImage
-                      src="../../images/accueil-images/footer-icons/icon-mail.png"
-                      alt="Email Icon"
-                      style={{ width: "24px" }}
-                  />
-                  contact@mathscan.net
-                </li>
-                <li>
-                  <StaticImage
-                      src="../../images/accueil-images/footer-icons/icon-phone.png"
-                      alt="Phone Icon"
-                      style={{ width: "24px" }}
-                  />
-                  +212 623 467 615
-                </li>
-                <li>
-                  <StaticImage
-                      src="../../images/accueil-images/footer-icons/icons-whatsapp.png"
-                      alt="WhatsApp Icon"
-                      style={{ width: "20px" }}
-                  />
-                  +212 623 467 615
-                </li>
-              </ul>
-            </div>
-            <div className='liens-footer'>
-              <h2 className="titres-footer mb-6 text-sm font-semibold uppercase dark:text-white">
-                {intl.formatMessage({ id: 'lienUtiles' })}
-              </h2>
-              <ul className="dark:text-gray-400">
-                <li>
-                  <Link to="/inscription">
-                    {intl.formatMessage({ id: 'diagnostique' })}
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/connection">
-                    {intl.formatMessage({ id: 'signIn' })}
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/contacter">
-                    {intl.formatMessage({ id: 'contacter' })}
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/privacy-policy">
-                    {intl.formatMessage({ id: 'politique' })}
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
+  <div className="mx-auto max-w-screen-xl">
+    <div className="content-container md:flex md:justify-between">
+      <div className="mb-6 md:mb-0">
+        <Link to="/" className="flex items-center">
+                <StaticImage
+                    src="../../images/accueil-images/new-logo-light.png"
+                    alt="Flowbite Logo"
+                    className='logo-footer'
+                />
+        </Link>
+        <div className='text-desc'>
+        {intl.formatMessage({ id: 'textfooter' })}
         </div>
       </div>
-      <div className="top-footer sm:flex sm:items-center sm:justify-between">
-          <span className="copyright text-sm sm:text-center dark:text-gray-400">
-            © {new Date().getFullYear()} Mathscan
-          </span>
-          <div className="social-media flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-          <a
+      <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-2">
+        <div class='contacter'>
+          <h2 className="titres-footer mb-6 text-sm font-semibold uppercase dark:text-white">
+          {intl.formatMessage({ id: 'contacter' })}
+          </h2>
+          <ul className="dark:text-gray-400">
+            <li>
+                <StaticImage
+                    src="../../images/accueil-images/footer-icons/icon-map.png"
+                    alt="Flowbite Logo"
+                    style={{ 
+                        width: "24px"
+                     }}
+                />
+              {intl.formatMessage({ id: 'address' })}
+            </li>
+            <li>
+                <StaticImage
+                    src="../../images/accueil-images/footer-icons/icon-mail.png"
+                    alt="Flowbite Logo"
+                    style={{ 
+                        width: "24px"
+                     }}
+                />
+                contact@mathscan.net
+            </li>
+            <li>
+                <StaticImage
+                    src="../../images/accueil-images/footer-icons/icon-phone.png"
+                    alt="Flowbite Logo"
+                    style={{ 
+                        width: "24px"
+                     }}
+                />
+                +212 623 467 615
+            </li>
+            <li>
+                <StaticImage
+                    src="../../images/accueil-images/footer-icons/icons-whatsapp.png"
+                    alt="Flowbite Logo"
+                    style={{ 
+                        width: "20px",
+                     }}
+                />
+                +212 623 467 615
+            </li>
+          </ul>
+        </div>
+        <div class='liens-footer'>
+          <h2 className="titres-footer mb-6 text-sm font-semibold uppercase dark:text-white">
+          {intl.formatMessage({ id: 'lienUtiles' })}
+          </h2>
+          <ul className=" dark:text-gray-400">
+            <li>
+              <Link
+                to="/inscription"
+              >
+                {intl.formatMessage({ id: 'diagnostique' })}
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/connection"
+              >
+                {intl.formatMessage({ id: 'signIn' })}
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/contacter"
+              >
+                {intl.formatMessage({ id: 'contacter' })}
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="#"
+              >
+                {intl.formatMessage({ id: 'politique' })}
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div className="top-footer sm:flex sm:items-center sm:justify-between">
+      <span className="copyright text-sm sm:text-center dark:text-gray-400">
+        Copyright © 2022 Mathscan
+      </span>
+      <div className="social-media flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+        <a
           href="https://www.facebook.com/Mathscanner/"
           className="hover dark:hover:text-white"
           target='_blank'
@@ -181,8 +195,9 @@ export default function Footer() {
 
 
         </a>
-          </div>
       </div>
-    </footer>
-  );
+    </div>
+</footer>
+
+  )
 }
