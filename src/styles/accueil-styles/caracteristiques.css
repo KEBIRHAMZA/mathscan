@@ -112,6 +112,13 @@ span {
     width: 1300px;
 }
 
+.large-screen-carc{
+    margin : 0;
+    margin-bottom: 300px;
+    margin-right: 200px;
+    margin-left: 300px;
+}
+
 
 @media (max-width: 768px) { 
     .container-caracteristiques {

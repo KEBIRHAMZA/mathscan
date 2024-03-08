@@ -8,18 +8,18 @@ export default function Caracteristiques() {
 
   const intl = useIntl();
 
-  const [margin,setMargin] = React.useState({})
+  const [additionalClass, setAdditionalClass] = React.useState('');
 
   // Changer la direction du composant quand la langue est l'arabe
   const locale = intl.locale;
   const direction = locale === 'ar' ? 'rtl' : 'ltr';
 
   React.useEffect(() => {
-    locale === 'ar' ? setMargin({margin : 0 ,marginBottom : "300px", marginRight : "200px" , marginLeft : "300px" }) : setMargin({})
+    setAdditionalClass(locale === 'ar' ? "large-screen-carc" : "");
   }, [direction]);
 
   return (
-    <div dir={direction} style={margin} className="container-caracteristiques grid gap-2 grid-cols-2">
+    <div dir={direction} className={`container-caracteristiques ${additionalClass} grid gap-2 grid-cols-2`}>
 
       {/* Le text de cette composant */}
       <div className="text-container">
