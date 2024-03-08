@@ -65,7 +65,8 @@
         font-weight: 400;
         display: inline-block; /* Ensures proper spacing and alignment */
         text-decoration: none; /* Removes underline from links */
-        margin-top: 1.25rem; /* Adds space above the button */
+        margin-top: 1.25rem; 
+        width: 230px;/* Adds space above the button */
     }
 
     .titre-for-school, .titre-two-school {
