@@ -5,12 +5,11 @@ import Seo from "../components/seo"
 import Hero from "../components/accueil/hero"
 import Statistique from "../components/accueil/statistique"
 import Caracteristiques from "../components/accueil/caracteristiques"
-import Testimonials from "../components/accueil/temoignage"
-import Video from "../components/accueil/video"
 import Ecole from "../components/accueil/ecole"
 import Astuces from "../components/accueil/astuces"
 import Partner from "../components/accueil/partner"
 import Media from "../components/accueil/media"
+import Temoignages from "../components/accueil/temoignages"
 
 
 
@@ -19,8 +18,7 @@ const IndexPage = () => (
     <Hero/>
     <Statistique/>
     <Caracteristiques/>
-    <Testimonials/>
-    <Video/>
+    <Temoignages/>
     <Ecole/>
     <Astuces/>
     <Partner/>

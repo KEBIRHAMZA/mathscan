@@ -11,6 +11,7 @@ import React from 'react';
 import { IntlProvider } from 'gatsby-plugin-intl';
 import { Helmet } from 'react-helmet';
 
+
 export const onRenderBody = ({ setHeadComponents }) => {
   setHeadComponents([
     <Helmet key="helmet">
