@@ -1,17 +1,27 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import '../../styles/accueil-styles/statistique.css';
-import { useIntl } from 'gatsby-plugin-intl'; // Import useIntl hook
- // Import CSS file
+import { useIntl } from 'gatsby-plugin-intl'; 
+import { useState,useEffect } from 'react';
 
 export default function Statistique() {
 
+    // Changer la direction du composant quand la langue est l'arabe
     const intl = useIntl();
+    const locale = intl.locale;
+    const direction = locale === 'ar' ? 'rtl' : 'ltr';
+
+    const [margin,setMargin] = useState()
+    useEffect(() => {
+        locale === 'ar' ? setMargin({marginRight:"80px"}) : setMargin({})
+    }, [locale]);
 
     return (
-        <div className='container'>
-            <div className="statistics-content grid grid-cols-1 lg:grid-cols-3 gap-3">
+        <div dir={direction} className='container-statistique'>
+            <div style={margin} className="statistics-content grid grid-cols-1 lg:grid-cols-3 gap-3">
                 <div className="lg:col-span-1 first">
+
+                    {/* Exercices et problèmes mathématiques ludiques */}
                     <div className="grid grid-cols-3 gap-4">
                         <div className="image-container-certificate">
                             <StaticImage
@@ -24,10 +34,12 @@ export default function Statistique() {
                             <p className="description">{intl.formatMessage({ id: "exercises" })}</p>
                         </div>
                     </div>
+
+
                 </div>
-                <div className="lg:col-span-1" style={{ 
-                    marginTop: '20px',
-                }}>
+
+                {/* Années de recherche et 200 publications */}
+                <div className="prt-statistique lg:col-span-1">
                     <div className="grid grid-cols-3 gap-4">
                         <div className="image-container-student">
                             <StaticImage
@@ -41,9 +53,9 @@ export default function Statistique() {
                         </div>
                     </div>
                 </div>
-                <div className="lg:col-span-1" style={{ 
-                    marginTop: '20px',
-                }}>
+
+                {/* Distinctions nationales et internationales */}
+                <div className="prt-statistique lg:col-span-1">
                     <div className="grid grid-cols-3 gap-4">
                         <div className="image-container-teacher">
                             <StaticImage
@@ -57,6 +69,8 @@ export default function Statistique() {
                         </div>
                     </div>
                 </div>
+
+
             </div>
         </div>
     )

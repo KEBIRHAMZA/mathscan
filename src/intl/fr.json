@@ -18,14 +18,15 @@
     "highSchool": "Lycée",
     "createAccountButton": "Créer mon compte",
 
-    "componentStatistique": "---------------------------statistique------------------------",
+    "component-Statistique": "---------------------------Statistique------------------------",
 
     "exercises": "Exercices et problèmes mathématiques ludiques",
     "research": "Années de recherche et 200 publications",
     "distinctions": "Distinctions nationales et internationales",
     "year": "ans",
 
-    "componentCaracteristiques": "---------------------------caractéristiques------------------------",
+    "component-Caracteristiques": "---------------------------caractéristiques------------------------",
+
     "title": "Pour les parents et les étudiants",
     "improvementOne": "Une amélioration de",
     "to": "à",

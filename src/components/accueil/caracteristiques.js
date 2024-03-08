@@ -5,22 +5,53 @@ import '../../styles/accueil-styles/caracteristiques.css';
 import { Link } from 'gatsby';
 
 export default function Caracteristiques() {
+
   const intl = useIntl();
 
+  const [margin,setMargin] = React.useState({})
+
+  // Changer la direction du composant quand la langue est l'arabe
+  const locale = intl.locale;
+  const direction = locale === 'ar' ? 'rtl' : 'ltr';
+
+  React.useEffect(() => {
+    locale === 'ar' ? setMargin({margin : 0 ,marginBottom : "300px", marginRight : "200px" , marginLeft : "300px" }) : setMargin({})
+  }, [direction]);
+
   return (
-    <div className="container-caracteristiques grid gap-2 grid-cols-2" style={{ marginLeft:"100px"}}>
+    <div dir={direction} style={margin} className="container-caracteristiques grid gap-2 grid-cols-2">
+
+      {/* Le text de cette composant */}
       <div className="text-container">
+
+        {/* la description de cette composant */}
         <div>
+
+          {/* Le premier titre */}
           <p className='titre-one'>{intl.formatMessage({ id: "title" })}</p> <br />
+
+          {/* Le dexieme titre */}
           <p className='titre-two'>
             {intl.formatMessage({ id: "improvementOne" })} <span>30%</span> {intl.formatMessage({ id: "to" })} <span>40%</span> {intl.formatMessage({ id: "improvementTwo" })}
-          </p> <br />
-          <p className='titre-three'>{intl.formatMessage({ id: "progress" })}</p> <br/>
-          <Link to='/inscription' className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">
-              {intl.formatMessage({ id: "createAccountButton" })}
-          </Link>
+          </p> 
+          <br />
+
+          {/* paragraph de cette composant */}
+          <p className='titre-three'>{intl.formatMessage({ id: "progress" })}</p><br/>
+
+          {/* La button d'inscription */}
+          <div className="text-center">
+              <Link to='/inscription' className="hero-button text-white py-2 px-4 border rounded inline-block mt-4">
+                  {intl.formatMessage({ id: "createAccountButton" })}
+              </Link>
+          </div>
+
         </div>
+
+
       </div>
+
+      {/* Les cartes */}
       <div className='cards-container'>
         <div className="grid gap-4 grid-cols-2 cards-position">
           <div className="card" >
@@ -28,8 +59,6 @@ export default function Caracteristiques() {
                 iconUrl={<StaticImage className='image-icon' src="../../images/accueil-images/intelligent-icon.png" alt="Intelligent Icon" />}
                 showen={intl.formatMessage({ id: "intelligentDiagnostic" })}
                 hiden={intl.formatMessage({ id: "intelligentDiagnosticDescription" })}
-                buttonText="Read the docs"
-                buttonLink="#"
             />
           </div>
           <div className="card">
@@ -37,8 +66,6 @@ export default function Caracteristiques() {
                 iconUrl={<StaticImage className='image-icon' src="../../images/accueil-images/phone-icon.png" alt="Phone Icon" />}
                 showen={intl.formatMessage({ id: "personalizedRemediation" })}
                 hiden={intl.formatMessage({ id: "personalizedRemediationDescription" })}
-                buttonText="Read the docs"
-                buttonLink="#"
             />
           </div>
           <div className="card">
@@ -46,8 +73,6 @@ export default function Caracteristiques() {
                 iconUrl={<StaticImage className='image-icon' src="../../images/accueil-images/time-icon.png" alt="Time Icon" />}
                 showen={intl.formatMessage({ id: "selfAssessment" })}
                 hiden={intl.formatMessage({ id: "selfAssessmentDescription" })}
-                buttonText="Read the docs"
-                buttonLink="#"
             />
           </div>
           <div className="card">
@@ -55,8 +80,6 @@ export default function Caracteristiques() {
                 iconUrl={<StaticImage className='image-icon' src="../../images/accueil-images/repport-icon.png" alt="Report Icon" />}
                 showen={intl.formatMessage({ id: "instantReports" })}
                 hiden={intl.formatMessage({ id: "instantReportsDescription" })}
-                buttonText="Read the docs"
-                buttonLink="#"
             />
           </div>
         </div>
@@ -66,7 +89,7 @@ export default function Caracteristiques() {
 }
 
 
-function DynamicComponent({ iconUrl, showen,hiden, buttonText, buttonLink }) {
+function DynamicComponent({ iconUrl, showen,hiden }) {
   return (
     <div className="cards group relative cursor-pointer overflow-hidden bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10">
       <span className="absolute top-10 z-0 h-20 w-20 rounded-full bg-sky-500 transition-all duration-300 group-hover:scale-[10]"></span>
