@@ -1,58 +1,72 @@
 *{
-    font-family:'Montserrat', sans-serif !important 
+    font-family:'Montserrat', sans-serif !important;
 }
+
 .image-for-school{
-    max-width: 500px;
-    height: auto;
-    margin-left: 50px;
+    max-width: 100%; /* Ensures image is not wider than its container */
+    height: auto; /* Maintains aspect ratio */
 }
 
 .conatiner-for-school{
-    margin: 200px;
+    margin: 0 auto; /* Centers the container */
     margin-top: 30px;
-    width: 1200px;
-    margin-left: 180px;
+    margin-bottom: 180px;
+    max-width: 90%; /* Prevents the container from being too wide on larger screens */
+    padding: 1rem; /* Adds some padding around the content */
 }
 
 .titre-for-school{
-    font-size: 26px;
+    font-size: 1.625rem; /* 26px equivalent */
     font-weight: 400;
     color: #FF64B1;
-    margin-bottom: 10px;
-    font-family: 'Montserrat', sans-serif !important;
+    margin-bottom: 0.625rem; /* 10px equivalent */
 }
 
 .titre-two-school{
-    font-size: 38px !important;
+    font-size: 2.375rem; /* 38px equivalent */
     font-weight: 500;
     line-height: 1.2;
-    margin-bottom: 15px;
-    color:#212529
+    margin-bottom: 0.9375rem; /* 15px equivalent */
+    color: #212529;
 }
 
 .btn-school{
-    font-size: 14px;
-    padding: 11px 21px 13px 18px !important;
-    border-radius: 8px;
+    font-size: 0.875rem; /* 14px equivalent */
+    padding: 0.6875rem 1.3125rem; /* Adjusted padding */
+    border-radius: 0.5rem; /* 8px equivalent */
     background-color: #FF64B1;
     color: #FFF;
     font-weight: 400;
-    font-family: 'Montserrat', sans-serif !important;
+    display: inline-block; /* Ensures proper spacing and alignment */
+    text-decoration: none; /* Removes underline from links */
+    margin-top: 1.25rem; /* Adds space above the button */
 }
 
 .text-school{
     color: rgb(108, 108, 125);
-    font-family: 'DM Sans', sans-serif;
-    font-size: 18px;
-    margin-top: 5px;
-    margin-bottom: 20px;
+    font-size: 1.125rem; /* 18px equivalent */
+    margin-top: 0.3125rem; /* 5px equivalent */
+    margin-bottom: 1.25rem; /* 20px equivalent */
+}
+
+@media only screen and (max-width: 768px) {
+    .conatiner-for-school {
+        width: auto; /* Allows the container to adapt to the screen size */
+        margin: 1rem;
+        margin-bottom: 180px; /* Reduced margin for smaller screens */
+    }
+
+    .titre-for-school, .titre-two-school {
+        font-size: smaller; /* Adjusts font size for readability */
+    }
+
+    .image-for-school {
+        margin-left: 0; /* Resets margin for consistency */
+    }
 }
 
 @media only screen and (max-width: 600px) {
     .conatiner-for-school {
-        margin-right: 0;
-        margin-left: 10px; 
-        margin-top: -80px;
-        width: 300px; 
+        margin-top: 1rem; /* Adjusts top margin for header space */
     }
 }

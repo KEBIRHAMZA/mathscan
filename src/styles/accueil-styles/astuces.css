@@ -1,71 +1,66 @@
 *{
-    font-family:'Montserrat', sans-serif !important 
-}
-.image-for-astuces{
-    max-width: 500px;
-    height: auto;
-    margin-left: 50px;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .conatiner-for-astuces{
-    margin: 200px;
-    margin-top: 30px;
-    width: 1200px;
-    margin-left: 50px;
-}
-
-.titre-for-astuces{
-    font-size: 26px;
-    font-weight: 400;
-    color: #FF64B1;
-    margin-bottom: 10px;
-    font-family: 'Montserrat', sans-serif !important;
+    margin: 0 auto; /* Centers the container */
+    padding-top: 30px;
+    max-width: 90%; /* Prevents the container from being too wide */
+    padding: 1rem; /* Adds some padding around the content */
 }
 
 .titre-two-astuces{
-    font-size: 38px !important;
+    font-size: 2.375rem; /* 38px */
     font-weight: 500;
     line-height: 1.2;
-    margin-bottom: 15px;
-    color:#212529
-}
-
-.btn-astuces{
-    font-size: 14px;
-    padding: 11px 21px 13px 18px !important;
-    border-radius: 8px;
-    background-color: #FF64B1;
-    color: #FFF;
-    font-weight: 400;
-    font-family: 'Montserrat', sans-serif !important;
+    margin-bottom: 0.9375rem; /* 15px */
+    color: #212529;
 }
 
 .text-astuces{
     color: rgb(108, 108, 125);
     font-family: 'DM Sans', sans-serif;
-    font-size: 18px;
-    margin-top: 5px;
-    margin-bottom: 20px;
+    font-size: 1.125rem; /* 18px */
+    margin-top: 0.3125rem; /* 5px */
+    margin-bottom: 1.25rem; /* 20px */
+}
+
+.btn-astuces{
+    font-size: 0.875rem; /* 14px */
+    padding: 0.6875rem 1.3125rem; /* Adjusted padding */
+    border-radius: 0.5rem; /* 8px */
+    background-color: #0dcaf0; /* Updated background color */
+    color: #FFF;
+    font-weight: 400;
+    display: inline-block; /* Ensures proper spacing and alignment */
+    text-decoration: none; /* Removes underline from links */
+    margin-top: 1.25rem; /* Adds space above the button */
+}
+
+.image-for-astuces{
+    max-width: 100%; /* Ensures image is not wider than its container */
+    height: auto; /* Maintains aspect ratio */
+    margin-left: auto; /* Centers the image horizontally */
+    margin-right: auto; /* Centers the image horizontally */
+}
+
+@media only screen and (max-width: 768px) {
+    .conatiner-for-astuces {
+        width: auto; /* Allows the container to adapt to the screen size */
+        padding: 1rem; /* Adds padding for smaller screens */
+    }
+
+    .titre-two-astuces, .text-astuces {
+        text-align: center; /* Centers text on smaller screens */
+    }
+
+    .image-for-astuces {
+        margin-top: 1rem; /* Adds space above the image */
+    }
 }
 
 @media only screen and (max-width: 600px) {
-    .conatiner-for-astuces {
-        margin-right: 0;
-        margin-left: 10px; 
-        margin-top: -80px;
-        width: 300px; 
-    }
-    .titre-two-astuces{
-        font-size: 38px !important;
-        font-weight: 500;
-        line-height: 1.2;
-        margin-bottom: 15px;
-        margin-top: -100px;
-        color: #212529;
-    }
-    .image-for-astuces{
-        max-width: 500px;
-        height: auto;
-        margin-left: -30px;
+    .titre-two-astuces {
+        font-size: 1.75rem; /* Adjusts font size for smaller screens */
     }
 }
