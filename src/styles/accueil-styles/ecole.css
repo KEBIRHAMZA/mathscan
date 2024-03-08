@@ -57,15 +57,10 @@
     }
 
     .btn-school{
-        font-size: 0.700rem; /* 14px equivalent */
-        padding: 0.6875rem 1.3125rem; /* Adjusted padding */
         border-radius: 0.5rem; /* 8px equivalent */
         background-color: #FF64B1;
         color: #FFF;
-        font-weight: 400;
-        display: inline-block; /* Ensures proper spacing and alignment */
         text-decoration: none; /* Removes underline from links */
-        margin-top: 1.25rem; 
         width: 200px;
         height: 100px;/* Adds space above the button */
     }
