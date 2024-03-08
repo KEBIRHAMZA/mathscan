@@ -78,4 +78,13 @@
     .conatiner-for-school {
         margin-top: 1rem; /* Adjusts top margin for header space */
     }
+
+    .btn-school{
+        border-radius: 0.5rem; /* 8px equivalent */
+        background-color: #FF64B1;
+        color: #FFF;
+        text-decoration: none; /* Removes underline from links */
+        width: 200px;
+        height: 100px;/* Adds space above the button */
+    }
 }
