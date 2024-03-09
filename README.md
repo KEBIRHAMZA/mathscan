@@ -51,7 +51,7 @@ Pour personnaliser ou modifier le contenu textuel de l'application selon la lang
 
 Une fois dans le fichier de langue approprié, vous pouvez localiser rapidement le texte spécifique à modifier en utilisant la fonction de recherche de votre éditeur de texte (généralement accessible via `Ctrl+F`). Recherchez le terme `component-{nom du composant}`, où `{nom du composant}` est le nom du composant dont vous souhaitez modifier le contenu.
 
-![Utiliser Ctrl+F pour rechercher](src/images/ctrl-f-search.png)
+![Utiliser Ctrl+F pour rechercher](src/images/accueil-images/logo.png)
 
 
 
