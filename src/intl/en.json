@@ -1,6 +1,6 @@
 {
 
-    "componentNavbar" : "---------------------------navbar------------------------",
+    "component-Navbar" : "---------------------------navbar------------------------",
 
     "home": "Home",
     "parents": "Parents",
@@ -8,7 +8,7 @@
     "signIn": "Sign In",
     "createAccount": "Create Account",
 
-    "componentHero" : "---------------------------hero------------------------",
+    "component-Hero" : "---------------------------hero------------------------",
 
     "heroTitle": "Make Math Fun Again",
     "heroDescription": "Platform powered by artificial intelligence, for fast, intuitive, and effective math learning.",
@@ -17,13 +17,13 @@
     "highSchool": "High School",
     "createAccountButton": "Create My Account",
 
-    "componentStatistique": "---------------------------statistic------------------------",
+    "component-Statistique": "---------------------------statistic------------------------",
     "exercises": "Exercises and Fun Math Problems",
     "research": "Years of Research and 200 Publications",
     "distinctions": "National and International Distinctions",
     "year": "years",
 
-    "componentCaracteristiques": "---------------------------characteristics------------------------",
+    "component-Caracteristiques": "---------------------------characteristics------------------------",
 
     "title": "For Parents and Students",
     "improvementOne": "An improvement of",
@@ -39,14 +39,14 @@
     "instantReports": "Tracking via Instant Reports",
     "instantReportsDescription": "Instant reports give you accurate and relevant information about your child's progress.",
 
-    "componentTestimonials": "---------------------------testimonials------------------------",
+    "component-Testimonials": "---------------------------testimonials------------------------",
 
     "titleTestimonials": "Testimonials",
     "testimonialOneName": "Mother of J.A.",
     "testimonialOneRole": "2nd year college",
     "testimonialOneContent": "I am delighted to announce that my daughter J.'s grade has improved from 9/20 to 17/20 thanks to Mathscan. Thanks to the team for all their efforts. Mother of J.A. 2nd year college.",
 
-    "componentecole": "---------------------------ecole------------------------",
+    "component-ecole": "---------------------------ecole------------------------",
 
     "schoolSectionTitle": "For Schools and Teachers",
     "schoolSectionSubtitle": "Save more than",
@@ -56,21 +56,21 @@
     "schoolSectionDescription2": "Automation of assessment in all its forms and detailed real-time reporting for differentiated student support.",
     "schoolSectionButton": "Use Mathscan in my school",
 
-    "componentastuces": "---------------------------astuces------------------------",
+    "component-astuces": "---------------------------astuces------------------------",
 
     "tipsSectionTitle": "5 Tips to Help Your Child Excel in Math",
     "tipsSectionSubtitle": "A free ebook for parents and children who want to learn some tips.",
     "tipsSectionButton": "Download my guide",
 
-    "componentpartners": "---------------------------partners------------------------",
+    "component-partners": "---------------------------partners------------------------",
 
     "partnersSectionTitle": "They Trust Us",
 
-    "componentmedia": "---------------------------media------------------------",
+    "component-media": "---------------------------media------------------------",
 
     "media" : "In the media",
 
-    "componentfooter": "---------------------------footer------------------------",
+    "component-footer": "---------------------------footer------------------------",
 
     "textfooter": "MATHSCAN is the only platform in the French-speaking and Arabic-speaking world, allowing the identification and remediation of gaps, the fight against forgetting and learning powered by Artificial Intelligence.",
     "nousCantacter": "Contact us",
@@ -80,7 +80,7 @@
     "contacter": "Contact us",
     "politique": "Privacy Policy",
 
-    "componentparents": "---------------------------parents------------------------",
+    "component-parents": "---------------------------parents------------------------",
 
     "titreone" : "Make your child",
     "exceller": "excel",
@@ -88,7 +88,7 @@
     "textparents" : "We have helped more than 16,000 students learn mathematics using our artificial intelligence system.",
 
 
-    "componentcardsparent": "---------------------------cardsparent------------------------",
+    "component-cardsparent": "---------------------------cardsparent------------------------",
 
     "titrecardsone" : "Join the",
     "spanCards": "thousands of parents ",
@@ -106,14 +106,14 @@
     "card4" : "Low cost",
     "desc4" : "You will also be able to know your child's real level and measure their progress at any time and in real time. All at a very low cost compared to traditional academic support",
 
-    "componentformule": "---------------------------formule------------------------",
+    "component-formule": "---------------------------formule------------------------",
 
     "titrformule": "Discover the different",
     "spanformule": "mathscan formulas",
     "textformule": "Our packages are suitable for all budgets. Initiate your child towards excellence in mathematics from zero dirhams.",
     "buttonformule": "Test Mathscan",
 
-    "componentpricing": "---------------------------pricing------------------------",
+    "component-pricing": "---------------------------pricing------------------------",
 
     "fondamantal" : "Fundamental",
 
@@ -144,7 +144,7 @@
     "infocard66" : "Access to preparation for the Olympics",
     "buttincard2" : "Inform me",
 
-    "componentconnection": "---------------------------connection------------------------",
+    "component-connection": "---------------------------connection------------------------",
 
     "connection" : "Sign in",
     "input1" : "Email address or username",
@@ -153,7 +153,7 @@
     "lientCreer" : "Create an account",
     "buttonconnecter" : "Sign in",
 
-    "componentinscription": "---------------------------Registration------------------------",
+    "component-inscription": "---------------------------Registration------------------------",
     "inscription": "Registration",
     "inputIn1": "Your Username",
     "inputIn2": "Your First Name",
@@ -180,7 +180,7 @@
     "lienInscription": "Log In",
     "buttonInscription": "Sign Up",
 
-    "componentContacter": "---------------------------Contacter------------------------",
+    "component-Contacter": "---------------------------Contacter------------------------",
 
     "titreContacter": "Contact us",
     "incontacter1" : "First name",

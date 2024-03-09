@@ -41,7 +41,7 @@
     "instantReports": "Suivi via des rapports instantanés",
     "instantReportsDescription": "Des rapports instantanés vous donnent des informations précises et pertinentes sur la progression de votre enfant.",
 
-    "componentTestimonials": "---------------------------témoignages------------------------",
+    "component-Testimonials": "---------------------------témoignages------------------------",
     
     "titleTestimonials": "Témoignages",
     "testimonialOneName": "Maman de J.A.",
@@ -49,7 +49,7 @@
     "testimonialOneContent": "J'ai la joie de vous annoncer que la note de ma fille J. est passée de 9/20 à 17/20 et cela grâce à Mathscan. Merci à l'équipe pour tous ses efforts. Maman de J. A. 2ème année collège.",
 
 
-    "componentecole": "---------------------------ecole------------------------",
+    "component-ecole": "---------------------------ecole------------------------",
 
     "schoolSectionTitle": "Pour les écoles et enseignants",
     "schoolSectionSubtitle": "Gain de plus de",
@@ -59,21 +59,21 @@
     "schoolSectionDescription2": "Automatisation de l’évaluation sous toutes ses formes et reportings détaillés en temps réel pour un accompagnement différencié des élèves.",
     "schoolSectionButton": "Utiliser Mathscan dans mon école",
 
-    "componentastuces": "---------------------------astuces------------------------",
+    "component-astuces": "---------------------------astuces------------------------",
 
     "tipsSectionTitle": "5 Astuces pour aider votre enfant à exceller en math",
     "tipsSectionSubtitle": "Un ebook gratuit pour les parents et les enfants qui souhaitent savoir quelques astuces.",
     "tipsSectionButton": "Télecharger mon guide",
 
-    "componentpartners": "---------------------------partners------------------------",
+    "component-partners": "---------------------------partners------------------------",
 
     "partnersSectionTitle": "Ils nous font confiance",
 
-    "componentmedia": "---------------------------media------------------------",
+    "component-media": "---------------------------media------------------------",
 
     "media" : "Dans les médias",
 
-    "componentfooter": "---------------------------footer------------------------",
+    "component-footer": "---------------------------footer------------------------",
 
     "textfooter": "MATHSCAN est I'unique plateforme dans le monde francophone et arabophone, permettant i'dentification et la remédiation aux lacunes, la lutte contre l'oubli et l'apprentissage propulsée par l’Intelligence artificielle.",
     "nousCantacter": "Nous contacter",
@@ -83,14 +83,14 @@
     "contacter": "Nous contacter",
     "politique": "Politique de confidentialité",
 
-    "componentparents": "---------------------------parents------------------------",
+    "component-parents": "---------------------------parents------------------------",
 
     "titreone" : "Faites",
     "exceller": "exceller",
     "titretwo": "votre enfant en mathématiques",
     "textparents" : "Nous avons aidé plus de 16000 élèves à apprendre les mathématiques grâce à notre système d’intelligence artificielle.",
 
-    "componentcardsparent": "---------------------------cardsparent------------------------",
+    "component-cardsparent": "---------------------------cardsparent------------------------",
 
     "titrecardsone" : "Rejoignez",
     "spanCards": "les milliers de parents ",
@@ -108,7 +108,7 @@
     "card4" : "Un faible coût",
     "desc4" : "Vous serez également en mesure de connaÎtre le niveau réel de votre enfant et de mesurer son progrès à tout moment et en temps réel. Le tout à très faible coût en comparaison au soutien scolaire traditionnel",
 
-    "componentformule": "---------------------------formule------------------------",
+    "component-formule": "---------------------------formule------------------------",
 
     "titrformule": "Découvrez les differentes",
     "spanformule": "formules mathscan",
@@ -117,7 +117,7 @@
 
 
     
-    "componentpricing": "---------------------------pricing------------------------",
+    "component-pricing": "---------------------------pricing------------------------",
 
     "fondamantal" : "Fondamental",
 
@@ -149,7 +149,7 @@
     "buttincard2" : "M'informer",
 
 
-    "componentconnection": "---------------------------connection------------------------",
+    "component-connection": "---------------------------connection------------------------",
 
     "connection" : "Connection",
     "input1" : "Adresse email ou nom d'utilisateur",
@@ -158,7 +158,7 @@
     "lientCreer" : "Créer un compte",
     "buttonconnecter" : "Se connecter",
 
-    "componentinscription": "---------------------------inscription------------------------",
+    "component-inscription": "---------------------------inscription------------------------",
 
     "inscription": "Inscription",
     "inputIn1":"Votre nom d'utilisateur",
@@ -187,7 +187,7 @@
     "buttonInscription" : "S'inscrire",
 
 
-    "componentContacter": "---------------------------Contacter------------------------",
+    "component-Contacter": "---------------------------Contacter------------------------",
 
     "titreContacter": "Contactez-nous",
     "incontacter1" : "Prénom",

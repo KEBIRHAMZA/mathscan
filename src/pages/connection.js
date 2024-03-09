@@ -8,6 +8,9 @@ export default function Connection() {
 
     const intl = useIntl();
 
+    const locale = intl.locale;
+    const direction = locale === 'ar' ? 'rtl' : 'ltr';
+
   return (
     <Layout>
         <section className="relative flex flex-wrap lg:h-screen lg:items-center">
@@ -15,7 +18,7 @@ export default function Connection() {
             <div className="mx-auto max-w-lg text-center">
                 <h1 className="text-2xl font-bold sm:text-3xl">{intl.formatMessage({ id: "connection" })}</h1>
             </div>
-            <form action="#" className="mx-auto mb-0 mt-8 max-w-md space-y-4">
+            <form dir={direction} action="#" className="mx-auto mb-0 mt-8 max-w-md space-y-4">
                 <div>
                 <label htmlFor="email" className="sr-only">
                 {intl.formatMessage({ id: "input1" })}
