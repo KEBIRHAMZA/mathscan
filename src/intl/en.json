@@ -192,6 +192,25 @@
     "phcontacter1" : "Your first name",
     "phcontacter2" : "Your phone number",
     "phcontacter3" : "The subject of your message",
-    "phcontacter4" : "Your message"
+    "phcontacter4" : "Your message",
+
+
+    "component-privacy" : "--------------------------privacy------------------------",
+
+    "titrePrivacy" : "General conditions of use",
+    "introduction" : "Introduction",
+    "textintroduction1" : "This website (the “Site”) is owned by MATHSCAN sarl in collaboration with Worcester Polytechnic Institute (“WPI”). MATHSCAN agrees to provide services and materials on this site in accordance with the terms of use set forth below. Any person who uses or relies on the services and materials on this site agrees to do so in accordance with these terms. MATHSCAN may modify these Terms by posting an update to this Site. You agree to the new terms by using or relying on our services and materials after such notice. You should take the time to read these Terms and, if you have any questions, please contact us at contact@mathscan.net.",
+    "textintroduction2" : "The information we collect, thanks to your registration for our offers, allows teachers, researchers, designers and engineers to continually improve the platform and strengthen learning.",
+    "textintroduction3" : "By registering, you are also participating in research aimed at improving mathematics education offerings and the quality of learning around the world. In the interest of research, you may be exposed to some variations from normal teaching practices. MATHSCAN does not use learner data for purposes other than the stated missions of education, research and customer management.",
+    "caractere" : "Personal data",
+    "textcaractere1" : "MATHSCAN may ask users to provide personal information such as their first and last names, contact details and email addresses, in certain cases; this information may be subject to automated processing.",
+    "textcaractere2" : "Said information is collected in accordance with the provisions of Law 09-08 of February 18, 2009 relating to the Protection of Individuals with regard to the Processing of Personal Data and is intended for the sole use of MATHSCAN, its subsidiaries and its providers if applicable. They will under no circumstances be made available to third parties.",
+    "Droits" : "User Rights",
+    "textdroits1" : "In accordance with Law 09-08 relating to the protection of individuals with regard to the processing of personal data, the Customer has a right of access and rectification of personal data concerning him, in application of articles 7 to 8 of the aforementioned law n°09-08.",
+    "textdroits2" : "The Customer may also, for legitimate reasons, object to the processing of personal data concerning him, except when collected under a law. This opposition may, however, result in the Customer being unable to access the Platform.",
+    "textdroits3" : "To exercise these rights, the Customer must comply with the following procedure:",
+    "textdroits4" : "Written request signed by the Customer to which a photocopy of their identity document is attached.",
+    "textdroits5" : "Request addressed to: ",
+    "textdroits6" : "This privacy policy is subject to change without notice."
 
 }
