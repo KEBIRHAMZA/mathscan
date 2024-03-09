@@ -3,88 +3,87 @@
 }
 
 .image-for-school{
-    max-width: 100%; /* Ensures image is not wider than its container */
-    height: auto; /* Maintains aspect ratio */
+    max-width: 100%; 
+    height: auto;
 }
 
 .conatiner-for-school{
-    margin: 0 auto; /* Centers the container */
+    margin: 0 auto; 
     margin-top: 30px;
     margin-bottom: 180px;
-    max-width: 90%; /* Prevents the container from being too wide on larger screens */
-    padding: 1rem; /* Adds some padding around the content */
+    max-width: 90%; 
+    padding: 1rem; 
 }
 
 .titre-for-school{
-    font-size: 1.625rem; /* 26px equivalent */
+    font-size: 1.625rem;
     font-weight: 400;
     color: #FF64B1;
-    margin-bottom: 0.625rem; /* 10px equivalent */
+    margin-bottom: 0.625rem; 
 }
 
 .titre-two-school{
-    font-size: 2.375rem; /* 38px equivalent */
+    font-size: 2.375rem;
     font-weight: 500;
     line-height: 1.2;
-    margin-bottom: 0.9375rem; /* 15px equivalent */
+    margin-bottom: 0.9375rem; 
     color: #212529;
 }
 
 .btn-school{
-    font-size: 0.875rem; /* 14px equivalent */
-    padding: 0.6875rem 1.3125rem; /* Adjusted padding */
-    border-radius: 0.5rem; /* 8px equivalent */
+    font-size: 0.875rem;
+    padding: 0.6875rem 1.3125rem; 
+    border-radius: 0.5rem;
     background-color: #FF64B1;
     color: #FFF;
     font-weight: 400;
-    display: inline-block; /* Ensures proper spacing and alignment */
-    text-decoration: none; /* Removes underline from links */
-    margin-top: 1.25rem; /* Adds space above the button */
+    display: inline-block; 
+    text-decoration: none; 
+    margin-top: 1.25rem; 
 }
 
 .text-school{
     color: rgb(108, 108, 125);
-    font-size: 1.125rem; /* 18px equivalent */
-    margin-top: 0.3125rem; /* 5px equivalent */
-    margin-bottom: 1.25rem; /* 20px equivalent */
+    font-size: 1.125rem; 
+    margin-top: 0.3125rem; 
+    margin-bottom: 1.25rem; 
 }
 
 @media only screen and (max-width: 768px) {
     .conatiner-for-school {
-        width: auto; /* Allows the container to adapt to the screen size */
+        width: auto; 
         margin: 1rem;
-        margin-bottom: 180px; /* Reduced margin for smaller screens */
+        margin-bottom: 180px; 
     }
 
     .btn-school{
-        border-radius: 0.5rem; /* 8px equivalent */
+        border-radius: 0.5rem; 
         background-color: #FF64B1;
         color: #FFF;
-        text-decoration: none; /* Removes underline from links */
+        text-decoration: none; 
         width: 200px;
-        height: 100px;/* Adds space above the button */
     }
 
     .titre-for-school, .titre-two-school {
-        font-size: smaller; /* Adjusts font size for readability */
+        font-size: smaller; 
     }
 
     .image-for-school {
-        margin-left: 0; /* Resets margin for consistency */
+        margin-left: 0; 
     }
 }
 
 @media only screen and (max-width: 600px) {
     .conatiner-for-school {
-        margin-top: 1rem; /* Adjusts top margin for header space */
+        margin-top: 1rem; 
     }
 
     .btn-school{
-        border-radius: 0.5rem; /* 8px equivalent */
+        border-radius: 0.5rem;
         background-color: #FF64B1;
         color: #FFF;
-        text-decoration: none; /* Removes underline from links */
+        text-decoration: none; 
         width: 200px;
-        height: 100px;/* Adds space above the button */
+        height: 100px;
     }
 }

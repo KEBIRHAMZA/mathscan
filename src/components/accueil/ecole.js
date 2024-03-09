@@ -20,13 +20,13 @@ export default function Ecole() {
                 <h1 className='titre-for-school'>
                     {intl.formatMessage({ id: "schoolSectionTitle" })}
                 </h1>
-                <p  dir={direction} className='titre-two-school'>
+                <p className='titre-two-school'>
                     {intl.formatMessage({ id: "schoolSectionSubtitle" })} <span style={{ color : '#FF64B1' }}>{intl.formatMessage({ id: "schoolSectionHours" })}</span> {intl.formatMessage({ id: "schoolSectionSubtitlePart2" })}
                 </p>
-                <p  dir={direction} className='text-school'>
+                <p className='text-school'>
                     {intl.formatMessage({ id: "schoolSectionDescription1" })}
                 </p>
-                <p  dir={direction} className='text-school'>
+                <p className='text-school'>
                     {intl.formatMessage({ id: "schoolSectionDescription2" })}
                 </p>
                 <Link
