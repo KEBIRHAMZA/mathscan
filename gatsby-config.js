@@ -9,10 +9,10 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `MATHSCAN`,
+    description: `MATHSCAN est I'unique plateforme dans le monde francophone et arabophone, permettant i'dentification et la remédiation aux lacunes, la lutte contre l'oubli et l'apprentissage propulsée par l’Intelligence artificielle.`,
+    author: `@kebir`,
+    siteUrl: `mathscan.net`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
