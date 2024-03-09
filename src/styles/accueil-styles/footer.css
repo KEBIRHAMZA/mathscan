@@ -56,27 +56,26 @@ li{
     margin-right: 100px;
 }
 
-/* Responsive adjustments for smaller screens */
 @media (max-width: 640px) {
     .footer-container {
-        padding: 20px; /* Adjust padding for smaller screens */
-        height: auto; /* Allow the container to grow as needed */
+        padding: 20px; 
+        height: auto; 
     }
 
     .logo-footer, .social-media-icons {
-        width: 50%; /* Adjust logo and icon sizes for smaller screens */
-        max-width: 100px; /* Ensure they're not too large */
+        width: 50%; 
+        max-width: 100px; 
     }
 
     .text-desc, .contacter, .liens-footer {
-        font-size: 15px; /* Adjust font size for readability on small screens */
-        margin: 10px 0; /* Improve spacing between elements */
-        width: auto; /* Allow text to fit container width */
-        text-align: center; /* Center-align text for a cohesive look */
+        font-size: 15px; 
+        margin: 10px 0; 
+        width: auto; 
+        text-align: center; 
     }
 
     .content-container, .contacter, .liens-footer {
-        margin-left: 0; /* Align content containers to the center */
+        margin-left: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -84,25 +83,24 @@ li{
 
     .top-footer, .social-media {
         text-align: center;
-        margin: 10px 0; /* Adjust top footer and social media spacing */
+        margin: 10px 0; 
     }
 
     .grid-cols-2 {
-        display: block; /* Stack grid items vertically on small screens */
+        display: block;
     }
 
-    /* Add these new styles */
     .copyright {
-        display: none; /* Hide copyright text on smaller screens */
+        display: none;
     }
 
     .social-media {
-        justify-content: center; /* Center social media icons */
-        width: 100%; /* Ensure the container takes full width for centering */
+        justify-content: center;
+        width: 100%; 
     }
 
     .social-media-icons {
-        width: 30px; /* Make icons significantly smaller */
+        width: 30px;
     }
     .top-footer{
         background-color: #081F5D;
