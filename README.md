@@ -1,4 +1,4 @@
-![Mathscan](src/images/mathscan-icon.png)
+![Mathscan](src/images/accueil-images/logo.png)
 
 # Mathscan
 
