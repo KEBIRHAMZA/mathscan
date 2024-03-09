@@ -51,16 +51,5 @@ Pour personnaliser ou modifier le contenu textuel de l'application selon la lang
 
 Une fois dans le fichier de langue approprié, vous pouvez localiser rapidement le texte spécifique à modifier en utilisant la fonction de recherche de votre éditeur de texte (généralement accessible via `Ctrl+F`). Recherchez le terme `component-{nom du composant}`, où `{nom du composant}` est le nom du composant dont vous souhaitez modifier le contenu.
 
-#### Ajout d'images explicatives
-
-Pour intégrer une image explicative dans une section du contenu, assurez-vous de placer l'image dans le répertoire approprié de votre projet et référencez-la correctement dans le fichier JSON de langue concerné. Par exemple, pour ajouter une image à un composant dans le fichier de langue française, vous pourriez modifier `src/intl/fr.json` comme suit :
-
-```json
-{
-  "component-nomDuComposant": {
-    "description": "Voici une description pour le composant.",
-    "image": "/chemin/vers/image-explicative.png"
-  }
-}
 
 
