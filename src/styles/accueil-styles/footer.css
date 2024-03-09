@@ -56,35 +56,55 @@ li{
     margin-right: 100px;
 }
 
+/* Responsive adjustments for smaller screens */
 @media (max-width: 640px) {
-    .grid-cols-2 {
-        grid-template-columns: 1fr;
-        margin-left: 0; /* Adjusted to remove left margin */
-    }
     .footer-container {
-        height: 935px; /* Adjusted to allow content to expand vertically */
+        padding: 20px; /* Adjust padding for smaller screens */
+        height: auto; /* Allow the container to grow as needed */
     }
-    .top-footer {
-        height: auto; /* Adjusted to allow content to expand vertically */
-        text-align: center; /* Center align content */
+
+    .logo-footer, .social-media-icons {
+        width: 50%; /* Adjust logo and icon sizes for smaller screens */
+        max-width: 100px; /* Ensure they're not too large */
     }
-    .social-media {
-        margin: 0 auto;
+
+    .text-desc, .contacter, .liens-footer {
+        font-size: 15px; /* Adjust font size for readability on small screens */
+        margin: 10px 0; /* Improve spacing between elements */
+        width: auto; /* Allow text to fit container width */
+        text-align: center; /* Center-align text for a cohesive look */
+    }
+
+    .content-container, .contacter, .liens-footer {
+        margin-left: 0; /* Align content containers to the center */
         display: flex;
-        justify-content: center;
-        margin-top: 12px;
+        flex-direction: column;
+        align-items: center;
     }
+
+    .top-footer, .social-media {
+        text-align: center;
+        margin: 10px 0; /* Adjust top footer and social media spacing */
+    }
+
+    .grid-cols-2 {
+        display: block; /* Stack grid items vertically on small screens */
+    }
+
+    /* Add these new styles */
     .copyright {
-        margin-left: 0; /* Adjusted to remove left margin */
-        line-height: 1.5; /* Adjusted line height */
+        display: none; /* Hide copyright text on smaller screens */
     }
-    .grid-cols-2,
-    .contacter,
-    .liens-footer {
-        margin-left: 0; /* Adjusted to remove left margin */
+
+    .social-media {
+        justify-content: center; /* Center social media icons */
+        width: 100%; /* Ensure the container takes full width for centering */
     }
+
     .social-media-icons {
-        width: 20px;
+        width: 30px; /* Make icons significantly smaller */
+    }
+    .top-footer{
+        background-color: #081F5D;
     }
 }
-

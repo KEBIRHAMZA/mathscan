@@ -1,9 +1,14 @@
-
 .cards-icons{
     width: 87px;
 }
 
 .cards-parents-container{
-    margin-top: -166px;
+    margin-top: -50px;
     margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+    .cards-parents-container{
+        margin-top: 100px;
+    }
 }
