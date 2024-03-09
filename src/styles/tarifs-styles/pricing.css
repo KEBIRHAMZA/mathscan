@@ -3,7 +3,7 @@
 }
 
 .pricing-parent{
-    margin-bottom: 800px;
+    margin-bottom: -400px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -11,6 +11,6 @@
         margin-bottom: 400px;
     }
     .pricing-parent{
-        margin-bottom: 1297px;
+        margin-bottom: -300px;
     }
 }

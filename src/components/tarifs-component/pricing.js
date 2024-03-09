@@ -7,12 +7,15 @@ export default function Pricing() {
 
   const intl = useIntl();
 
+  const locale = intl.locale;
+  const direction = locale === 'ar' ? 'rtl' : 'ltr';
+
   return (
-    <div className="pricing-parent">
+    <div dir={direction} className="pricing-parent">
   <div style={{ 
     backgroundColor:"white"
-   }} className="pricing-container mt-24 container space-y-12 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-8">
-    <div className="relative p-8  border border-gray-200 rounded-2xl shadow-sm flex flex-col">
+   }} className="pricing-container mx-auto mt-24 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-8 px-4 sm:px-6 lg:px-8 max-w-screen-lg">
+    <div className="relative p-6 border border-gray-200 rounded-2xl shadow-sm flex flex-col text-center mx-auto">
       <div className="flex-1">
         <h3 className="text-xl font-semibold ">{intl.formatMessage({ id: 'fondamantal' })}</h3>
         <p className="mt-4 flex items-baseline ">
@@ -159,7 +162,7 @@ export default function Pricing() {
         {intl.formatMessage({ id: 'buttoncard1' })}
       </Link>
     </div>
-    <div className="relative p-8  border border-gray-200 rounded-2xl shadow-sm flex flex-col">
+    <div className="relative p-6 border border-gray-200 rounded-2xl shadow-sm flex flex-col text-center mx-auto">
       <div className="flex-1">
         <h3 className="text-xl font-semibold ">{intl.formatMessage({ id: 'exellence' })}</h3>
         <p className="absolute top-0 py-1.5 px-4 bg-emerald-500 text-white rounded-full text-xs font-semibold uppercase tracking-wide  transform -translate-y-1/2">

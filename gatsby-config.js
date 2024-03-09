@@ -12,7 +12,7 @@ module.exports = {
     title: `MATHSCAN`,
     description: `MATHSCAN est I'unique plateforme dans le monde francophone et arabophone, permettant i'dentification et la remédiation aux lacunes, la lutte contre l'oubli et l'apprentissage propulsée par l’Intelligence artificielle.`,
     author: `@kebir`,
-    siteUrl: `mathscan.net`,
+    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

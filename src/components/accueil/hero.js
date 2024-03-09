@@ -34,7 +34,7 @@ export default function Hero() {
                         </p>
 
                         {/* Les niveaux */}
-                        <p className="max-w-xl mb-6 text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"> 
+                        <p dir={direction} className="max-w-xl mb-6 text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"> 
                             <span className='span-niveau' style={{ color: '#f1bf5b' }}>
                                 {intl.formatMessage({ id: "primary" })}    
                             </span> 
