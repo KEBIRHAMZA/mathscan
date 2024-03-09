@@ -7,7 +7,7 @@ import Seo from "../components/seo"
 const UsingSSR = ({ serverData }) => {
   return (
     <Layout>
-      <h1>
+      {/* <h1>
         This page is <b>rendered server-side</b>
       </h1>
       <p>
@@ -27,7 +27,7 @@ const UsingSSR = ({ serverData }) => {
         </a>
         .
       </p>
-      <Link to="/">Go back to the homepage</Link>
+      <Link to="/">Go back to the homepage</Link> */}
     </Layout>
   )
 }
