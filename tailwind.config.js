@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Montserrat', 'sans-serif'],
+        'readex-pro': ['"Readex Pro"', 'sans-serif'],
       },
     },
   },

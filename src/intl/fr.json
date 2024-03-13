@@ -125,9 +125,11 @@
 
     "fondamantal" : "Fondamental",
 
-    "price1" : "45 dh",
+    "price1" : "65 DH",
+    "Cprice1" : "45 DH",
     "descprice1" : "/mois (annuel)",
-    "price2" : "90 dh",
+    "price2" : "120 DH",
+    "Cprice2" : "90 DH",
     "descprice2" : "/mois (mensuel)",
 
     "infocard1":"Diagnostic integral et granulaire des lacunes de toutes les thématiques",

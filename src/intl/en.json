@@ -122,9 +122,11 @@
 
     "fondamantal" : "Fundamental",
 
-    "price1" : "45 dh",
+    "price1" : "65 MAD",
+    "Cprice1" : "45 MAD",
     "descprice1" : "/month (annual)",
-    "price2" : "90 dh",
+    "price2" : "120 MAD",
+    "Cprice2" : "90 MAD",
     "descprice2" : "/month (monthly)",
 
     "infocard1":"Comprehensive and granular diagnosis of gaps in all themes",

@@ -10,7 +10,7 @@ export default function Pricing() {
   const direction = locale === 'ar' ? 'rtl' : 'ltr';
 
   return (
-    <section className="flex items-center justify-center mt-10 pb-10">
+    <section className={`flex items-center justify-center mt-10 pb-10 ${locale === 'ar' ? 'font-readex-pro' : 'font-sans'}`}>
       <div
         className="p-4 sm:px-10 flex flex-col justify-center items-center text-base h-100vh mx-auto"
         id="pricing"
@@ -31,6 +31,14 @@ export default function Pricing() {
               </span>
               <span className="text-5xl font-bold tracking-tight text-gray-900">
               {intl.formatMessage({ id: 'Cprice1' })}
+              </span>
+            </p>
+            <p className="mt-6 flex items-baseline gap-x-1">
+              <span className="line-through text-2xl font-sans text-gray-500/70">
+              {intl.formatMessage({ id: 'price2' })}
+              </span>
+              <span className="text-5xl font-bold tracking-tight text-gray-900">
+              {intl.formatMessage({ id: 'Cprice2' })}
               </span>
             </p>
             <a
@@ -179,22 +187,14 @@ export default function Pricing() {
                 id="tier-extended"
                 className="text-blue-600 text-2xl font-semibold leading-8"
               >
-                Extended
+                {intl.formatMessage({ id: 'exellence' })}
               </h3>
               <p className="rounded-full bg-blue-600/10 px-2.5 py-1 text-xs font-semibold leading-5 text-blue-600">
-                Most popular
+              {intl.formatMessage({ id: 'desccard2' })}
               </p>
             </div>
             <p className="mt-4 text-base leading-6 text-gray-600">
-              1 license for up to 3 activations
-            </p>
-            <p className="mt-6 flex items-baseline gap-x-1">
-              <span className="line-through text-2xl font-sans text-gray-500/70">
-                $59
-              </span>
-              <span className="text-5xl font-bold tracking-tight text-gray-900">
-                $39
-              </span>
+            {intl.formatMessage({ id: 'titrecard2' })}
             </p>
             <a
               href=""
@@ -202,7 +202,7 @@ export default function Pricing() {
               className="bg-blue-600 text-white shadow-sm hover:bg-blue-500 mt-6 block rounded-md py-2 px-3 text-center text-base font-medium leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
               target="_blank"
             >
-              Buy now
+              {intl.formatMessage({ id: 'buttincard2' })}
             </a>
             <ul
               role="list"
@@ -224,7 +224,7 @@ export default function Pricing() {
                     d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                   />
                 </svg>
-                Lifetime access
+                {intl.formatMessage({ id: 'infocard11' })}
               </li>
               <li className="flex gap-x-3 text-base">
                 <svg
@@ -242,7 +242,7 @@ export default function Pricing() {
                     d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                   />
                 </svg>
-                All AI features
+                {intl.formatMessage({ id: 'infocard22' })}
               </li>
               <li className="flex gap-x-3 text-base">
                 <svg
@@ -260,7 +260,61 @@ export default function Pricing() {
                     d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                   />
                 </svg>
-                Use your own OpenAI key
+                {intl.formatMessage({ id: 'infocard33' })}
+              </li>
+              <li className="flex gap-x-3 text-base">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                  className="h-6 w-5 flex-none text-blue-600"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                {intl.formatMessage({ id: 'infocard44' })}
+              </li>
+              <li className="flex gap-x-3 text-base">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                  className="h-6 w-5 flex-none text-blue-600"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                {intl.formatMessage({ id: 'infocard55' })}
+              </li>
+              <li className="flex gap-x-3 text-base">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                  className="h-6 w-5 flex-none text-blue-600"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                {intl.formatMessage({ id: 'infocard66' })}
               </li>
             </ul>
           </div>
