@@ -42,9 +42,14 @@
     "component-Testimonials": "---------------------------testimonials------------------------",
 
     "titleTestimonials": "Testimonials",
-    "testimonialOneName": "Mother of J.A.",
-    "testimonialOneRole": "2nd year college",
-    "testimonialOneContent": "I am delighted to announce that my daughter J.'s grade has improved from 9/20 to 17/20 thanks to Mathscan. Thanks to the team for all their efforts. Mother of J.A. 2nd year college.",
+
+    "testimonialOneName1": "Father Amin",
+    "testimonialRole1": "Second Year of Middle School",
+    "testimonialOneContent1": "Mathematics is no longer a source of frustration for my son Amin as it used to be. The MathScan platform provided him with the opportunity to go back to basics and adjust them first, and then move forward step by step. He has made tremendous progress in a short time and his grades have increased from 12 to 18.",
+
+    "testimonialOneName2": "Mother of Jannat",
+    "testimonialRole2": "Second Year of Middle School",
+    "testimonialOneContent2": "I am happy to tell you that my daughter Jannat has moved from 9/20 to 15/20 in a month and a half of using your platform. Thank you to the entire team for your efforts.",
 
     "component-ecole": "---------------------------ecole------------------------",
 

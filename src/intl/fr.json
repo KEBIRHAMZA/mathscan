@@ -44,10 +44,14 @@
     "component-Testimonials": "---------------------------témoignages------------------------",
     
     "titleTestimonials": "Témoignages",
-    "testimonialOneName": "Maman de J.A.",
-    "testimonialOneRole": "2ème année collège",
-    "testimonialOneContent": "J'ai la joie de vous annoncer que la note de ma fille J. est passée de 9/20 à 17/20 et cela grâce à Mathscan. Merci à l'équipe pour tous ses efforts. Maman de J. A. 2ème année collège.",
+    
+    "testimonialOneName1": "Père de Amin",
+    "testimonialRole1": "Deuxième année du collège",
+    "testimonialOneContent1": "Les mathématiques ne sont plus une source de frustration pour mon fils Amin comme elles l'étaient auparavant. La plateforme MathScan lui a donné l'occasion de revenir aux bases et de les régler d'abord, puis de progresser pas à pas. Il a fait d'énormes progrès en peu de temps et ses notes sont passées de 12 à 18.",
 
+    "testimonialOneName2": "Mère de Jannat",
+    "testimonialRole2": "Deuxième année du collège",
+    "testimonialOneContent2": "Je suis heureuse de vous dire que ma fille Jannat est passée de 9/20 à 15/20 en un mois et demi d'utilisation de votre plateforme. Merci à toute l'équipe pour vos efforts.",
 
     "component-ecole": "---------------------------ecole------------------------",
 

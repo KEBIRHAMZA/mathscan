@@ -1,11 +1,11 @@
 *{
     font-family:'Montserrat', sans-serif !important 
 }
-.image-for-school{
-    max-width: 500px;
+/* .image-for-school{
+    max-width: 2200px;
     height: auto;
     margin-left: 50px;
-}
+} */
 
 .conatiner-for-school{
     margin: 200px;
@@ -15,7 +15,7 @@
 }
 
 .titre-for-school{
-    font-size: 26px;
+    font-size: 1000px !important;
     font-weight: 400;
     color: #FF64B1;
     margin-bottom: 10px;
@@ -23,7 +23,7 @@
 }
 
 .titre-two-school{
-    font-size: 38px !important;
+    font-size: 100px !important;
     font-weight: 500;
     line-height: 1.2;
     margin-bottom: 15px;

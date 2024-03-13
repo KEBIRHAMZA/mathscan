@@ -14,7 +14,7 @@ export default function Astuces() {
             <div className="">
               <StaticImage
                 src="../../images/accueil-images/ebook.png"
-                alt="Flowbite Logo"
+                alt="ebook image"
                 className='image-for-astuces'
               />
             </div>

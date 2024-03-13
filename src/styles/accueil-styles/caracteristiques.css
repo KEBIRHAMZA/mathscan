@@ -3,7 +3,7 @@
 }
 
 .titre-one {
-    font-size: 22px;
+    font-size: 30px;
     color: #0C92BE;
     font-weight: 400;
     font-family: 'Montserrat', sans-serif !important;
@@ -91,14 +91,16 @@ span {
 
 .shoen-content{
     font-weight: bold;
+    font-size: 25px;
 }
 
 .cards:hover{
-    height: 350px;
+    height: 500px;
 }
 
 .hidden-content{
     display: none;
+    font-size : 20px
 }
 
 .image-icon{

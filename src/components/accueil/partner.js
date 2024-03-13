@@ -13,6 +13,11 @@ const Partner = () => {
     <StaticImage src="../../images/accueil-images/partner-icons/jamiati.png" alt="Flowbite Logo" style={{ width:'169px',marginTop:"15px" }}/>,
     <StaticImage src="../../images/accueil-images/partner-icons/elbilia.png" alt="Flowbite Logo" style={{ width:'105px' }}/>,
     <StaticImage src="../../images/accueil-images/partner-icons/tijari.png" alt="Flowbite Logo" style={{ width:'177px' }}/>,
+    <StaticImage src="../../images/accueil-images/partner-icons/al-hikma.png" alt="Flowbite Logo" style={{ width:'177px' }}/>,
+    <StaticImage src="../../images/accueil-images/partner-icons/el-fateh.png" alt="Flowbite Logo" style={{ width:'100px',marginTop:"-18px" }}/>,
+    <StaticImage src="../../images/accueil-images/partner-icons/moubadara.png" alt="Flowbite Logo" style={{ width:'177px',marginTop:"10px" }}/>,
+    <StaticImage src="../../images/accueil-images/partner-icons/residence.jpg" alt="Flowbite Logo" style={{ width:'100px' }}/>,
+    <StaticImage src="../../images/accueil-images/partner-icons/stevejobs.png" alt="Flowbite Logo" style={{ width:'150px',marginTop:"-30px" }}/>,
   ];
 
   return (
@@ -24,7 +29,7 @@ const Partner = () => {
 
         <div className="grid px-4 md:grid-cols-2 lg:grid-cols-5">
           {users.map((user, index) => (
-            <div key={index} className="mx-auto mb-12 lg:mb-0">
+            <div key={index} className="media-ic mx-auto mb-12 lg:mb-0">
               {user}
             </div>
           ))}

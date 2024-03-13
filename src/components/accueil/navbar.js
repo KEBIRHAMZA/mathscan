@@ -32,7 +32,7 @@ export default function Navbar() {
         <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <StaticImage
             src="../../images/accueil-images/logo.png"
-            alt="Flowbite Logo"
+            alt="Mathscan logo"
             className="h-8"
             style={{ width: '200px' }}
           />
@@ -95,7 +95,7 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <Link to="/connection" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+              <Link to="/connection" className="text-white hero-button hover:bg-blue-400 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
                 {intl.formatMessage({ id: "signIn" })}
               </Link>
             </li>
@@ -113,7 +113,7 @@ export default function Navbar() {
               >
                 <option value="en">English</option>
                 <option value="fr">Français</option>
-                <option value="ar">Arabe</option>
+                <option value="ar">العربية</option>
               </select>
             </div>
             </li>

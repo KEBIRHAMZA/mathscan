@@ -1,294 +1,272 @@
-import React from 'react'
-import '../../styles/tarifs-styles/pricing.css'
-import { useIntl } from 'gatsby-plugin-intl'; 
+import React from 'react';
+import '../../styles/tarifs-styles/pricing.css';
+import { useIntl } from 'gatsby-plugin-intl';
 import { Link } from 'gatsby';
 
 export default function Pricing() {
-
   const intl = useIntl();
 
   const locale = intl.locale;
   const direction = locale === 'ar' ? 'rtl' : 'ltr';
 
   return (
-    <div dir={direction} className="pricing-parent">
-  <div style={{ 
-    backgroundColor:"white"
-   }} className="pricing-container mx-auto mt-24 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-8 px-4 sm:px-6 lg:px-8 max-w-screen-lg">
-    <div className="relative p-6 border border-gray-200 rounded-2xl shadow-sm flex flex-col text-center mx-auto">
-      <div className="flex-1">
-        <h3 className="text-xl font-semibold ">{intl.formatMessage({ id: 'fondamantal' })}</h3>
-        <p className="mt-4 flex items-baseline ">
-          <p className="text-5xl font-extrabold tracking-tight">{intl.formatMessage({ id: 'price1' })}</p>
-          <p className="ml-1 text-xl font-semibold">{intl.formatMessage({ id: 'descprice1' })}</p>
-        </p>
-        <p className="mt-4 flex items-baseline ">
-          <p className="text-5xl font-extrabold tracking-tight">{intl.formatMessage({ id: 'price2' })}</p>
-          <p className="ml-1 text-xl font-semibold">{intl.formatMessage({ id: 'descprice2' })}</p>
-        </p>
-        <ul role="list" className="mt-6 space-y-6">
-          <li className="flex">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width={24}
-              height={24}
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth={2}
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="flex-shrink-0 w-6 h-6 text-emerald-500"
-              aria-hidden="true"
-            >
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-            <p className="ml-3 ">{intl.formatMessage({ id: 'infocard1' })}</p>
-          </li>
-          <li className="flex">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width={24}
-              height={24}
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth={2}
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="flex-shrink-0 w-6 h-6 text-emerald-500"
-              aria-hidden="true"
-            >
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-            <p className="ml-3 ">{intl.formatMessage({ id: 'infocard2' })}</p>
-          </li>
-          <li className="flex">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width={24}
-              height={24}
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth={2}
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="flex-shrink-0 w-6 h-6 text-emerald-500"
-              aria-hidden="true"
-            >
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-            <p className="ml-3 ">{intl.formatMessage({ id: 'infocard3' })}</p>
-          </li>
-          <li className="flex">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width={24}
-              height={24}
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth={2}
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="flex-shrink-0 w-6 h-6 text-emerald-500"
-              aria-hidden="true"
-            >
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-            <p className="ml-3 ">{intl.formatMessage({ id: 'infocard4' })}</p>
-          </li>
-          <li className="flex">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width={24}
-              height={24}
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth={2}
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="flex-shrink-0 w-6 h-6 text-emerald-500"
-              aria-hidden="true"
-            >
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-            <p className="ml-3 ">{intl.formatMessage({ id: 'infocard5' })}</p>
-          </li>
-          <li className="flex">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width={24}
-              height={24}
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth={2}
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="flex-shrink-0 w-6 h-6 text-emerald-500"
-              aria-hidden="true"
-            >
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-            <p className="ml-3 ">{intl.formatMessage({ id: 'infocard6' })}</p>
-          </li>
-          <li className="flex">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width={24}
-              height={24}
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth={2}
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="flex-shrink-0 w-6 h-6 text-emerald-500"
-              aria-hidden="true"
-            >
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-            <p className="ml-3 ">{intl.formatMessage({ id: 'infocard7' })}</p>
-          </li>
-        </ul>
-      </div>
-      <Link
-        className="bg-emerald-50 text-emerald-700 hover:bg-emerald-100 mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium"
-        to="/connection"
+    <section className="flex items-center justify-center mt-10 pb-10">
+      <div
+        className="p-4 sm:px-10 flex flex-col justify-center items-center text-base h-100vh mx-auto"
+        id="pricing"
       >
-        {intl.formatMessage({ id: 'buttoncard1' })}
-      </Link>
-    </div>
-    <div className="relative p-6 border border-gray-200 rounded-2xl shadow-sm flex flex-col text-center mx-auto">
-      <div className="flex-1">
-        <h3 className="text-xl font-semibold ">{intl.formatMessage({ id: 'exellence' })}</h3>
-        <p className="absolute top-0 py-1.5 px-4 bg-emerald-500 text-white rounded-full text-xs font-semibold uppercase tracking-wide  transform -translate-y-1/2">
-        {intl.formatMessage({ id: 'desccard2' })}
-        </p>
-        <p className="mt-6 ">{intl.formatMessage({ id: 'titrecard2' })}</p>
-        <ul role="list" className="mt-6 space-y-6">
-          <li className="flex">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width={24}
-              height={24}
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth={2}
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="flex-shrink-0 w-6 h-6 text-emerald-500"
-              aria-hidden="true"
+        <div className="isolate mx-auto grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+          <div dir={direction} className="ring-1 ring-gray-200 rounded-3xl p-8 xl:p-10">
+            <div className="flex items-center justify-between gap-x-4">
+              <h3
+                id="tier-standard"
+                className="text-gray-900 text-2xl font-semibold leading-8"
+              >
+                {intl.formatMessage({ id: 'fondamantal' })}
+              </h3>
+            </div>
+            <p className="mt-6 flex items-baseline gap-x-1">
+              <span className="line-through text-2xl font-sans text-gray-500/70">
+              {intl.formatMessage({ id: 'price1' })}
+              </span>
+              <span className="text-5xl font-bold tracking-tight text-gray-900">
+              {intl.formatMessage({ id: 'Cprice1' })}
+              </span>
+            </p>
+            <a
+              href=""
+              aria-describedby="tier-standard"
+              className="text-blue-600 ring-1 ring-inset ring-blue-200 hover:ring-blue-300 mt-6 block rounded-md py-2 px-3 text-center text-base font-medium leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+              target="_blank"
             >
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-            <p className="ml-3 ">{intl.formatMessage({ id: 'infocard11' })}</p>
-          </li>
-          <li className="flex">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width={24}
-              height={24}
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth={2}
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="flex-shrink-0 w-6 h-6 text-emerald-500"
-              aria-hidden="true"
+              {intl.formatMessage({ id: 'buttoncard1' })}
+            </a>
+            <ul
+              role="list"
+              className="mt-8 space-y-3 text-sm leading-6 text-gray-600 xl:mt-10"
             >
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-            <p className="ml-3 ">{intl.formatMessage({ id: 'infocard22' })}</p>
-          </li>
-          <li className="flex">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width={24}
-              height={24}
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth={2}
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="flex-shrink-0 w-6 h-6 text-emerald-500"
-              aria-hidden="true"
+              <li className="flex gap-x-3 text-base">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                  className="h-6 w-5 flex-none text-blue-600"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                {intl.formatMessage({ id: 'infocard1' })}
+              </li>
+              <li className="flex gap-x-3 text-base">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                  className="h-6 w-5 flex-none text-blue-600"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                {intl.formatMessage({ id: 'infocard2' })}
+              </li>
+              <li className="flex gap-x-3 text-base">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                  className="h-6 w-5 flex-none text-blue-600"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                {intl.formatMessage({ id: 'infocard3' })}
+              </li>
+              <li className="flex gap-x-3 text-base">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                  className="h-6 w-5 flex-none text-blue-600"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                {intl.formatMessage({ id: 'infocard4' })}
+              </li>
+              <li className="flex gap-x-3 text-base">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                  className="h-6 w-5 flex-none text-blue-600"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                {intl.formatMessage({ id: 'infocard5' })}
+              </li>
+              <li className="flex gap-x-3 text-base">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                  className="h-6 w-5 flex-none text-blue-600"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                {intl.formatMessage({ id: 'infocard6' })}
+              </li>
+              <li className="flex gap-x-3 text-base">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                  className="h-6 w-5 flex-none text-blue-600"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                {intl.formatMessage({ id: 'infocard7' })}
+              </li>
+            </ul>
+          </div>
+          <div dir={direction} className="ring-2 ring-blue-600 rounded-3xl p-8 xl:p-10">
+            <div className="flex items-center justify-between gap-x-4">
+              <h3
+                id="tier-extended"
+                className="text-blue-600 text-2xl font-semibold leading-8"
+              >
+                Extended
+              </h3>
+              <p className="rounded-full bg-blue-600/10 px-2.5 py-1 text-xs font-semibold leading-5 text-blue-600">
+                Most popular
+              </p>
+            </div>
+            <p className="mt-4 text-base leading-6 text-gray-600">
+              1 license for up to 3 activations
+            </p>
+            <p className="mt-6 flex items-baseline gap-x-1">
+              <span className="line-through text-2xl font-sans text-gray-500/70">
+                $59
+              </span>
+              <span className="text-5xl font-bold tracking-tight text-gray-900">
+                $39
+              </span>
+            </p>
+            <a
+              href=""
+              aria-describedby="tier-extended"
+              className="bg-blue-600 text-white shadow-sm hover:bg-blue-500 mt-6 block rounded-md py-2 px-3 text-center text-base font-medium leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+              target="_blank"
             >
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-            <p className="ml-3 ">{intl.formatMessage({ id: 'infocard33' })}</p>
-          </li>
-          <li className="flex">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width={24}
-              height={24}
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth={2}
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="flex-shrink-0 w-6 h-6 text-emerald-500"
-              aria-hidden="true"
+              Buy now
+            </a>
+            <ul
+              role="list"
+              className="mt-8 space-y-3 text-sm leading-6 text-gray-600 xl:mt-10"
             >
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-            <p className="ml-3 ">{intl.formatMessage({ id: 'infocard44' })}</p>
-          </li>
-          <li className="flex">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width={24}
-              height={24}
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth={2}
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="flex-shrink-0 w-6 h-6 text-emerald-500"
-              aria-hidden="true"
-            >
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-            <p className="ml-3 ">{intl.formatMessage({ id: 'infocard55' })}</p>
-          </li>
-          <li className="flex">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width={24}
-              height={24}
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth={2}
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="flex-shrink-0 w-6 h-6 text-emerald-500"
-              aria-hidden="true"
-            >
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-            <p className="ml-3 ">{intl.formatMessage({ id: 'infocard66' })}</p>
-          </li>
-        </ul>
+              <li className="flex gap-x-3 text-base">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                  className="h-6 w-5 flex-none text-blue-600"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                Lifetime access
+              </li>
+              <li className="flex gap-x-3 text-base">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                  className="h-6 w-5 flex-none text-blue-600"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                All AI features
+              </li>
+              <li className="flex gap-x-3 text-base">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                  className="h-6 w-5 flex-none text-blue-600"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                Use your own OpenAI key
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <a
-        className="bg-emerald-500 text-white  hover:bg-emerald-600 mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium"
-        href="/auth/login"
-      >
-        {intl.formatMessage({ id: 'buttincard2' })}
-      </a>
-    </div>
-  </div>
-</div>
+    </section>
 
-  )
+  );
 }

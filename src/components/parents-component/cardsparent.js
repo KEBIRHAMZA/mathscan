@@ -36,25 +36,33 @@ export default function Cardsparent() {
         <Card
           title={intl.formatMessage({ id: 'card1' })}
           description={intl.formatMessage({ id: 'desc1' })}
-          image={<StaticImage className='cards-icons image-decalage' src="../../images/parents-images/cards-images/app-icon.png"/>}
+          image={<StaticImage
+            style={{ width:"80px" }}
+            className='cards-icons image-decalage' src="../../images/parents-images/cards-images/app-icon.png" />}
         />
 
         <Card
           title={intl.formatMessage({ id: 'card2' })}
           description={intl.formatMessage({ id: 'desc2' })}
-          image={<StaticImage className='cards-icons' src="../../images/parents-images/cards-images/checklist-icon.png"/>}
+          image={<StaticImage 
+            style={{ width:"50px" }}
+            className='cards-icons' src="../../images/parents-images/cards-images/checklist-icon.png"/>}
         />
 
         <Card
           title={intl.formatMessage({ id: 'card3' })}
           description={intl.formatMessage({ id: 'desc3' })}
-          image={<StaticImage className='cards-icons' src="../../images/parents-images/cards-images/rocket-icon.png"/>}
+          image={<StaticImage 
+            style={{ width:"50px" }}
+            className='cards-icons' src="../../images/parents-images/cards-images/rocket-icon.png"/>}
         />
 
         <Card
           title={intl.formatMessage({ id: 'card4' })}
           description={intl.formatMessage({ id: 'desc4' })}
-          image={<StaticImage className='cards-icons' src="../../images/parents-images/cards-images/money-icon.png"/>}
+          image={<StaticImage 
+            style={{ width:"50px" }}
+            className='cards-icons' src="../../images/parents-images/cards-images/money-icon.png"/>}
         />
       </div>
     </div>

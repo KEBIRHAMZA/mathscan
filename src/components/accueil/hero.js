@@ -18,23 +18,23 @@ export default function Hero() {
     }, [direction]);
 
     return (
-        <section className="hero-section bg-white dark:bg-gray-900">
+        <section dir={direction} className="hero-section bg-white dark:bg-gray-900">
             <div className="max-w-screen-xl px-4 py-8 mx-auto lg:py-16">
                 <div className="lg:flex lg:items-center">
                     <div style={margin} className="lg:w-1/2">
 
                         {/* Hero title 1 */}
-                        <h1 dir={direction} className="titre-hero text-3xl md:text-4xl xl:text-5xl font-extrabold tracking-tight leading-tight md:leading-tight dark:text-white">
+                        <h1 className="titre-hero text-3xl md:text-4xl xl:text-5xl font-extrabold tracking-tight leading-tight md:leading-tight dark:text-white">
                             {intl.formatMessage({ id: "heroTitle" })}
                         </h1>
 
                         {/* Hero Paragraph */}
-                        <p dir={direction} className="desc-hero max-w-xl mt-4 text-base md:text-lg lg:text-xl font-light text-gray-500 md:mb-6 lg:mb-8 dark:text-gray-400">
+                        <p className="desc-hero max-w-xl mt-4 text-base md:text-lg lg:text-xl font-light text-gray-500 md:mb-6 lg:mb-8 dark:text-gray-400">
                             {intl.formatMessage({ id: "heroDescription" })}
                         </p>
 
                         {/* Les niveaux */}
-                        <p dir={direction} className="max-w-xl mb-6 text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"> 
+                        <p className="max-w-xl mb-6 text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"> 
                             <span className='span-niveau' style={{ color: '#f1bf5b' }}>
                                 {intl.formatMessage({ id: "primary" })}    
                             </span> 
