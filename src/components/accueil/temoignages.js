@@ -15,7 +15,7 @@ export default function Temoignages() {
             <h1 className="text-4xl font-bold mb-8">Témoignages</h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                 <div className="max-w-md mx-auto">
-                    <div className="relative bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg overflow-hidden">
+                    <div className="relative bg-gradient-to-r from-blue-600 to-sky-600 rounded-lg overflow-hidden">
                         <div className="px-8 py-6">
                             <p className="text-white">
                                 {intl.formatMessage({ id: "testimonialOneContent1" })}
@@ -35,7 +35,7 @@ export default function Temoignages() {
                     </div>
                 </div>
                 <div className="max-w-md mx-auto" style={{ height:"40px" }}>
-                    <div className="relative bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg overflow-hidden">
+                    <div className="relative bg-gradient-to-r from-blue-600 to-sky-600 rounded-lg overflow-hidden">
                         <div className="px-8 py-6">
                             <p className="text-white">
                                 {intl.formatMessage({ id: "testimonialOneContent2" })}<br/><br/><br/>
