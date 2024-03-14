@@ -1,89 +1,87 @@
-*{
-    font-family:'Montserrat', sans-serif !important;
-}
-
-.image-for-school{
-    max-width: 100%; 
-    height: auto;
-}
-
-.conatiner-for-school{
-    margin: 0 auto; 
+.container-for-school {
+    margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 180px;
-    max-width: 90%; 
-    padding: 1rem; 
-}
-
-.titre-for-school{
+    max-width: 90%;
+    padding: 1rem;
+  }
+  
+  .title-for-school {
     font-size: 40px;
     font-weight: 400;
     color: #FF64B1;
-    margin-bottom: 0.625rem; 
-}
-
-.titre-two-school{
+    margin-bottom: 0.625rem;
+  }
+  
+  .subtitle-for-school {
     font-size: 2.375rem;
     font-weight: 500;
     line-height: 1.2;
-    margin-bottom: 0.9375rem; 
+    margin-bottom: 0.9375rem;
     color: #212529;
-}
-
-.btn-school{
+  }
+  
+  .text-for-school {
+    color: rgb(108, 108, 125);
+    font-size: 1.125rem;
+    margin-top: 0.3125rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  .btn-school {
     font-size: 0.875rem;
-    padding: 0.6875rem 1.3125rem; 
+    padding: 0.6875rem 1.3125rem;
     border-radius: 0.5rem;
     background-color: #FF64B1;
     color: #FFF;
     font-weight: 400;
-    display: inline-block; 
-    text-decoration: none; 
-    margin-top: 1.25rem; 
-}
-
-.text-school{
-    color: rgb(108, 108, 125);
-    font-size: 1.125rem; 
-    margin-top: 0.3125rem; 
-    margin-bottom: 1.25rem; 
-}
-
-@media only screen and (max-width: 768px) {
-    .conatiner-for-school {
-        width: auto; 
-        margin: 1rem;
-        margin-bottom: 180px; 
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 1.25rem;
+  }
+  
+  .image-for-school {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .container-for-school {
+      width: auto;
+      margin: 1rem;
+      margin-bottom: 180px;
     }
-
-    .btn-school{
-        border-radius: 0.5rem; 
-        background-color: #FF64B1;
-        color: #FFF;
-        text-decoration: none; 
-        width: 200px;
+  
+    .btn-school {
+      border-radius: 0.5rem;
+      background-color: #FF64B1;
+      color: #FFF;
+      text-decoration: none;
+      width: 200px;
     }
-
-    .titre-for-school, .titre-two-school {
-        font-size: smaller; 
+  
+    .title-for-school,
+    .subtitle-for-school {
+      font-size: smaller;
     }
-
+  
     .image-for-school {
-        margin-left: 0; 
+      margin-left: 0;
     }
-}
-
-@media only screen and (max-width: 600px) {
-    .conatiner-for-school {
-        margin-top: 1rem; 
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .container-for-school {
+      margin-top: 1rem;
     }
-
-    .btn-school{
-        border-radius: 0.5rem;
-        background-color: #FF64B1;
-        color: #FFF;
-        text-decoration: none; 
-        width: 200px;
-        height: 63px;
+  
+    .btn-school {
+      border-radius: 0.5rem;
+      background-color: #FF64B1;
+      color: #FFF;
+      text-decoration: none;
+      width: 200px;
+      height: 63px;
     }
-}
+  }
+  
