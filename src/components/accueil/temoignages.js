@@ -56,7 +56,8 @@ export default function Temoignages() {
                 </div>
             </div>
             {/* Ajout de la vidéo YouTube */}
-            <div className="video-container mt-8 sm:mt-12 md:mt-16 lg:mt-20 xl:mt-24">
+            <div
+            className="video-container mt-8 sm:mt-12 md:mt-16 lg:mt-20 xl:mt-24">
                 <iframe
                     width="560"
                     height="315"
