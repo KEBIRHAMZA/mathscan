@@ -181,11 +181,11 @@ export default function Pricing() {
               </li>
             </ul>
           </div>
-          <div dir={direction} className="ring-2 ring-blue-600 rounded-3xl p-8 xl:p-10">
+          <div dir={direction} className="ring-2 ring-sky-400 rounded-3xl p-8 xl:p-10">
             <div className="flex items-center justify-between gap-x-4">
               <h3
                 id="tier-extended"
-                className="text-blue-600 text-2xl font-semibold leading-8"
+                className="text-sky-400 text-2xl font-semibold leading-8"
               >
                 {intl.formatMessage({ id: 'exellence' })}
               </h3>
@@ -199,7 +199,7 @@ export default function Pricing() {
             <a
               href=""
               aria-describedby="tier-extended"
-              className="bg-blue-600 text-white shadow-sm hover:bg-blue-500 mt-6 block rounded-md py-2 px-3 text-center text-base font-medium leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+              className="bg-sky-400 text-white shadow-sm hover:bg-blue-500 mt-6 block rounded-md py-2 px-3 text-center text-base font-medium leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
               target="_blank"
             >
               {intl.formatMessage({ id: 'buttincard2' })}
