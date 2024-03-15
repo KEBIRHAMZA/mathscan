@@ -1,3 +1,15 @@
+.container-arabe-caracter{
+    margin-right: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    margin: 300px;
+    margin-top: 4000px; 
+    margin-left: 100px;
+    margin-bottom: 100px
+}
+
 .cards-position{
     margin-left: -250px;
 }
@@ -9,6 +21,7 @@
     font-family: 'Montserrat', sans-serif !important;
     font-weight: bolder;
 }
+
 
 .titre-two {
     font-size: 38px;
@@ -25,14 +38,14 @@ span {
     color: rgba(13, 202, 240, 1);
 }
 
-.container-caracteristiques {
+.container-caracteristiques-etranger {
     margin-right: auto;
     padding: 20px;
     display: flex;
     align-items: center; 
     justify-content: center; 
     margin: 300px;
-    margin-top: 70px; 
+    margin-top: 100px; 
     margin-left: 100px;
     margin-bottom: 100px;
 }
@@ -95,12 +108,12 @@ span {
 }
 
 .cards:hover{
-    height: 500px;
+    height: 360px;
 }
 
 .hidden-content{
     display: none;
-    font-size : 20px
+    font-size : 15px
 }
 
 .image-icon{
@@ -117,9 +130,10 @@ span {
 
 .large-screen-carc{
     margin : 0;
-    margin-bottom: 300px;
+    margin-bottom: 100px;
     margin-right: 200px;
     margin-left: 300px;
+    margin-top: 100px;
 }
 
 

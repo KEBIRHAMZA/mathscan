@@ -37,7 +37,7 @@ export default function Formules() {
             <div className="images-container-pricing">
                 <StaticImage
                     src="../../images/tarifs-images/pricing-cover.png"
-                    alt="Flowbite Logo"
+                    alt=""
                     className='images-pricing'
                 />
             </div>

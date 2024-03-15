@@ -9,6 +9,7 @@ export default function Caracteristiques() {
   const intl = useIntl();
 
   const [additionalClass, setAdditionalClass] = React.useState('');
+  const [arabeStyle,setStyle] = React.useState('');
 
   // Changer la direction du composant quand la langue est l'arabe
   const locale = intl.locale;
@@ -16,10 +17,11 @@ export default function Caracteristiques() {
 
   React.useEffect(() => {
     setAdditionalClass(locale === 'ar' ? "large-screen-carc" : "");
+    setStyle(locale === 'ar' ? "container-arabe-caracter" : "container-caracteristiques-etranger");
   }, [direction]);
 
   return (
-    <div dir={direction} className={`container-caracteristiques ${additionalClass} grid gap-2 grid-cols-2`}>
+    <div dir={direction} className={`${arabeStyle} ${additionalClass} grid gap-2 grid-cols-2`}>
 
       {/* Le text de cette composant */}
       <div className="text-container">
