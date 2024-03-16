@@ -111,9 +111,9 @@ export default function Navbar() {
                 onChange={(e) => handleLanguageChange(e.target.value)}
                 value={intl.locale}
               >
-                <option value="en">English</option>
-                <option value="fr">Français</option>
                 <option value="ar">العربية</option>
+                <option value="fr">Français</option>
+                <option value="en">English</option>
               </select>
             </div>
             </li>

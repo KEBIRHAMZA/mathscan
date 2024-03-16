@@ -23,7 +23,7 @@ export default function Ecole() {
         <div style={margin} className="lg:w-1/2 flex flex-col justify-center items-center lg:items-start lg:justify-start">
 
           {/* Hero title 1 */}
-          <h1 dir={direction} style={{ fontSize: "50px", color: "#FF64B1", marginBottom: "20px" }} className=''>
+          <h1 dir={direction} style={{color: "#FF64B1", marginBottom: "20px" }} className='titre-one'>
             {intl.formatMessage({ id: "schoolSectionTitle" })}
           </h1>
 
