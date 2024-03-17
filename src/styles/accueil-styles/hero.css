@@ -105,19 +105,19 @@ body {
   left: 0%;
 }
 .slider__nav:checked:nth-of-type(2) ~ .slider__inner {
-  left: -100%;
+  left: -35%;
 }
 .slider__nav:checked:nth-of-type(3) ~ .slider__inner {
-  left: -200%;
+  left: -68%;
 }
 .slider__nav:checked:nth-of-type(4) ~ .slider__inner {
-  left: -300%;
+  left: -105%;
 }
 .slider__inner {
   position: absolute;
   top: 0;
   left: 0;
-  width: 400%;
+  width: 135%;
   height: 100%;
   -webkit-transition: left 0.4s;
   transition: left 0.4s;

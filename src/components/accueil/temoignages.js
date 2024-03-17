@@ -10,7 +10,7 @@ export default function Temoignages() {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            const nextSlide = (currentSlide + 1) % 4; // Assuming 4 slides
+            const nextSlide = (currentSlide + 1) % 3; // Assuming 4 slides
             setCurrentSlide(nextSlide);
         }, 5000); // Change slides every 5 seconds
 
@@ -59,14 +59,6 @@ export default function Temoignages() {
             checked={currentSlide === 2}
             className="slider__nav"
             onClick={() => handleSlideChange(2)}
-        />
-        <input
-            type="radio"
-            name="slider"
-            title="slide4"
-            checked={currentSlide === 3}
-            className="slider__nav"
-            onClick={() => handleSlideChange(3)}
         />
         <div className="slider__inner">
             <div className="slider__contents">
