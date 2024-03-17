@@ -11,9 +11,6 @@ import React from 'react';
 import { IntlProvider } from 'gatsby-plugin-intl';
 import { Helmet } from 'react-helmet';
 
-import "@popperjs/core/dist/umd/popper.min"
-import "bootstrap/dist/css/bootstrap.min.css"
-import "bootstrap/dist/js/bootstrap.min"
 
 
 export const onRenderBody = ({ setHeadComponents }) => {
