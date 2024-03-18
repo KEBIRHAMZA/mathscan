@@ -62,7 +62,7 @@ body {
 
 .slider {
     margin-top: 15px;
-    height: 430px;
+    height: 500px;
   position: relative;
   overflow: hidden;
   display: -webkit-box;
@@ -117,7 +117,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 135%;
+  width: 170%;
   height: 100%;
   -webkit-transition: left 0.4s;
   transition: left 0.4s;
