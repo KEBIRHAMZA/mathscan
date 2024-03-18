@@ -101,6 +101,16 @@ export default function Temoignages() {
             {intl.formatMessage({ id: 'testimonialOneContent2' })}
             </p>
             </div>
+            <div className="slider__contents">
+            <StaticImage
+                src=""
+                alt=""
+            />
+            <h2 className="slider__caption">{intl.formatMessage({ id: 'testimonialOneName3' })}</h2>
+            <p className="slider__txt">
+            {intl.formatMessage({ id: 'testimonialOneContent3' })}
+            </p>
+            </div>
         </div>
         </div>
         </div>
