@@ -28,7 +28,7 @@ const Temoignagevideo = () => {
 
   return (
     <div className="container-tem-video">
-      <h2 className="flex justify-center text-4xl font-bold">Temoignage vidéo</h2>
+      <h2 style={{ marginBottom : "-120px" }} className="flex justify-center text-4xl font-bold">Temoignage vidéo</h2>
       <div className="slider">
         {videos.map((video, index) => (
           <iframe

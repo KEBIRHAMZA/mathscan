@@ -7,40 +7,51 @@ import { Link } from 'gatsby';
 
 export default function Exceller() {
 
-    const intl = useIntl(); 
+  const intl = useIntl(); 
 
-    const locale = intl.locale;
-    const direction = locale === 'ar' ? 'ltr' : 'rtl';
+  const [margin,setMargin] = React.useState({})
+  const [arabeStyle,setStyle] = React.useState({});
+
+  // Change the direction of the component when the language is Arabic
+  const locale = intl.locale;
+  const direction = locale === 'ar' ? 'rtl' : 'ltr';
+
+  React.useEffect(() => {
+    locale === 'ar' ? setMargin({marginRight : "10%"}) : setMargin({});
+  }, [direction]);
 
   return (
-    <section dir={direction} style={{ marginBottom: '200px' }} className="mb-40 conatiner-for-astuces">
-      <div className="px-6 py-12 text-center dark:bg-neutral-900 md:px-12 lg:text-left">
-        <div className="w-100 mx-auto sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl">
-          <div className="grid items-center gap-12 lg:grid-cols-2">
-            <div className="">
-              <StaticImage
-                src="../../images/parents-images/parents-cover.png"
-                alt="ebook image"
-                className='image-for-astuces'
-              />
-            </div>
-            <div className="mt-12 lg:mt-0">
+    <section dir={direction} style={{ marginTop: "50px", marginBottom: "-50px" }} className="bg-white dark:bg-gray-900">
+      <div className="max-w-screen-xl px-4 py-8 mx-auto lg:py-16 flex flex-col items-center lg:flex-row">
+        <div style={margin} className="lg:w-1/2 flex flex-col justify-center items-center lg:items-start lg:justify-start">
 
-              <p className='text-5xl'>
-               {intl.formatMessage({ id: 'titreone' })} <span>{intl.formatMessage({ id: 'exceller' })}</span> {intl.formatMessage({ id: 'titretwo' })}
-              </p><br/>
-              <p className='text-astuces'>
-                {intl.formatMessage({ id: 'textparents' })}
-              </p>
-              <Link
-                href="/inscriprion"
-                className="btn-astuces"
-                style={{ backgroundColor: '#0dcaf0' }}
-              >
+          {/* Hero title 1 */}
+          <p className='titre-two-astuces'>
+            {intl.formatMessage({ id: 'titreone' })} <span>{intl.formatMessage({ id: 'exceller' })}</span> {intl.formatMessage({ id: 'titretwo' })}
+          </p>
+
+          {/* Hero Paragraph */}
+          <p className='text-astuces'>
+          {intl.formatMessage({ id: 'textparents' })}
+          </p>
+
+          {/* la button d'inscription */}
+          <Link
+                 href="/inscriprion"
+                 className="btn-astuces"
+                 style={{ backgroundColor: '#0dcaf0' }}
+               >
                 {intl.formatMessage({ id: 'createAccount' })}
-              </Link>
-            </div>
-          </div>
+           </Link>
+        </div>
+
+        {/* L'image de Hero */}
+        <div className="lg:w-1/2 lg:pl-12 mt-8 lg:mt-0 flex justify-center">
+          <StaticImage
+            src="../../images/parents-images/parents-cover.png"
+            alt="Hero image"
+            className="max-w-full"
+          />
         </div>
       </div>
     </section>
