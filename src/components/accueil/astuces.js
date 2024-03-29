@@ -2,6 +2,7 @@ import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import '../../styles/accueil-styles/astuces.css';
 import { useIntl } from 'gatsby-plugin-intl';
+import { Link } from 'gatsby';
 
 export default function Astuces() {
   const intl = useIntl(); 
@@ -34,13 +35,18 @@ export default function Astuces() {
           </p>
 
           {/* la button d'inscription */}
-          <a
+          <div className="text-center">
+              <Link to='/inscription' className="hero-button text-white py-2 px-4 border rounded inline-block mt-4">
+                  {intl.formatMessage({ id: "tipsSectionButton" })}
+              </Link>
+          </div>
+          {/* <a
             href="#"
             className="btn-astuces"
             style={{ backgroundColor: '#0dcaf0' }}
           >
             {intl.formatMessage({ id: 'tipsSectionButton' })}
-          </a>
+          </a> */}
         </div>
 
         {/* L'image de Hero */}

@@ -36,13 +36,11 @@ export default function Exceller() {
           </p>
 
           {/* la button d'inscription */}
-          <Link
-                 href="/inscriprion"
-                 className="btn-astuces"
-                 style={{ backgroundColor: '#0dcaf0' }}
-               >
-                {intl.formatMessage({ id: 'createAccount' })}
-           </Link>
+          <div className="text-center">
+              <Link to='/inscription' className="hero-button text-white py-2 px-4 border rounded inline-block mt-4">
+                  {intl.formatMessage({ id: "createAccount" })}
+              </Link>
+          </div>
         </div>
 
         {/* L'image de Hero */}
