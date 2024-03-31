@@ -1,6 +1,9 @@
 import React from 'react';
 import '../../styles/accueil-styles/temoignagevideo.css';
 
+import { useIntl } from 'gatsby-plugin-intl';
+
+
 const adultVideoUrls = [
     "https://www.youtube.com/embed/4B4h0a36-ic?si=ooxgikt6K52FJHf-",
     "https://www.youtube.com/embed/G90FGCnsYDo?si=WnP11jD36qKzJldQ",
@@ -13,12 +16,15 @@ const childrenVideoUrls = [
 ];
 
 const Temoignagevideo = () => {
+
+    const intl = useIntl(); 
+
     return (
         <>
             {/* --------------------------- Temoignages adultes ------------------------------ */}
             <div style={{ height: "100%", overflowX: "hidden", textAlign: "center", marginTop: "100px" }}>
                 <div className="flex justify-center">
-                    <h1 className='text-4xl font-bold'>Temoignages adultes</h1>
+                    <h1 className='text-4xl font-bold'>{intl.formatMessage({ id: 'TemoignageAdulte' })}</h1>
                 </div>
                 <div className="csslider infinity" id="sliderAdult">
                     {adultVideoUrls.map((url, index) => (
@@ -60,7 +66,7 @@ const Temoignagevideo = () => {
             {/* --------------------------- Temoignages enfants ------------------------------ */}
             <div style={{ height: "100%", overflowX: "hidden", textAlign: "center", marginTop: "100px" }}>
                 <div className="flex justify-center">
-                    <h1 className='text-4xl font-bold'>Temoignages enfants</h1>
+                    <h1 className='text-4xl font-bold'>{intl.formatMessage({ id: 'TemoignageEnfant' })}</h1>
                 </div>
                 <div className="csslider infinity" id="sliderChildren">
                     {childrenVideoUrls.map((url, index) => (

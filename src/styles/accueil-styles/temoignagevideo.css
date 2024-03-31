@@ -226,10 +226,7 @@
 /*#region MODULES */
 /*#endregion */
 /*___________________________________ LAYOUT ___________________________________ */
-      * {
-          margin: 0;
-          padding: 0;
-      }
+      
       ul {
           padding-left: 40px;
       }
@@ -267,7 +264,4 @@
           -moz-background-size:cover; 
           -o-background-size:cover; 
           background-size:cover; 
-      }
-      p {
-          margin-left:3em;
       }
