@@ -5,17 +5,12 @@ import { useIntl } from 'gatsby-plugin-intl';
 
 
 const adultVideoUrls = [
-    "https://www.youtube.com/embed/4B4h0a36-ic?si=ooxgikt6K52FJHf-",
-    "https://www.youtube.com/embed/G90FGCnsYDo?si=WnP11jD36qKzJldQ",
-    "https://www.youtube.com/embed/2VJWUARvkIg?si=PZTJ3MBXXamGPUg6",
-    "https://www.youtube.com/embed/K9dqMe3g2tE?si=YGMU2gFQ9E9tWq0U",
-    "https://www.youtube.com/embed/VCy8-y7tr9Q?si=ZSMn3vlhDk-QACA0"
-];
-
-const childrenVideoUrls = [
-    "https://www.youtube.com/embed/2VJWUARvkIg?si=PZTJ3MBXXamGPUg6",
-    "https://www.youtube.com/embed/K9dqMe3g2tE?si=YGMU2gFQ9E9tWq0U",
-    "https://www.youtube.com/embed/VCy8-y7tr9Q?si=ZSMn3vlhDk-QACA0"
+    "https://www.youtube.com/embed/K9veIwpcO-g?si=BDvkRSeDalCS5FRw",
+    "https://www.youtube.com/embed/OJlxyI234vs?si=R0e4mxMRdwebPnOD",
+    "https://www.youtube.com/embed/njOzXFBJ-hM?si=-mnwXvv-SfVmoFO4",
+    "https://www.youtube.com/embed/bYRK1gC9I4k?si=RjCpVudvypsaWIKp",
+    "https://www.youtube.com/embed/d7ADhSJJR7A?si=4CQZP68dRJ5ebiUt",
+    "https://www.youtube.com/embed/G90FGCnsYDo"
 ];
 
 const Temoignagevideo = () => {
