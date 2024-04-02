@@ -9,6 +9,7 @@ import Cardsparent from '../components/parents-component/cardsparent'
 import Partner from "../components/accueil/partner"
 import Media from '../components/accueil/media'
 import Temoignages from '../components/accueil/temoignages'
+import Temoignagevideo from "../components/accueil/temoignagevideo"
 
 
 export default function Parents() {
@@ -17,6 +18,7 @@ export default function Parents() {
       <Exceller/>
       <Astuces/>
       <Cardsparent/>
+      <Temoignagevideo/>
       <Temoignages/>
       <Partner/>
       <Media/>
