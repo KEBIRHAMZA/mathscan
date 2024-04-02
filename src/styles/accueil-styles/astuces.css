@@ -2,13 +2,17 @@
 .conatiner-for-astuces{
     margin: 0 auto; /* Centers the container */
     padding-top: 30px;
-    max-width: 90%; /* Prevents the container from being too wide */
+    max-width: 100%; /* Prevents the container from being too wide */
     padding: 1rem; /* Adds some padding around the content */
 }
 
+.astuce-section{
+    width: 100%;
+}
+
 .titre-two-astuces{
-    font-size: 2.375rem; /* 38px */
-    font-weight: 500;
+    font-size: 2.5rem; /* 38px */
+    font-weight: 600;
     line-height: 1.2;
     margin-bottom: 0.9375rem; /* 15px */
     color: #212529;
@@ -17,7 +21,7 @@
 .text-astuces{
     color: rgb(108, 108, 125);
     font-family: 'DM Sans', sans-serif;
-    font-size: 1.125rem; /* 18px */
+    font-size: 1.5rem; /* 18px */
     margin-top: 0.3125rem; /* 5px */
     margin-bottom: 1.25rem; /* 20px */
 }

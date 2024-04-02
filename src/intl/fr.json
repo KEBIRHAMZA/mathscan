@@ -53,6 +53,10 @@
     "testimonialRole2": "Deuxième année du collège",
     "testimonialOneContent2": "Je suis heureuse de vous dire que ma fille Jannat est passée de 9/20 à 15/20 en un mois et demi d'utilisation de votre plateforme. Merci à toute l'équipe pour vos efforts.",
 
+    "testimonialOneName3": "Mère de l'éleve Hamza",
+    "testimonialRole3": "Tronc commun",
+    "testimonialOneContent3": "Bonjour. Je suis la mère de l'étudiant Hamza, qui étudie dans une matière académique commune à la Fondation « Belia ». Je tiens à vous remercier sincèrement pour la plateforme que vous avez mise à la disposition de nos enfants. En fait, c'est la raison pour laquelle mon fils a surmonté un certain nombre de problèmes au niveau de son travail sur ce sujet. Mathématiques, et je vous demande de me guider vers un site qui fonctionne avec la même méthodologie en physique.",
+
     
     "TemoignageAdulte" : "Témoignage Adults",
     "TemoignageEnfant" : "Témoignage Enfants",
@@ -127,38 +131,21 @@
     
     "component-pricing": "---------------------------pricing------------------------",
 
-    "fondamantal" : "Fondamental",
+    "titleProce" : "Nos plans tarifaires",
 
-    "price1" : "65 DH",
-    "Cprice1" : "45 DH",
-    "descprice1" : "/mois (annuel)",
-    "price2" : "120 DH",
-    "Cprice2" : "90 DH",
-    "descprice2" : "/mois (mensuel)",
+    "price1" : "90 Dhs",
+    "compaireprice1" : "100 Dhs",
+    "duration1" : "un mois",
 
-    "priceTitle" : "Caractéristiques",
+    "price2" : "390 Dhs",
+    "compaireprice2" : "400 Dhs",
+    "duration2" : "six mois",
 
-    "infocard1":"Diagnostic integral et granulaire des lacunes de toutes les thématiques",
-    "infocard2":"Remédiation des lacunes de toutes les thématiques",
-    "infocard3":"Accés à tous les chapitres et tout le programme",
-    "infocard4":"Révision par thème et par chapitre",
-    "infocard5":"Accès à la progression des examens",
-    "infocard6":"Suivi de la progression par rapport au programme scolaire",
-    "infocard7":"Accès au rapport de progression par thème et au rapport global",
-    "buttoncard1":"Acheter",
+    "price3" : "590 Dhs",
+    "compaireprice3" : "600 Dhs",
+    "duration3" : "un an",
 
-
-    "exellence" : "Excellence",
-    "desccard2" : "Bientôt disponible",
-    "titrecard2" : "En plus de ce qu’il y’a dans le plan fondamental",
-
-    "infocard11" : "Suivi individualisé et personnalisé quotidien par un prof de math",
-    "infocard22" : "Participation à tous les ateliers d’accompagnement",
-    "infocard33" : "Participation à tous les ateliers sur l’usage des maths dans la vie réelle",
-    "infocard44" : "Accès à la préparation des concours (à partir du tronc commun)",
-    "infocard55" : "Accès à la préparation des tests internationaux",
-    "infocard66" : "Accès à la préparation des olympiades",
-    "buttincard2" : "M'informer",
+    "buttonPrice" : "Choisir",
 
 
     "component-connection": "---------------------------connection------------------------",

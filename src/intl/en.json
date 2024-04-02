@@ -51,6 +51,11 @@
     "testimonialRole2": "Second Year of Middle School",
     "testimonialOneContent2": "I am happy to tell you that my daughter Jannat has moved from 9/20 to 15/20 in a month and a half of using your platform. Thank you to the entire team for your efforts.",
 
+    "testimonialOneName3": "Mother of the student Hamza",
+    "testimonialRole3": "A scientific common thread",
+    "testimonialOneContent3": "Hello. I am the mother of the student Hamza, who is studying with a common academic subject at the 'Belia' Foundation. I would like to extend my sincere thanks to you for the platform that you have placed at the disposal of our children. In fact, it was the reason for my son overcoming a number of problems at the level of working on the subject. Mathematics, and I am asking you to guide me to a site that works with the same methodology in physics. ",
+
+
     "TemoignageAdulte" : "Adult Testimony",
     "TemoignageEnfant" : "Children's testimony",
 
@@ -123,38 +128,21 @@
 
     "component-pricing": "---------------------------pricing------------------------",
 
-    "fondamantal" : "Fundamental",
+    "titleProce" : "Our pricing plans",
 
-    "price1" : "65 MAD",
-    "Cprice1" : "45 MAD",
-    "descprice1" : "/month (annual)",
-    "price2" : "120 MAD",
-    "Cprice2" : "90 MAD",
-    "descprice2" : "/month (monthly)",
+    "price1" : "90 MAD",
+    "compaireprice1" : "100 MAD",
+    "duration1" : "a month",
 
-    "priceTitle" : "Features",
+    "price2" : "390 MAD",
+    "compaireprice2" : "400 MAD",
+    "duration2" : "six months",
 
-    "infocard1":"Comprehensive and granular diagnosis of gaps in all themes",
-    "infocard2":"Remediation of gaps in all themes",
-    "infocard3":"Access to all chapters and the entire program",
-    "infocard4":"Revision by theme and chapter",
-    "infocard5":"Access to exam progress",
-    "infocard6":"Monitoring progress against the school curriculum",
-    "infocard7":"Access to the progress report by theme and the overall report",
-    "buttoncard1":"Buy",
+    "price3" : "590 MAD",
+    "compaireprice3" : "600 MAD",
+    "duration3" : "a year",
 
-
-    "exellence" : "Excellency",
-    "desccard2" : "Coming soon",
-    "titrecard2" : "In addition to what is in the fundamental plan",
-
-    "infocard11" : "Individualized and personalized daily monitoring by a math teacher",
-    "infocard22" : "Participation in all support workshops",
-    "infocard33" : "Participation in all workshops on the use of maths in real life",
-    "infocard44" : "Access to competitive exam preparation (from the common core)",
-    "infocard55" : "Access to international test preparation",
-    "infocard66" : "Access to preparation for the Olympics",
-    "buttincard2" : "Inform me",
+    "buttonPrice" : "choose",
 
     "component-connection": "---------------------------connection------------------------",
 

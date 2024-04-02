@@ -15,12 +15,12 @@ export default function Astuces() {
   const direction = locale === 'ar' ? 'rtl' : 'ltr';
 
   React.useEffect(() => {
-    locale === 'ar' ? setMargin({marginRight : "10%"}) : setMargin({});
+    locale === 'ar' ? setMargin({marginRight : "140px"}) : setMargin({marginLeft : "55px"});
   }, [direction]);
   
   
   return (
-    <section dir={direction} style={{ marginTop: "10px", marginBottom: "-70px" }} className="bg-white dark:bg-gray-900">
+    <section dir={direction} style={{ marginTop: "-10px", marginBottom: "-100px"}} className="bg-white dark:bg-gray-900 astuce-section">
       <div className="max-w-screen-xl px-4 py-8 mx-auto lg:py-16 flex flex-col items-center lg:flex-row">
         <div style={margin} className="lg:w-1/2 flex flex-col justify-center items-center lg:items-start lg:justify-start">
 

@@ -30,7 +30,7 @@ export default function Footer() {
           {intl.formatMessage({ id: 'contacter' })}
           </h2>
           <ul className="dark:text-gray-400">
-            <li>
+            <li style={{ marginLeft : "-40px" }}>
                 <StaticImage
                     src="../../images/accueil-images/footer-icons/icon-map.png"
                     alt="Flowbite Logo"
@@ -40,7 +40,7 @@ export default function Footer() {
                 />
               {intl.formatMessage({ id: 'address' })}
             </li>
-            <li>
+            <li style={{ marginLeft : "-40px" }}>
                 <StaticImage
                     src="../../images/accueil-images/footer-icons/icon-mail.png"
                     alt="Flowbite Logo"
@@ -50,7 +50,7 @@ export default function Footer() {
                 />
                 contact@mathscan.net
             </li>
-            <li>
+            <li style={{ marginLeft : "-40px" }}>
                 <StaticImage
                     src="../../images/accueil-images/footer-icons/icon-phone.png"
                     alt="Flowbite Logo"
@@ -60,7 +60,7 @@ export default function Footer() {
                 />
                 +212 623 467 615
             </li>
-            <li>
+            <li style={{ marginLeft : "-40px" }}>
                 <StaticImage
                     src="../../images/accueil-images/footer-icons/icons-whatsapp.png"
                     alt="Flowbite Logo"
@@ -77,28 +77,28 @@ export default function Footer() {
           {intl.formatMessage({ id: 'lienUtiles' })}
           </h2>
           <ul className=" dark:text-gray-400">
-            <li>
+            <li style={{ marginLeft : "-40px" }}>
               <Link
                 to="/inscription"
               >
                 {intl.formatMessage({ id: 'diagnostique' })}
               </Link>
             </li>
-            <li>
+            <li style={{ marginLeft : "-40px" }}>
               <Link
                 to="/connection"
               >
                 {intl.formatMessage({ id: 'signIn' })}
               </Link>
             </li>
-            <li>
+            <li style={{ marginLeft : "-40px" }}>
               <Link
                 to="/contacter"
               >
                 {intl.formatMessage({ id: 'contacter' })}
               </Link>
             </li>
-            <li>
+            <li style={{ marginLeft : "-40px" }}>
               <Link
                 to="#"
               >

@@ -10,154 +10,82 @@ export default function Pricing() {
   const direction = locale === 'ar' ? 'rtl' : 'ltr';
 
   return (
-    <section dir={direction} className={`flex items-center justify-center mt-10 pb-10 ${locale === 'ar' ? 'font-readex-pro' : 'font-sans'}`}>
-      <div class="m-4 flex flex-col justify-between p-5 bg-white border rounded shadow-sm card-container">
-    <div class="mb-6">
-        <div class="flex items-center justify-between pb-6 mb-6 border-b">
-            <div>
-                <p class="text-3xl font-bold tracking-wider uppercase">{intl.formatMessage({ id: 'fondamantal' })}</p> <br/>
-                <p class="text-3xl font-extrabold">{intl.formatMessage({ id: 'Cprice1' })} {intl.formatMessage({ id: 'descprice1' })}</p> <br/>
-                <p class="text-3xl font-extrabold">{intl.formatMessage({ id: 'Cprice2' })} {intl.formatMessage({ id: 'descprice2' })}</p>
+    <section className="py-24" style={{ marginBottom:"-70px" }}>
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mb-12 text-center">
+          <h2 className="font-manrope text-5xl text-center font-bold text-gray-900 mb-4">
+            {intl.formatMessage({ id: 'titleProce' })}
+          </h2>
+          {/*Switch*/}
+          <div className="tabs">
+            <div
+              id="tabs-with-background-1"
+              role="tabpanel"
+              aria-labelledby="tabs-with-background-item-1"
+              className="tabcontent mt-12"
+              style={{}}
+            >
+              <div className="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-8 lg:space-y-0">
+                {/*Pricing Card*/}
+                <div className="group relative flex flex-col mx-auto w-full max-w-sm text-gray-900 rounded-2xl border border-solid border-gray-300 text-center transition-all duration-300 p-6 xl:p-12 hover:border-indigo-600">
+                  <h3 className="font-manrope text-2xl font-bold mb-6"></h3>
+                  <div className="mb-20 flex flex-col">
+                    <span className="font-manrope text-4xl font-semibold mb-2">
+                      <span dir={direction}>{intl.formatMessage({ id: 'price1' })}</span>
+                      <span dir={direction} className="text-red-500 text-base ml-2 line-through">{intl.formatMessage({ id: 'compaireprice1' })}</span>
+                    </span>
+                    <span className="text-xl text-gray-400">{intl.formatMessage({ id: 'duration1' })}</span>
+                  </div>
+                  <a
+                    href="javascript:;"
+                    className="py-2.5 px-5 bg-indigo-50 shadow-sm rounded-full transition-all duration-500 text-base text-indigo-600 font-semibold text-center w-fit mx-auto group-hover:bg-blue-400 group-hover:text-white"
+                  >
+                    {intl.formatMessage({ id: 'buttonPrice' })}
+                  </a>
+                  {/*List End*/}
+                </div>
+                {/*Pricing Card*/}
+                <div className="group relative flex flex-col mx-auto w-full max-w-sm text-gray-900 rounded-2xl border border-solid border-gray-300 text-center transition-all duration-300 p-6 xl:p-12 hover:border-indigo-600">
+                  <h3 className="font-manrope text-2xl font-bold mb-6"></h3>
+                  <div className="mb-20 flex flex-col">
+                    <span className="font-manrope text-4xl font-semibold mb-2">
+                      <span dir={direction}>{intl.formatMessage({ id: 'price2' })}</span>
+                      <span dir={direction} className="text-red-500 text-base ml-2 line-through">{intl.formatMessage({ id: 'compaireprice2' })}</span>
+                    </span>
+                    <span className="text-xl text-gray-400">{intl.formatMessage({ id: 'duration2' })}</span>
+                  </div>
+                  <a
+                    href="javascript:;"
+                    className="py-2.5 px-5 bg-indigo-50 shadow-sm rounded-full transition-all duration-500 text-base text-indigo-600 font-semibold text-center w-fit mx-auto group-hover:bg-blue-400 group-hover:text-white"
+                  >
+                    {intl.formatMessage({ id: 'buttonPrice' })}
+                  </a>
+                  {/*List End*/}
+                </div>
+                {/*Pricing Card*/}
+                <div className="group relative flex flex-col mx-auto w-full max-w-sm text-gray-900 rounded-2xl border border-solid border-gray-300 text-center transition-all duration-300 p-8 xl:p-12 hover:border-indigo-600">
+                  <h3 className="font-manrope text-2xl font-bold mb-6"></h3>
+                  <div className="mb-20 flex flex-col">
+                    <span className="font-manrope text-4xl font-semibold mb-2">
+                      <span dir={direction}>{intl.formatMessage({ id: 'price3' })}</span>
+                      <span dir={direction} className="text-red-500 text-base ml-2 line-through">{intl.formatMessage({ id: 'compaireprice3' })}</span>
+                    </span>
+                    <span className="text-xl text-gray-400">{intl.formatMessage({ id: 'duration3' })}</span>
+                  </div>
+                  <a
+                    href="javascript:;"
+                    className="py-2.5 px-5 bg-indigo-50 shadow-sm rounded-full transition-all duration-500 text-base text-indigo-600 font-semibold text-center w-fit mx-auto group-hover:bg-blue-400 group-hover:text-white"
+                  >
+                    {intl.formatMessage({ id: 'buttonPrice' })}
+                  </a>
+                  {/*List End*/}
+                </div>
+              </div>
             </div>
+          </div>
+          {/*Switch End*/}
         </div>
-        <div>
-            <p class="mb-2 font-bold tracking-wide">{intl.formatMessage({ id: 'priceTitle' })}</p>
-            <ul class="space-y-2">
-                <li class="flex items-center">
-                    <div class="mr-2"><svg class="w-4 h-4 text-blue-600" viewBox="0 0 24 24" stroke-linecap="round"
-                            strokeLidth="2">
-                            <polyline fill="none" stroke="currentColor" points="6,12 10,16 18,8"></polyline>
-                            <circle cx="12" cy="12" fill="none" r="11" stroke="currentColor"></circle>
-                        </svg></div>
-                    <p class="font-medium text-gray-800">{intl.formatMessage({ id: 'infocard1' })}</p>
-                </li>
-                <li class="flex items-center">
-                    <div class="mr-2"><svg class="w-4 h-4 text-blue-600" viewBox="0 0 24 24" stroke-linecap="round"
-                            strokeLidth="2">
-                            <polyline fill="none" stroke="currentColor" points="6,12 10,16 18,8"></polyline>
-                            <circle cx="12" cy="12" fill="none" r="11" stroke="currentColor"></circle>
-                        </svg></div>
-                    <p class="font-medium text-gray-800">{intl.formatMessage({ id: 'infocard2' })}</p>
-                </li>
-                <li class="flex items-center">
-                    <div class="mr-2"><svg class="w-4 h-4 text-blue-600" viewBox="0 0 24 24" stroke-linecap="round"
-                            strokeLidth="2">
-                            <polyline fill="none" stroke="currentColor" points="6,12 10,16 18,8"></polyline>
-                            <circle cx="12" cy="12" fill="none" r="11" stroke="currentColor"></circle>
-                        </svg></div>
-                    <p class="font-medium text-gray-800">{intl.formatMessage({ id: 'infocard3' })}</p>
-                </li>
-                <li class="flex items-center">
-                    <div class="mr-2"><svg class="w-4 h-4 text-blue-600" viewBox="0 0 24 24" stroke-linecap="round"
-                            strokeLidth="2">
-                            <polyline fill="none" stroke="currentColor" points="6,12 10,16 18,8"></polyline>
-                            <circle cx="12" cy="12" fill="none" r="11" stroke="currentColor"></circle>
-                        </svg></div>
-                    <p class="font-medium text-gray-800">{intl.formatMessage({ id: 'infocard4' })}</p>
-                </li>
-                <li class="flex items-center">
-                    <div class="mr-2"><svg class="w-4 h-4 text-blue-600" viewBox="0 0 24 24" stroke-linecap="round"
-                            strokeLidth="2">
-                            <polyline fill="none" stroke="currentColor" points="6,12 10,16 18,8"></polyline>
-                            <circle cx="12" cy="12" fill="none" r="11" stroke="currentColor"></circle>
-                        </svg></div>
-                    <p class="font-medium text-gray-800">{intl.formatMessage({ id: 'infocard5' })}</p>
-                </li>
-                <li class="flex items-center">
-                    <div class="mr-2"><svg class="w-4 h-4 text-blue-600" viewBox="0 0 24 24" stroke-linecap="round"
-                            strokeLidth="2">
-                            <polyline fill="none" stroke="currentColor" points="6,12 10,16 18,8"></polyline>
-                            <circle cx="12" cy="12" fill="none" r="11" stroke="currentColor"></circle>
-                        </svg></div>
-                    <p class="font-medium text-gray-800">{intl.formatMessage({ id: 'infocard6' })}</p>
-                </li>
-                <li class="flex items-center">
-                    <div class="mr-2"><svg class="w-4 h-4 text-blue-600" viewBox="0 0 24 24" stroke-linecap="round"
-                            strokeLidth="2">
-                            <polyline fill="none" stroke="currentColor" points="6,12 10,16 18,8"></polyline>
-                            <circle cx="12" cy="12" fill="none" r="11" stroke="currentColor"></circle>
-                        </svg></div>
-                    <p class="font-medium text-gray-800">{intl.formatMessage({ id: 'infocard7' })}</p>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div>
-        <a href="#"
-            class="inline-flex items-center justify-center w-full h-12 px-6 mb-4 font-medium tracking-wide text-white transition duration-200 rounded shadow-md hero-button-pricing focus:shadow-outline focus:outline-none">{intl.formatMessage({ id: 'buttoncard1' })}
-        </a>
-    </div>
-</div>
-<div class="m-4 flex flex-col justify-between p-5 bg-white border rounded shadow-sm card-container">
-    <div class="mb-6">
-        <div class="flex items-center justify-between pb-6 mb-6 border-b">
-            <div>
-                <p class="text-3xl font-bold tracking-wider uppercase">{intl.formatMessage({ id: 'exellence' })}</p> <br/>
-                <p class="text-2xl ">{intl.formatMessage({ id: 'desccard2' })}</p> <br/>
-                <p class="text-xl ">{intl.formatMessage({ id: 'titrecard2' })}</p> 
-            </div>
-        </div>
-        <div>
-            <p class="mb-2 font-bold tracking-wide">{intl.formatMessage({ id: 'priceTitle' })}</p>
-            <ul class="space-y-2">
-                <li class="flex items-center">
-                    <div class="mr-2"><svg class="w-4 h-4 text-blue-600" viewBox="0 0 24 24" stroke-linecap="round"
-                            strokeLidth="2">
-                            <polyline fill="none" stroke="currentColor" points="6,12 10,16 18,8"></polyline>
-                            <circle cx="12" cy="12" fill="none" r="11" stroke="currentColor"></circle>
-                        </svg></div>
-                    <p class="font-medium text-gray-800">{intl.formatMessage({ id: 'infocard11' })}</p>
-                </li>
-                <li class="flex items-center">
-                    <div class="mr-2"><svg class="w-4 h-4 text-blue-600" viewBox="0 0 24 24" stroke-linecap="round"
-                            strokeLidth="2">
-                            <polyline fill="none" stroke="currentColor" points="6,12 10,16 18,8"></polyline>
-                            <circle cx="12" cy="12" fill="none" r="11" stroke="currentColor"></circle>
-                        </svg></div>
-                    <p class="font-medium text-gray-800">{intl.formatMessage({ id: 'infocard22' })}</p>
-                </li>
-                <li class="flex items-center">
-                    <div class="mr-2"><svg class="w-4 h-4 text-blue-600" viewBox="0 0 24 24" stroke-linecap="round"
-                            strokeLidth="2">
-                            <polyline fill="none" stroke="currentColor" points="6,12 10,16 18,8"></polyline>
-                            <circle cx="12" cy="12" fill="none" r="11" stroke="currentColor"></circle>
-                        </svg></div>
-                    <p class="font-medium text-gray-800">{intl.formatMessage({ id: 'infocard33' })}</p>
-                </li>
-                <li class="flex items-center">
-                    <div class="mr-2"><svg class="w-4 h-4 text-blue-600" viewBox="0 0 24 24" stroke-linecap="round"
-                            strokeLidth="2">
-                            <polyline fill="none" stroke="currentColor" points="6,12 10,16 18,8"></polyline>
-                            <circle cx="12" cy="12" fill="none" r="11" stroke="currentColor"></circle>
-                        </svg></div>
-                    <p class="font-medium text-gray-800">{intl.formatMessage({ id: 'infocard44' })}</p>
-                </li>
-                <li class="flex items-center">
-                    <div class="mr-2"><svg class="w-4 h-4 text-blue-600" viewBox="0 0 24 24" stroke-linecap="round"
-                            strokeLidth="2">
-                            <polyline fill="none" stroke="currentColor" points="6,12 10,16 18,8"></polyline>
-                            <circle cx="12" cy="12" fill="none" r="11" stroke="currentColor"></circle>
-                        </svg></div>
-                    <p class="font-medium text-gray-800">{intl.formatMessage({ id: 'infocard55' })}</p>
-                </li>
-                <li class="flex items-center">
-                    <div class="mr-2"><svg class="w-4 h-4 text-blue-600" viewBox="0 0 24 24" stroke-linecap="round"
-                            strokeLidth="2">
-                            <polyline fill="none" stroke="currentColor" points="6,12 10,16 18,8"></polyline>
-                            <circle cx="12" cy="12" fill="none" r="11" stroke="currentColor"></circle>
-                        </svg></div>
-                    <p class="font-medium text-gray-800">{intl.formatMessage({ id: 'infocard66' })}</p>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div>
-        <a href="#"
-            class="inline-flex items-center justify-center w-full h-12 px-6 mb-4 font-medium tracking-wide text-white transition duration-200 rounded shadow-md hero-button-pricing focus:shadow-outline focus:outline-none">{intl.formatMessage({ id: 'buttincard2' })}
-        </a>
-    </div>
-</div>
+      </div>
     </section>
-
   );
 }

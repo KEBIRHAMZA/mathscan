@@ -19,9 +19,9 @@ const IndexPage = () => (
     <Hero/>
     <Statistique/>
     <Caracteristiques/>
-    <Temoignages/>
-    <Temoignagevideo/>
     <Ecole/>
+    <Temoignagevideo/>
+    <Temoignages/>
     <Astuces/>
     <Partner/>
     <Media/>

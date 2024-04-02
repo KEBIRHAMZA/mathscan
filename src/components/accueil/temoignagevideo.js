@@ -7,6 +7,9 @@ import { useIntl } from 'gatsby-plugin-intl';
 const adultVideoUrls = [
     "https://www.youtube.com/embed/4B4h0a36-ic?si=ooxgikt6K52FJHf-",
     "https://www.youtube.com/embed/G90FGCnsYDo?si=WnP11jD36qKzJldQ",
+    "https://www.youtube.com/embed/2VJWUARvkIg?si=PZTJ3MBXXamGPUg6",
+    "https://www.youtube.com/embed/K9dqMe3g2tE?si=YGMU2gFQ9E9tWq0U",
+    "https://www.youtube.com/embed/VCy8-y7tr9Q?si=ZSMn3vlhDk-QACA0"
 ];
 
 const childrenVideoUrls = [
@@ -22,9 +25,9 @@ const Temoignagevideo = () => {
     return (
         <>
             {/* --------------------------- Temoignages adultes ------------------------------ */}
-            <div style={{ height: "100%", overflowX: "hidden", textAlign: "center", marginTop: "100px" }}>
+            <div style={{ height: "100%", overflowX: "hidden", textAlign: "center", marginTop: "130px" }}>
                 <div className="flex justify-center">
-                    <h1 className='text-4xl font-bold'>{intl.formatMessage({ id: 'TemoignageAdulte' })}</h1>
+                    <h1 className='text-5xl font-bold'>{ intl.formatMessage({ id: 'titleTestimonials' }) }</h1>
                 </div>
                 <div className="csslider infinity" id="sliderAdult">
                     {adultVideoUrls.map((url, index) => (
@@ -64,9 +67,9 @@ const Temoignagevideo = () => {
             </div>
 
             {/* --------------------------- Temoignages enfants ------------------------------ */}
-            <div style={{ height: "100%", overflowX: "hidden", textAlign: "center", marginTop: "100px" }}>
+            {/* <div style={{ height: "100%", overflowX: "hidden", textAlign: "center", marginTop: "100px" }}>
                 <div className="flex justify-center">
-                    <h1 className='text-4xl font-bold'>{intl.formatMessage({ id: 'TemoignageEnfant' })}</h1>
+                    <h1 className='text-4xl font-bold'></h1>
                 </div>
                 <div className="csslider infinity" id="sliderChildren">
                     {childrenVideoUrls.map((url, index) => (
@@ -103,7 +106,7 @@ const Temoignagevideo = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </>
     );
 };

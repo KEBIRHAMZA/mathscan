@@ -1,118 +1,98 @@
-import React, { useState, useEffect } from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
-import { useIntl } from 'gatsby-plugin-intl'; 
-import "../../styles/accueil-styles/hero.css";
+import React from 'react';
+import { useIntl } from 'gatsby-plugin-intl';
+import { useState, useEffect } from 'react';
 
-export default function Temoignages() {
-    const intl = useIntl(); 
-    const [currentSlide, setCurrentSlide] = useState(0);
-    const [arabeStyle,setStyle] = React.useState();
+function Temoignages() {
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            const nextSlide = (currentSlide + 1) % 3; // Assuming 4 slides
-            setCurrentSlide(nextSlide);
-        }, 5000); // Change slides every 5 seconds
+  const [styleCard, setstyleCard,] = useState({});
+  const [styleprofile, setstyleprofile] = useState({});
 
-        return () => clearInterval(interval);
-    }, [currentSlide]);
+  const intl = useIntl();
 
-    const handleSlideChange = (index) => {
-        setCurrentSlide(index);
-    };
+  const locale = intl.locale
 
-    // Changer la direction du composant quand la langue est l'arabe
-    const locale = intl.locale;
-    const direction = locale === 'ar' ? 'rtl' : 'ltr';
+  useEffect(() => {
+    switch (locale) {
+      case 'ar':
+        setstyleCard({
+          height: "280px"
+        })
+        break
+      case 'fr':
+      case 'en':
+        setstyleCard({
+          height: "400px"
+        })
+        break
+    }
 
-    React.useEffect(() => {
-        setStyle(locale === 'ar' ? {marginTop : "-120px"} : "");
-    }, [direction]);
+  }, [locale]);
 
-    return (
-        <div className='testi-cantainer'>
-            <div className="flex justify-center">
-                <h1 className='text-4xl font-bold'>{intl.formatMessage({ id: 'titleTestimonials' })}</h1>
+  const direction = locale === 'ar' ? 'rtl' : 'ltr';
+
+
+  const testimonials = [
+    {
+      name: intl.formatMessage({ id: 'testimonialOneName1' }),
+      title: intl.formatMessage({ id: 'testimonialRole1' }),
+      content: intl.formatMessage({ id: 'testimonialOneContent1' }),
+      imageSrc: 'https://pagedone.io/asset/uploads/1696229969.png',
+      margin: locale == "ar" ? {marginTop:"70px"} : {marginTop:"120px"},
+    },
+    {
+      name: intl.formatMessage({ id: 'testimonialOneName2' }),
+      title: intl.formatMessage({ id: 'testimonialRole2' }),
+      content: intl.formatMessage({ id: 'testimonialOneContent2' }),
+      imageSrc: 'https://pagedone.io/asset/uploads/1696229969.png',
+      margin: locale == "ar" ? {marginTop:"100px"} : {marginTop:"170px"},
+    },
+    {
+      name: intl.formatMessage({ id: 'testimonialOneName3' }),
+      title: intl.formatMessage({ id: 'testimonialRole3' }),
+      content: intl.formatMessage({ id: 'testimonialOneContent3' }),
+      imageSrc: 'https://pagedone.io/asset/uploads/1696229969.png',
+      margin: locale == "ar" ? {marginTop:"50px"} : {marginTop:"30px"},
+    }
+  ];
+
+  return (
+    <div className="flex flex-col items-center" style={{ marginTop: "30px" }}>
+      <h2 className="text-4xl font-bold my-6"></h2>
+      <div className="flex flex-wrap justify-center">
+        {testimonials.map((testimonial, index) => (
+          <div key={index} className="flex flex-col flex-grow w-full md:w-1/2 lg:w-1/3 px-2 mb-4">
+            <div style={styleCard} className="flex justify-center items-start flex-col p-5 bg-white hover:shadow-indigo-300 hover:shadow-lg rounded-lg border relative">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width={30}
+                height={30}
+                fill="none"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                className="icon icon-tabler icon-tabler-quote rotate-180 text-sky-500"
+                viewBox="0 0 24 24"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" />
+                <path d="M10 11H6a1 1 0 01-1-1V7a1 1 0 011-1h3a1 1 0 011 1v6c0 2.667-1.333 4.333-4 5M19 11h-4a1 1 0 01-1-1V7a1 1 0 011-1h3a1 1 0 011 1v6c0 2.667-1.333 4.333-4 5"></path>
+              </svg>
+              <div className="flex flex-col gap-2 flex-grow">
+                <p dir={direction} className="text-sm md:text-base">{testimonial.content}</p>
+                <div style={testimonial.margin} className="flex items-center gap-2">
+                  <img src={testimonial.imageSrc} alt={testimonial.name} className="w-8 h-8 rounded-full" />
+                  <div>
+                    <h3 className="text-base font-semibold">{testimonial.name}</h3>
+                    <p className="text-xs">{testimonial.title}</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            
-        <div className="slider">
-        <input
-            type="radio"
-            name="slider"
-            title="slide1"
-            checked={currentSlide === 0}
-            className="slider__nav"
-            onClick={() => handleSlideChange(0)}
-        />
-        <input
-            type="radio"
-            name="slider"
-            title="slide2"
-            checked={currentSlide === 1}
-            className="slider__nav"
-            onClick={() => handleSlideChange(1)}
-        />
-        <input
-            type="radio"
-            name="slider"
-            title="slide3"
-            checked={currentSlide === 2}
-            className="slider__nav"
-            onClick={() => handleSlideChange(2)}
-        />
-        <div className="slider__inner">
-            <div className="slider__contents">
-            <StaticImage
-                src="../../images/accueil-images/maman-revieww.png"
-                alt=""
-            />
-            <h2 className="slider__caption">{intl.formatMessage({ id: 'testimonialOneName1' })}</h2>
-            <p className="slider__txt">
-            {intl.formatMessage({ id: 'testimonialOneContent1' })}
-            </p>
-            </div>
-            <div className="slider__contents">
-            <StaticImage
-                src="../../images/accueil-images/maman-revieww.png"
-                alt=""
-            />
-            <h2 className="slider__caption">{intl.formatMessage({ id: 'testimonialOneName2' })}</h2>
-            <p className="slider__txt">
-            {intl.formatMessage({ id: 'testimonialOneContent2' })}
-            </p>
-            </div>
-            <div className="slider__contents">
-            <StaticImage
-                src="../../images/accueil-images/maman-revieww.png"
-                alt=""
-            />
-            <h2 className="slider__caption">{intl.formatMessage({ id: 'testimonialOneName1' })}</h2>
-            <p className="slider__txt">
-            {intl.formatMessage({ id: 'testimonialOneContent1' })}
-            </p>
-            </div>
-            <div className="slider__contents">
-            <StaticImage
-                src="../../images/accueil-images/maman-revieww.png"
-                alt=""
-            />
-            <h2 className="slider__caption">{intl.formatMessage({ id: 'testimonialOneName2' })}</h2>
-            <p className="slider__txt">
-            {intl.formatMessage({ id: 'testimonialOneContent2' })}
-            </p>
-            </div>
-            <div className="slider__contents">
-            <StaticImage
-                src=""
-                alt=""
-            />
-            <h2 className="slider__caption">{intl.formatMessage({ id: 'testimonialOneName3' })}</h2>
-            <p className="slider__txt">
-            {intl.formatMessage({ id: 'testimonialOneContent3' })}
-            </p>
-            </div>
-        </div>
-        </div>
-        </div>
-    );
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 }
+
+export default Temoignages;

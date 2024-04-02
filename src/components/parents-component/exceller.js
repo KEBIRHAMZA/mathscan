@@ -17,7 +17,7 @@ export default function Exceller() {
   const direction = locale === 'ar' ? 'rtl' : 'ltr';
 
   React.useEffect(() => {
-    locale === 'ar' ? setMargin({marginRight : "10%"}) : setMargin({});
+    locale === 'ar' ? setMargin({marginRight : "10%"}) : setMargin({marginLeft:"50px"});
   }, [direction]);
 
   return (
