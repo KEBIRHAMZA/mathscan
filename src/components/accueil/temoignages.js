@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useIntl } from 'gatsby-plugin-intl';
+import { StaticImage } from 'gatsby-plugin-image';
 
 function Temoignages() {
   const [styleCard, setStyleCard] = useState({});
@@ -31,21 +32,21 @@ function Temoignages() {
       name: intl.formatMessage({ id: 'testimonialOneName1' }),
       title: intl.formatMessage({ id: 'testimonialRole1' }),
       content: intl.formatMessage({ id: 'testimonialOneContent1' }),
-      imageSrc: 'https://pagedone.io/asset/uploads/1696229969.png',
+      imageSrc: "../../images/accueil-images/default-avatar.jpg",
       margin: locale === 'ar' ? { marginTop: '10px' } : { marginTop: '28px' }
     },
     {
       name: intl.formatMessage({ id: 'testimonialOneName2' }),
       title: intl.formatMessage({ id: 'testimonialRole2' }),
       content: intl.formatMessage({ id: 'testimonialOneContent2' }),
-      imageSrc: 'https://pagedone.io/asset/uploads/1696229969.png',
+      imageSrc: "../../images/accueil-images/default-avatar.jpg",
       margin: locale === 'ar' ? { marginTop: '35px' } : { marginTop: '100px' }
     },
     {
       name: intl.formatMessage({ id: 'testimonialOneName3' }),
       title: intl.formatMessage({ id: 'testimonialRole3' }),
       content: intl.formatMessage({ id: 'testimonialOneContent3' }),
-      imageSrc: 'https://pagedone.io/asset/uploads/1696229969.png',
+      imageSrc: "../../images/accueil-images/default-avatar.jpg",
       margin: locale === 'ar' ? { marginTop: '30px' } : { marginTop: '50px' }
     }
   ];
@@ -81,7 +82,11 @@ function Temoignages() {
                   {testimonial.content}
                 </p>
                 <div dir={direction} style={testimonial.margin} className="flex items-center gap-2">
-                  <img src={testimonial.imageSrc} alt={testimonial.name} className="w-8 h-8 rounded-full" />
+                  <StaticImage
+                    src="../../images/accueil-images/default-avatar.jpg"
+                    alt="default profile image"
+                    className="w-8 h-8 rounded-full" 
+                  />
                   <div>
                     <h3 className="text-base font-semibold">{testimonial.name}</h3>
                     <p className="text-xs">{testimonial.title}</p>

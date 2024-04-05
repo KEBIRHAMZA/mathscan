@@ -10,7 +10,7 @@ export default function Exceller() {
   const intl = useIntl(); 
 
   const [margin,setMargin] = React.useState({})
-  const [arabeStyle,setStyle] = React.useState({});
+  const [marginsection,setmarginsection] = React.useState({});
 
   // Change the direction of the component when the language is Arabic
   const locale = intl.locale;
@@ -18,10 +18,11 @@ export default function Exceller() {
 
   React.useEffect(() => {
     locale === 'ar' ? setMargin({marginRight : "10%"}) : setMargin({marginLeft:"50px"});
+    locale === 'ar' ? setmarginsection({ marginTop: "50px", marginBottom: "-50px",width:"1400px" }) : setmarginsection({ marginTop: "50px", marginBottom: "-50px" });
   }, [direction]);
 
   return (
-    <section dir={direction} style={{ marginTop: "50px", marginBottom: "-50px" }} className="bg-white dark:bg-gray-900">
+    <section dir={direction} style={marginsection} className="bg-white dark:bg-gray-900">
       <div className="max-w-screen-xl px-4 py-8 mx-auto lg:py-16 flex flex-col items-center lg:flex-row">
         <div style={margin} className="lg:w-1/2 flex flex-col justify-center items-center lg:items-start lg:justify-start">
 

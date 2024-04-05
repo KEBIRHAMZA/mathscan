@@ -8,21 +8,23 @@ export default function Astuces() {
   const intl = useIntl(); 
 
   const [margin,setMargin] = React.useState({})
-  const [arabeStyle,setStyle] = React.useState({});
+  const [marginsection,setmarginsection] = React.useState({})
 
   // Change the direction of the component when the language is Arabic
   const locale = intl.locale;
-  const direction = locale === 'ar' ? 'rtl' : 'ltr';
+  const direction = locale === 'ar' ? 'ltr' : 'rtl';
+  const entidirection = locale === 'ar' ? 'rtl' : 'ltr';
 
   React.useEffect(() => {
-    locale === 'ar' ? setMargin({marginRight : "140px"}) : setMargin({marginLeft : "55px"});
+    locale === 'ar' ? setMargin({marginRight : "-70px"}) : setMargin({marginLeft : "10px"});
+    locale === 'ar' ? setmarginsection({ marginTop: "-10px", marginBottom: "-100px",marginLeft:"90px",width:"1400px"}) : setmarginsection({ marginTop: "-10px", marginBottom: "-100px",marginLeft:"-100px"});
   }, [direction]);
   
   
   return (
-    <section dir={direction} style={{ marginTop: "-10px", marginBottom: "-100px"}} className="bg-white dark:bg-gray-900 astuce-section">
+    <section dir={direction} style={marginsection} className="bg-white dark:bg-gray-900 astuce-section">
       <div className="max-w-screen-xl px-4 py-8 mx-auto lg:py-16 flex flex-col items-center lg:flex-row">
-        <div style={margin} className="lg:w-1/2 flex flex-col justify-center items-center lg:items-start lg:justify-start">
+        <div dir={entidirection} style={margin} className="lg:w-1/2 flex flex-col justify-center items-center lg:items-start lg:justify-start">
 
           {/* Hero title 1 */}
           <p className='titre-two-astuces'>
