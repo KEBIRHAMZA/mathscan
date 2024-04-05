@@ -91,17 +91,22 @@ export default function Caracteristiques() {
 }
 
 
-function DynamicComponent({ iconUrl, showen,hiden }) {
+function DynamicComponent({ iconUrl, showen, hiden }) {
+  const intl = useIntl();
+  const locale = intl.locale;
   return (
-    <div className="cards group relative cursor-pointer overflow-hidden bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10">
-      <span className="absolute top-10 z-0 h-20 w-20 rounded-full bg-sky-500 transition-all duration-300 group-hover:scale-[10]"></span>
+    <div className="cards group relative cursor-pointer overflow-hidden bg-gray-300 px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10">
+      <span className="absolute top-10 z-0 h-20 w-20 rounded-full bg-gray-300 transition-all duration-300 group-hover:scale-[15]"></span>
       <div className="relative z-10 mx-auto max-w-md">
-        <span className="grid h-20 w-20 place-items-center rounded-full bg-sky-500 transition-all duration-300 group-hover:bg-sky-400">
+        <span className="grid h-20 w-20 place-items-center rounded-full bg-gray-500 transition-all duration-300 group-hover:bg-gray-500">
           {iconUrl}
         </span>
         <div className="space-y-6 pt-5 text-base leading-7 text-gray-600 transition-all duration-300 group-hover:text-white/90">
-          <p className='shoen-content'>{showen}</p>
-          <p className='hidden-content'>{hiden}</p>
+          {/* Styling the first 'showen' */}
+          <p className='shoen-content text-lg font-semibold text-center'>{showen}</p>
+          {/* Styling the second 'showen' as a title */}
+          <p className='hidden-content text-center font-bold' style={locale == "ar" ? { fontSize : "25px" }:{}}>{showen}</p>
+          <p className="hidden-content text-center" style={locale == "ar" ? { fontSize : "20px" }:{}}>{hiden}</p> 
         </div>
       </div>
     </div>

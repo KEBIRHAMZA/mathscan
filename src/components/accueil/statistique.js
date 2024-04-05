@@ -48,7 +48,7 @@ export default function Statistique() {
                             />
                         </div>
                         <div className="col-span-2 inner-container">
-                            <span className="number">15{intl.formatMessage({ id: "year" })}</span> <br/>
+                            <span className="number">15 {intl.formatMessage({ id: "year" })}</span> <br/>
                             <p className="description">{intl.formatMessage({ id: "research" })}</p>
                         </div>
                     </div>
