@@ -16,10 +16,10 @@ export default function Parents() {
   return (
     <Layout>
       <Exceller/>
-      <Astuces/>
       <Cardsparent/>
       <Temoignagevideo/>
       <Temoignages/>
+      <Astuces/>
       <Partner/>
       <Media/>
     </Layout>

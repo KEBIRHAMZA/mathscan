@@ -1,0 +1,390 @@
+body.my-inscription {  
+    font-family:var(--bs-body-font-family);
+    font-size:var(--bs-body-font-size);
+    font-weight:var(--bs-body-font-weight);
+    line-height:var(--bs-body-line-height);
+    color:var(--bs-body-color);
+    text-align:var(--bs-body-text-align);
+}  
+
+.my-inscription * { 
+    box-sizing: border-box;
+} 
+
+.my-inscription { 
+    height: 100%; 
+    min-height: 100%;
+} 
+
+.my-inscription body { 
+    margin: 0; 
+    font-family: var(--bs-body-font-family); 
+    font-size: var(--bs-body-font-size); 
+    font-weight: var(--bs-body-font-weight); 
+    line-height: var(--bs-body-line-height); 
+    color: var(--bs-body-color); 
+    text-align: var(--bs-body-text-align); 
+    background-color: var(--bs-body-bg); 
+    -webkit-text-size-adjust: 100%; 
+    -webkit-tap-highlight-color: transparent;
+} 
+
+.my-inscription html { 
+    height: 100%; 
+    min-height: 100%;
+} 
+
+.my-inscription :root { 
+    --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; 
+    --bs-body-font-family: var(--bs-font-sans-serif); 
+    --bs-body-font-size: 1rem; 
+    --bs-body-font-weight: 400; 
+    --bs-body-line-height: 1.5; 
+    --bs-body-color: #212529; 
+    --bs-body-bg: #fff;
+} 
+
+
+@media (prefers-reduced-motion: no-preference){ 
+  :root { 
+    scroll-behavior: smooth;
+  } 
+}     
+
+.my-inscription *  { 
+    flex-shrink: 0; 
+    width: 100%; 
+    max-width: 100%; 
+    padding-right: calc(var(--bs-gutter-x) * .5); 
+    padding-left: calc(var(--bs-gutter-x) * .5); 
+    margin-top: var(--bs-gutter-y);
+} 
+
+.my-inscription .col-c4e { 
+    flex: 0 0 auto; 
+    width: 91.66666667%;
+} 
+
+@media (min-width: 576px){ 
+  .col-zyw-inscription { 
+    flex: 0 0 auto; 
+    width: 91.66666667%;
+  } 
+}     
+
+@media (min-width: 768px){ 
+  .col-swf-inscription { 
+    flex: 0 0 auto; 
+    width: 75%;
+  } 
+}     
+
+@media (min-width: 992px){ 
+  .col-3a3-inscription { 
+    flex: 0 0 auto; 
+    width: 41.66666667%;
+  } 
+} 
+
+.my-inscription #register-screen > .col-3a3-inscription { 
+    height: 100%; 
+    background-color: #f1f3f7;
+} 
+
+.my-inscription .form-goa-inscription  { 
+    padding: 50px 0; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+} 
+
+.my-inscription .form-goa-inscription  { 
+    display: block;
+} 
+
+.my-inscription *,:after,:before { 
+    box-sizing: border-box;
+} 
+
+.my-inscription p { 
+    margin-top: 0; 
+    margin-bottom: 1rem;
+} 
+
+.my-inscription .text-awj { 
+    text-align: center!important;
+} 
+
+.my-inscription .col-co4 { 
+    flex: 0 0 auto; 
+    width: 100%;
+} 
+
+@media (min-width: 576px){ 
+  .col-618-inscription { 
+    flex: 0 0 auto; 
+    width: 100%;
+  } 
+}     
+
+.my-inscription .card-mgx { 
+    position: relative; 
+    display: flex; 
+    flex-direction: column; 
+    min-width: 0; 
+    word-wrap: break-word; 
+    background-color: #fff; 
+    background-clip: border-box; 
+    border: 1px solid rgba(0,0,0,.125); 
+    border-radius: .25rem;
+} 
+
+.my-inscription .mx-rwm { 
+    margin-right: auto!important; 
+    margin-left: auto!important;
+} 
+
+.my-inscription a { 
+    color: #0d6efd; 
+    text-decoration: underline;
+} 
+
+.my-inscription a:hover { 
+    color: #0a58ca;
+} 
+
+.my-inscription .card-ad4 { 
+    flex: 1 1 auto; 
+    padding: 1rem 1rem;
+} 
+
+.my-inscription img { 
+    vertical-align: middle;
+} 
+
+.my-inscription .form-goa-inscription .logo-odi  { 
+    margin-bottom: 45px;
+} 
+
+.my-inscription input { 
+    margin: 0; 
+    font-family: inherit; 
+    font-size: inherit; 
+    line-height: inherit;
+} 
+
+.my-inscription .mb-aic { 
+    margin-bottom: 1rem!important;
+} 
+
+.my-inscription hr { 
+    margin: 1rem 0; 
+    color: inherit; 
+    background-color: currentColor; 
+    border: 0; 
+    opacity: .25;
+} 
+
+.my-inscription hr:not([size]) { 
+    height: 1px;
+} 
+
+.my-inscription .footer-zwx { 
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-end;
+} 
+
+.my-inscription label { 
+    display: inline-block;
+} 
+
+.my-inscription .label-zp1 { 
+    margin-bottom: .5rem;
+} 
+
+.my-inscription .form-control-7v3 { 
+    display: block; 
+    width: 100%; 
+    padding: .375rem .75rem; 
+    font-size: 1rem; 
+    font-weight: 400; 
+    line-height: 1.5; 
+    color: #212529; 
+    background-color: #fff; 
+    background-clip: padding-box; 
+    border: 1px solid #ced4da; 
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    appearance: none; 
+    border-radius: .25rem; 
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+} 
+
+.my-inscription .form-control-7v3:focus { 
+    color: #212529; 
+    background-color: #fff; 
+    border-color: #86b7fe; 
+    outline: 0; 
+    box-shadow: 0 0 0 .25rem rgba(13,110,253,.25);
+} 
+
+.my-inscription select { 
+    margin: 0; 
+    font-family: inherit; 
+    font-size: inherit; 
+    line-height: inherit;
+} 
+
+.my-inscription select { 
+    text-transform: none;
+} 
+
+.my-inscription select { 
+    word-wrap: normal;
+} 
+
+.my-inscription .select-wm7 { 
+    display: block; 
+    width: 100%; 
+    padding: .375rem 2.25rem .375rem .75rem; 
+    -moz-padding-start: calc(0.75rem - 3px); 
+    font-size: 1rem; 
+    font-weight: 400; 
+    line-height: 1.5; 
+    color: #212529; 
+    background-color: #fff; 
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e"); 
+    background-repeat: no-repeat; 
+    background-position: right .75rem center; 
+    background-size: 16px 12px; 
+    border: 1px solid #ced4da; 
+    border-radius: .25rem; 
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; 
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    appearance: none;
+} 
+
+.my-inscription .my-5xe { 
+    margin-top: .25rem!important; 
+    margin-bottom: .25rem!important;
+} 
+
+.my-inscription button { 
+    border-radius: 0;
+} 
+
+.my-inscription button { 
+    margin: 0; 
+    font-family: inherit; 
+    font-size: inherit; 
+    line-height: inherit;
+} 
+
+.my-inscription button { 
+    text-transform: none;
+} 
+
+.my-inscription button { 
+    -webkit-appearance: button;
+} 
+
+.my-inscription .btn-rz3 { 
+    width: 100px;
+    margin-left: -100px;
+    display: inline-block; 
+    font-weight: 400; 
+    line-height: 1.5; 
+    color: #212529; 
+    text-align: center; 
+    text-decoration: none; 
+    vertical-align: middle; 
+    cursor: pointer; 
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    user-select: none; 
+    background-color: transparent; 
+    border: 1px solid transparent; 
+    padding: .375rem .75rem; 
+    font-size: 1rem; 
+    border-radius: .25rem; 
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+} 
+
+.my-inscription .btn-primary-3wk { 
+    color: #fff; 
+    background-color: #0d6efd; 
+    border-color: #0d6efd;
+} 
+
+.my-inscription button:not(:disabled) { 
+    cursor: pointer;
+} 
+
+.my-inscription .btn-rz3:hover { 
+    color: #212529;
+} 
+
+.my-inscription .btn-primary-3wk:hover { 
+    color: #fff; 
+    background-color: #0b5ed7; 
+    border-color: #0a58ca;
+} 
+
+.my-inscription optgroup { 
+    margin: 0; 
+    font-family: inherit; 
+    font-size: inherit; 
+    line-height: inherit;
+} 
+
+.my-inscription .form-goa .footer-zwx a  { 
+    margin-right: 15px;
+} 
+
+.my-inscription iframe { 
+    border: 0;
+} 
+
+.my-inscription textarea { 
+    margin: 0; 
+    font-family: inherit; 
+    font-size: inherit; 
+    line-height: inherit;
+} 
+
+.my-inscription textarea { 
+    resize: vertical;
+} 
+
+
+/* These were inline style tags. Uses id+class to override almost everything */
+#style-ftIj6.style-ftIj6 {  
+   overflow:auto;  
+}  
+#style-tIc5t.style-tIc5t {  
+   width: 256px;  
+    height: 60px;  
+    display: block;  
+    transition: right 0.3s ease 0s;  
+    position: fixed;  
+    bottom: 14px;  
+    right: -186px;  
+    box-shadow: gray 0px 0px 5px;  
+    border-radius: 2px;  
+    overflow: hidden;  
+}  
+#g-r-srl.style-kXlcQ {  
+   width: 250px;  
+    height: 40px;  
+    border: 1px solid rgb(193, 193, 193);  
+    margin: 10px 25px;  
+    padding: 0px;  
+    resize: none;  
+    display: none;  
+}  
+#style-BhTIz.style-BhTIz {  
+   display: none;  
+}

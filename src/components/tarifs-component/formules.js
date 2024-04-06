@@ -15,7 +15,7 @@ export default function Formules() {
     const direction = locale === 'ar' ? 'rtl' : 'ltr';
 
     React.useEffect(() => {
-        locale === 'ar' ? setMargin({marginRight : "300px", marginTop: "50px", marginBottom: "50px"}) : setMargin({marginLeft : "250px"});
+        locale === 'ar' ? setMargin({marginRight : "300px", marginTop: "50px", marginBottom: "-100px"}) : setMargin({marginLeft : "250px"});
     }, [direction]);
 
   return (
