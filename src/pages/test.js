@@ -6,7 +6,7 @@ import { useIntl } from 'gatsby-plugin-intl';
 import '../styles/inscription.css'
 
 
-export default function Connection() {
+const Test = () => {
     const intl = useIntl();
     const locale = intl.locale;
     const direction = locale === 'ar' ? 'rtl' : 'ltr';
@@ -105,3 +105,5 @@ export default function Connection() {
 }
 
 export const Head = () => <Seo title="Mathscan ©" />
+
+export default Test;
