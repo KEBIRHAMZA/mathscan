@@ -189,6 +189,14 @@
     "lienInscription" : "Se connecter",
     "buttonInscription" : "S'inscrire",
 
+    "insc_place1" : "Votre nom d'utilisateur",
+    "insc_place2" : "Votre Prénom",
+    "insc_place3" : "Votre Nom",
+    "insc_place4" : "Entrer Email Address",
+    "insc_place5" : "Programm: Système marocain",
+    "insc_place6" : "Entrer le mot de passe",
+    "insc_place7" : "Confirmer le Mot de passe",
+
 
     "component-Contacter": "---------------------------Contacter------------------------",
 

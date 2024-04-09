@@ -186,6 +186,14 @@
     "lienInscription": "تسجيل الدخول",
     "buttonInscription": "إنشاء حساب",
 
+    "insc_place1" : "اسم المستخدم الخاص بك",
+    "insc_place2" : "الاسم الأول",
+    "insc_place3" : "اسمك الأخير",
+    "insc_place4" : "أدخل عنوان البريد الالكتروني",
+    "insc_place5" : "البرنامج : النظام المغربي",
+    "insc_place6" : "أدخل كلمة المرور",
+    "insc_place7" : "أكد كلمة المرور",
+
     "component-Contacter": "---------------------------Contacter------------------------",
 
     "titreContacter": "اتصل بنا",

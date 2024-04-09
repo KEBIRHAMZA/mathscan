@@ -42,7 +42,7 @@ export default function Inscription() {
             name="username"
             id="use-zq1"
             defaultValue=""
-            placeholder="Votre nom d'utilisateur"
+            placeholder={intl.formatMessage({ id: 'insc_place1' })}
             className="form-control-7v3"
             dir={direction}
           />
@@ -54,7 +54,7 @@ export default function Inscription() {
             name="username"
             id="use-zq1"
             defaultValue=""
-            placeholder="Votre Prénom"
+            placeholder={intl.formatMessage({ id: 'insc_place2' })}
             className="form-control-7v3"
             dir={direction}
           />
@@ -66,7 +66,7 @@ export default function Inscription() {
             name="username"
             id="use-zq1"
             defaultValue=""
-            placeholder="Votre Nom"
+            placeholder={intl.formatMessage({ id: 'insc_place3' })}
             className="form-control-7v3"
             dir={direction}
           />
@@ -78,7 +78,7 @@ export default function Inscription() {
             name="username"
             id="use-zq1"
             defaultValue=""
-            placeholder="Entrer Email Address"
+            placeholder={intl.formatMessage({ id: 'insc_place4' })}
             className="form-control-7v3"
             dir={direction}
           />
@@ -102,7 +102,7 @@ export default function Inscription() {
                 id="edu-ro1"
                 dir={direction}
             >
-                <optgroup label='Programm: Système marocain'>
+                <optgroup label={intl.formatMessage({ id: 'insc_place5' })}>
                 <option value="1+6">{intl.formatMessage({ id: 'niveau1' })}</option>
                 <option value="1+7">{intl.formatMessage({ id: 'niveau2' })}</option>
                 <option value="1+8">{intl.formatMessage({ id: 'niveau3' })}</option>
@@ -124,7 +124,7 @@ export default function Inscription() {
             name="username"
             id="use-zq1"
             defaultValue=""
-            placeholder="Entrer le mot de passe"
+            placeholder={intl.formatMessage({ id: 'insc_place6' })}
             className="form-control-7v3"
             dir={direction}
           />
@@ -136,7 +136,7 @@ export default function Inscription() {
             name="username"
             id="use-zq1"
             defaultValue=""
-            placeholder="Confirmer le Mot de passe"
+            placeholder={intl.formatMessage({ id: 'insc_place7' })}
             className="form-control-7v3"
             dir={direction}
           />

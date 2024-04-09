@@ -184,6 +184,14 @@
     "lienInscription": "Log In",
     "buttonInscription": "Sign Up",
 
+    "insc_place1" : "Your username",
+    "insc_place2" : "Your first name",
+    "insc_place3" : "Your name",
+    "insc_place4" : "Enter Email Address",
+    "insc_place5" : "Program: Moroccan system",
+    "insc_place6" : "Enter password",
+    "insc_place7" : "Confirm password",
+
     "component-Contacter": "---------------------------Contacter------------------------",
 
     "titreContacter": "Contact us",
