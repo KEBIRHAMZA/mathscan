@@ -1,23 +1,14 @@
-import React, { useState,useEffect } from 'react';
+import React from 'react';
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 import { StaticImage } from 'gatsby-plugin-image';
 import { useIntl } from 'gatsby-plugin-intl';
 import '../styles/inscription.css'
 
-
-export default function Connection() {
+const Testtwo = () => {
     const intl = useIntl();
     const locale = intl.locale;
     const direction = locale === 'ar' ? 'rtl' : 'ltr';
-
-    const [stylein,setstylein] = useState({})
-    const [stylelb,setstylelb] = useState({})
-
-    useEffect(() => {
-        locale == 'ar' ? setstylein({ marginLeft:'450px',width:"40px" }) : setstylein({ marginRight:'-200px',width:"40px" })
-        locale == 'ar' ? setstylelb({ marginLeft:"-490px",width:"150px" }) : setstylelb({ marginLeft:"200px",width:"150px" })
-    }, [direction]);
 
     return (
         <section style={{ marginBottom: "10%" }} className="relative flex flex-wrap lg:h-screen lg:items-center">
@@ -75,10 +66,10 @@ id="style-ftIj6"
     id="remember-me"
     name="remember-me"
     className="form-checkbox h-5 w-5 text-primary-600 mr-2"
-    style={stylein}
+    style={{ marginRight:'-200px',width:"40px" }}
     dir={direction} 
 />
-<label dir={direction}  htmlFor="remember-me" className="text-sm text-gray-600" style={stylelb}>
+<label dir={direction}  htmlFor="remember-me" className="text-sm text-gray-600" style={{ marginLeft:"200px",width:"150px" }}>
 {intl.formatMessage({ id: 'remember' })}
 </label>
 </div>
@@ -116,4 +107,4 @@ id="style-ftIj6"
     );
 }
 
-export const Head = () => <Seo title="Mathscan ©" />
+export default Testtwo;
