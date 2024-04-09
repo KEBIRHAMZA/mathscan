@@ -15,8 +15,8 @@ export default function Connection() {
     const [stylelb,setstylelb] = useState({})
 
     useEffect(() => {
-        locale == 'ar' ? setstylein({ marginLeft:'450px',width:"40px" }) : setstylein({ marginRight:'-200px',width:"40px" })
-        locale == 'ar' ? setstylelb({ marginLeft:"-490px",width:"150px" }) : setstylelb({ marginLeft:"200px",width:"150px" })
+        locale == 'ar' ? setstylein({ marginLeft:'440px',width:"40px" }) : setstylein({ marginRight:'-200px',width:"40px" })
+        locale == 'ar' ? setstylelb({ marginLeft:"-200px",width:"150px" }) : setstylelb({ marginLeft:"200px",width:"150px" })
     }, [direction]);
 
     return (
