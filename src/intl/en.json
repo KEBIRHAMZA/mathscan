@@ -154,6 +154,9 @@
     "lientCreer" : "Create an account",
     "buttonconnecter" : "Sign in",
 
+    "placeinput1":"Email address or username",
+    "placeinput2":"Your password",
+
     "component-inscription": "---------------------------Registration------------------------",
     "inscription": "Registration",
     "inputIn1": "Your Username",

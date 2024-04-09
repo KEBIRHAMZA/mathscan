@@ -158,6 +158,9 @@
     "lientCreer" : "Créer un compte",
     "buttonconnecter" : "Se connecter",
 
+    "placeinput1":"Adresse Email ou nom d'utilisateur",
+    "placeinput2":"Votre mot de passe",
+
     "component-inscription": "---------------------------inscription------------------------",
 
     "inscription": "Inscription",
