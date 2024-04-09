@@ -12,7 +12,7 @@ export default function Connection() {
     const direction = locale === 'ar' ? 'rtl' : 'ltr';
 
     return (
-            <section style={{ marginBottom: "10%" }} className="relative flex flex-wrap lg:h-screen lg:items-center">
+            <section dir={direction} style={{ marginBottom: "10%" }} className="relative flex flex-wrap lg:h-screen lg:items-center">
             <div
   className="my-inscription col-3a3 col-swf col-zyw col-c4e form-goa style-ftIj6 w-full px-4 py-12 sm:px-6 sm:py-16 lg:w-1/2 lg:px-8 lg:py-24"
   id="style-ftIj6"
@@ -37,7 +37,7 @@ export default function Connection() {
           id="_to-own"
         />
         <div className="mb-aic">
-          <label className="label-zp1">Email Address</label>
+          <label className="label-zp1">{intl.formatMessage({ id: 'input1' })}</label>
           <input
             type="text"
             name="username"
@@ -48,7 +48,7 @@ export default function Connection() {
           />
         </div>
         <div className="mb-aic">
-          <label className="label-zp1">Mot de passe</label>
+          <label className="label-zp1">{intl.formatMessage({ id: 'input2' })}</label>
           <input
             type="password"
             name="username"
@@ -67,7 +67,7 @@ export default function Connection() {
         style={{ marginRight:'-200px',width:"40px" }}
     />
     <label htmlFor="remember-me" className="text-sm text-gray-600" style={{ marginLeft:"200px",width:"150px" }}>
-        Se souvenir de moi
+    {intl.formatMessage({ id: 'Remember me' })}
     </label>
 </div>
         <hr />
@@ -81,7 +81,7 @@ export default function Connection() {
           </div>
           <div className="footer-zwx">
             <button type="submit" className="btn-rz3 btn-primary-3wk" style={{ width:"150px" }}>
-                Se connecter
+            {intl.formatMessage({ id: 'buttonconnecter' })}
             </button>
         </div>
         </div>
@@ -89,7 +89,7 @@ export default function Connection() {
     </div>
   </div>
   <p className="my-5xe" style={{ marginLeft:'200px',width:"400px" }}>
-            Besoin d'un compte ? <a href="https://mathscan.net/login">Créer un compte</a>
+  {intl.formatMessage({ id: 'lientBesoin' })} <a href="https://mathscan.net/login">{intl.formatMessage({ id: 'lientCreer' })}</a>
     </p>
 </div>
 

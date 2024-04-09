@@ -149,6 +149,7 @@
     "connection" : "Sign in",
     "input1" : "Email address or username",
     "input2" : "Password",
+    "remember" : "Remember me",
     "lientBesoin" : "Need an account ?",
     "lientCreer" : "Create an account",
     "buttonconnecter" : "Sign in",

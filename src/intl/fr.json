@@ -153,6 +153,7 @@
     "connection" : "Connection",
     "input1" : "Adresse email ou nom d'utilisateur",
     "input2" : "Mot de passe",
+    "remember" : "Se souvenir de moi",
     "lientBesoin" : "Besoin d'un compte ?",
     "lientCreer" : "Créer un compte",
     "buttonconnecter" : "Se connecter",
