@@ -59,9 +59,8 @@ export default function Footer() {
                       style={{ 
                           width: "24px"
                       }}
-                      dir="ltr"
                   />
-                  +212 623 467 615
+                  {intl.formatMessage({ id: 'tel1' })}
               </li>
               <li>
                   <StaticImage
@@ -70,9 +69,8 @@ export default function Footer() {
                       style={{ 
                           width: "20px",
                       }}
-                      dir="ltr"
                   />
-                  +212 623 467 615
+                  {intl.formatMessage({ id: 'tel1' })}
               </li>
             </ul>
           </div>
