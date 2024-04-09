@@ -36,7 +36,7 @@ export default function Inscription() {
           id="_to-own"
         />
         <div className="mb-aic">
-          <label className="label-zp1">Nom d'utilisateur</label>
+          <label className="label-zp1">{intl.formatMessage({ id: 'inputIn1' })}</label>
           <input
             type="text"
             name="username"
@@ -47,7 +47,7 @@ export default function Inscription() {
           />
         </div>
         <div className="mb-aic">
-          <label className="label-zp1">Prénom</label>
+          <label className="label-zp1">{intl.formatMessage({ id: 'inputIn2' })}</label>
           <input
             type="text"
             name="username"
@@ -58,7 +58,7 @@ export default function Inscription() {
           />
         </div>
         <div className="mb-aic">
-          <label className="label-zp1">Nom</label>
+          <label className="label-zp1">{intl.formatMessage({ id: 'inputIn3' })}</label>
           <input
             type="text"
             name="username"
@@ -69,7 +69,7 @@ export default function Inscription() {
           />
         </div>
         <div className="mb-aic">
-          <label className="label-zp1">Email Address</label>
+          <label className="label-zp1">{intl.formatMessage({ id: 'inputIn4' })}</label>
           <input
             type="text"
             name="username"
@@ -81,16 +81,16 @@ export default function Inscription() {
         </div>
         <div className="mb-aic">
             <label htmlFor="Genre" className="label-zp1">
-                Genre
+            {intl.formatMessage({ id: 'inputIn5' })}
             </label>
             <select className="my-inscription select-wm7" name="sex" id="xltmd">
-                <option value="m">Homme</option>
-                <option value="f">Femme</option>
+                <option value="m">{intl.formatMessage({ id: 'genre1' })}</option>
+                <option value="f">{intl.formatMessage({ id: 'genre2' })}</option>
             </select>
         </div>
         <div className="mb-aic">
             <label htmlFor="Niveau Scolaire" className="label-zp1">
-                Niveau Scolaire
+            {intl.formatMessage({ id: 'inputIn6' })}
             </label>
             <select
                 className="my-inscription select-wm7"
@@ -98,20 +98,22 @@ export default function Inscription() {
                 id="edu-ro1"
             >
                 <optgroup label='Programm: Système marocain'>
-                <option value="1+6">6ème année primaire</option>
-                <option value="1+7">1ère année collége</option>
-                <option value="1+8">2ème année collége</option>
-                <option value="1+9">3ème année collége</option>
-                <option value="1+10">Tronc Commun</option>
-                <option value="1+11">1ère année BAC Sc MATH</option>
-                <option value="1+12">2ème année BAC Sc MATH</option>
-                <option value="1+13">1ère année BAC Sc Ex</option>
-                <option value="1+14">2ème BAC PC ou SVT</option>
+                <option value="1+6">{intl.formatMessage({ id: 'niveau1' })}</option>
+                <option value="1+7">{intl.formatMessage({ id: 'niveau2' })}</option>
+                <option value="1+8">{intl.formatMessage({ id: 'niveau3' })}</option>
+                <option value="1+9">{intl.formatMessage({ id: 'niveau4' })}</option>
+                <option value="1+10">{intl.formatMessage({ id: 'niveau5' })}</option>
+                <option value="1+11">{intl.formatMessage({ id: 'niveau6' })}</option>
+                <option value="1+12">{intl.formatMessage({ id: 'niveau7' })}</option>
+                <option value="1+13">{intl.formatMessage({ id: 'niveau8' })}</option>
+                <option value="1+14">{intl.formatMessage({ id: 'niveau9' })}</option>
+                <option value="1+14">{intl.formatMessage({ id: 'niveau10' })}</option>
+                <option value="1+14">{intl.formatMessage({ id: 'niveau11' })}</option>
                 </optgroup>
             </select>
         </div>
         <div className="mb-aic">
-          <label className="label-zp1">Mot de passe</label>
+          <label className="label-zp1">{intl.formatMessage({ id: 'inputIn7' })}</label>
           <input
             type="password"
             name="username"
@@ -122,7 +124,7 @@ export default function Inscription() {
           />
         </div>
         <div className="mb-aic">
-          <label className="label-zp1">Confirmer le Mot de passe</label>
+          <label className="label-zp1">{intl.formatMessage({ id: 'inputIn8' })}</label>
           <input
             type="password"
             name="username"
@@ -136,8 +138,8 @@ export default function Inscription() {
         <hr />
         <div className="footer-zwx">
           <p className="my-5xe">
-            Vous avez déjà un compte?
-            <a href="https://mathscan.net/login">Se connecter</a>
+          {intl.formatMessage({ id: 'question' })}
+            <a href="https://mathscan.net/login">{intl.formatMessage({ id: 'lienInscription' })}</a>
           </p>
           <div>
             <div className="style-tIc5t" id="style-tIc5t">
@@ -159,10 +161,10 @@ export default function Inscription() {
           </div>
           <div className="footer-zwx">
             <p className="my-5xe">
-                Vous avez déjà un compte? <a href="https://mathscan.net/login">Se connecter</a>
+            {intl.formatMessage({ id: 'question' })} <a href="https://mathscan.net/login">{intl.formatMessage({ id: 'lienInscription' })}</a>
             </p>
             <button type="submit" className="btn-rz3 btn-primary-3wk">
-                S'inscrire
+            {intl.formatMessage({ id: 'buttonInscription' })}
             </button>
         </div>
         </div>
