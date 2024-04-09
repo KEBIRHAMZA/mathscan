@@ -59,6 +59,7 @@ export default function Footer() {
                       style={{ 
                           width: "24px"
                       }}
+                      dir="ltr"
                   />
                   +212 623 467 615
               </li>
@@ -69,6 +70,7 @@ export default function Footer() {
                       style={{ 
                           width: "20px",
                       }}
+                      dir="ltr"
                   />
                   +212 623 467 615
               </li>
