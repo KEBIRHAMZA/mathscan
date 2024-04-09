@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import Layout from "../components/layout";
 import Seo from "../components/seo";
 import { StaticImage } from 'gatsby-plugin-image';
 import { useIntl } from 'gatsby-plugin-intl';
 import '../styles/inscription.css'
+import { Link } from 'gatsby';
 
 export default function Inscription() {
     const intl = useIntl();
@@ -168,7 +168,7 @@ export default function Inscription() {
           </div>
           <div className="footer-zwx">
             <p className="my-5xe">
-            {intl.formatMessage({ id: 'question' })} <a href="https://mathscan.net/login">{intl.formatMessage({ id: 'lienInscription' })}</a>
+            {intl.formatMessage({ id: 'question' })} <Link to="/connection">{intl.formatMessage({ id: 'lienInscription' })}</Link>
             </p>
             <button type="submit" className="btn-rz3 btn-primary-3wk">
             {intl.formatMessage({ id: 'buttonInscription' })}

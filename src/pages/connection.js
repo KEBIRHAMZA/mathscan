@@ -1,9 +1,9 @@
 import React, { useState,useEffect } from 'react';
-import Layout from "../components/layout";
 import Seo from "../components/seo";
 import { StaticImage } from 'gatsby-plugin-image';
 import { useIntl } from 'gatsby-plugin-intl';
 import '../styles/inscription.css'
+import { Link } from 'gatsby';
 
 
 export default function Connection() {
@@ -101,7 +101,7 @@ id="style-ftIj6"
 </div>
 </div>
 <p className="my-5xe" style={{ marginLeft:'200px',width:"400px" }}>
-{intl.formatMessage({ id: 'lientBesoin' })} <a href="https://mathscan.net/login">{intl.formatMessage({ id: 'lientCreer' })}</a>
+{intl.formatMessage({ id: 'lientBesoin' })} <Link to="/inscription">{intl.formatMessage({ id: 'lientCreer' })}</Link>
 </p>
 </div>
 
