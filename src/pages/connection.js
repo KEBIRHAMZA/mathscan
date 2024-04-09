@@ -12,7 +12,7 @@ export default function Connection() {
     const direction = locale === 'ar' ? 'rtl' : 'ltr';
 
     return (
-            <section dir={direction} style={{ marginBottom: "10%" }} className="relative flex flex-wrap lg:h-screen lg:items-center">
+            <section style={{ marginBottom: "10%" }} className="relative flex flex-wrap lg:h-screen lg:items-center">
             <div
   className="my-inscription col-3a3 col-swf col-zyw col-c4e form-goa style-ftIj6 w-full px-4 py-12 sm:px-6 sm:py-16 lg:w-1/2 lg:px-8 lg:py-24"
   id="style-ftIj6"
@@ -35,9 +35,10 @@ export default function Connection() {
           name="_token"
           defaultValue="aGYrY0HIZValIPlVmqmkjjY3gF3cwAFW56IuqvLU"
           id="_to-own"
+          dir={direction} 
         />
         <div className="mb-aic">
-          <label className="label-zp1">{intl.formatMessage({ id: 'input1' })}</label>
+          <label className="label-zp1" dir={direction} >{intl.formatMessage({ id: 'input1' })}</label>
           <input
             type="text"
             name="username"
@@ -45,10 +46,11 @@ export default function Connection() {
             defaultValue=""
             placeholder="Entrer Email Address"
             className="form-control-7v3"
+            dir={direction} 
           />
         </div>
         <div className="mb-aic">
-          <label className="label-zp1">{intl.formatMessage({ id: 'input2' })}</label>
+          <label className="label-zp1" dir={direction} >{intl.formatMessage({ id: 'input2' })}</label>
           <input
             type="password"
             name="username"
@@ -56,6 +58,7 @@ export default function Connection() {
             defaultValue=""
             placeholder="Entrer le mot de passe"
             className="form-control-7v3"
+            dir={direction} 
           />
         </div>
         <div className="mb-aic flex items-center"> 
@@ -65,8 +68,9 @@ export default function Connection() {
         name="remember-me"
         className="form-checkbox h-5 w-5 text-primary-600 mr-2"
         style={{ marginRight:'-200px',width:"40px" }}
+        dir={direction} 
     />
-    <label htmlFor="remember-me" className="text-sm text-gray-600" style={{ marginLeft:"200px",width:"150px" }}>
+    <label dir={direction}  htmlFor="remember-me" className="text-sm text-gray-600" style={{ marginLeft:"200px",width:"150px" }}>
     {intl.formatMessage({ id: 'Remember me' })}
     </label>
 </div>
@@ -80,7 +84,7 @@ export default function Connection() {
             <iframe className="style-BhTIz" id="style-BhTIz"></iframe>
           </div>
           <div className="footer-zwx">
-            <button type="submit" className="btn-rz3 btn-primary-3wk" style={{ width:"150px" }}>
+            <button type="submit" className="btn-rz3 btn-primary-3wk" style={{ width:"150px" }} dir={direction} >
             {intl.formatMessage({ id: 'buttonconnecter' })}
             </button>
         </div>
