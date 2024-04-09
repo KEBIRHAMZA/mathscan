@@ -36,7 +36,7 @@ export default function Inscription() {
           id="_to-own"
         />
         <div className="mb-aic">
-          <label className="label-zp1">{intl.formatMessage({ id: 'inputIn1' })}</label>
+          <label dir={direction} className="label-zp1">{intl.formatMessage({ id: 'inputIn1' })}</label>
           <input
             type="text"
             name="username"
@@ -44,10 +44,11 @@ export default function Inscription() {
             defaultValue=""
             placeholder="Votre nom d'utilisateur"
             className="form-control-7v3"
+            dir={direction}
           />
         </div>
         <div className="mb-aic">
-          <label className="label-zp1">{intl.formatMessage({ id: 'inputIn2' })}</label>
+          <label dir={direction} className="label-zp1">{intl.formatMessage({ id: 'inputIn2' })}</label>
           <input
             type="text"
             name="username"
@@ -55,10 +56,11 @@ export default function Inscription() {
             defaultValue=""
             placeholder="Votre Prénom"
             className="form-control-7v3"
+            dir={direction}
           />
         </div>
         <div className="mb-aic">
-          <label className="label-zp1">{intl.formatMessage({ id: 'inputIn3' })}</label>
+          <label dir={direction} className="label-zp1">{intl.formatMessage({ id: 'inputIn3' })}</label>
           <input
             type="text"
             name="username"
@@ -66,10 +68,11 @@ export default function Inscription() {
             defaultValue=""
             placeholder="Votre Nom"
             className="form-control-7v3"
+            dir={direction}
           />
         </div>
         <div className="mb-aic">
-          <label className="label-zp1">{intl.formatMessage({ id: 'inputIn4' })}</label>
+          <label dir={direction} className="label-zp1">{intl.formatMessage({ id: 'inputIn4' })}</label>
           <input
             type="text"
             name="username"
@@ -77,25 +80,27 @@ export default function Inscription() {
             defaultValue=""
             placeholder="Entrer Email Address"
             className="form-control-7v3"
+            dir={direction}
           />
         </div>
         <div className="mb-aic">
-            <label htmlFor="Genre" className="label-zp1">
+            <label dir={direction} htmlFor="Genre" className="label-zp1">
             {intl.formatMessage({ id: 'inputIn5' })}
             </label>
-            <select className="my-inscription select-wm7" name="sex" id="xltmd">
+            <select dir={direction} className="my-inscription select-wm7" name="sex" id="xltmd">
                 <option value="m">{intl.formatMessage({ id: 'genre1' })}</option>
                 <option value="f">{intl.formatMessage({ id: 'genre2' })}</option>
             </select>
         </div>
         <div className="mb-aic">
-            <label htmlFor="Niveau Scolaire" className="label-zp1">
+            <label dir={direction} htmlFor="Niveau Scolaire" className="label-zp1">
             {intl.formatMessage({ id: 'inputIn6' })}
             </label>
             <select
                 className="my-inscription select-wm7"
                 name="education_system_select"
                 id="edu-ro1"
+                dir={direction}
             >
                 <optgroup label='Programm: Système marocain'>
                 <option value="1+6">{intl.formatMessage({ id: 'niveau1' })}</option>
@@ -113,7 +118,7 @@ export default function Inscription() {
             </select>
         </div>
         <div className="mb-aic">
-          <label className="label-zp1">{intl.formatMessage({ id: 'inputIn7' })}</label>
+          <label dir={direction} className="label-zp1">{intl.formatMessage({ id: 'inputIn7' })}</label>
           <input
             type="password"
             name="username"
@@ -121,10 +126,11 @@ export default function Inscription() {
             defaultValue=""
             placeholder="Entrer le mot de passe"
             className="form-control-7v3"
+            dir={direction}
           />
         </div>
         <div className="mb-aic">
-          <label className="label-zp1">{intl.formatMessage({ id: 'inputIn8' })}</label>
+          <label dir={direction} className="label-zp1">{intl.formatMessage({ id: 'inputIn8' })}</label>
           <input
             type="password"
             name="username"
@@ -132,6 +138,7 @@ export default function Inscription() {
             defaultValue=""
             placeholder="Confirmer le Mot de passe"
             className="form-control-7v3"
+            dir={direction}
           />
         </div>
         {/* Other form elements */}
