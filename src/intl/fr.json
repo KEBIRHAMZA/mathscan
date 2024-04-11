@@ -135,15 +135,15 @@
     "titleProce" : "Nos plans tarifaires",
 
     "price1" : "90 Dhs",
-    "compaireprice1" : "100 Dhs",
+    "compaireprice1" : "110 Dhs",
     "duration1" : "un mois",
 
     "price2" : "390 Dhs",
-    "compaireprice2" : "400 Dhs",
+    "compaireprice2" : "540 Dhs",
     "duration2" : "six mois",
 
     "price3" : "590 Dhs",
-    "compaireprice3" : "600 Dhs",
+    "compaireprice3" : "900 Dhs",
     "duration3" : "un an",
 
     "buttonPrice" : "Choisir",
