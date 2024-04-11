@@ -15,6 +15,7 @@ export default function Astuces() {
   const direction = locale === 'ar' ? 'ltr' : 'rtl';
   const entidirection = locale === 'ar' ? 'rtl' : 'ltr';
 
+  //des styles selon la langue
   React.useEffect(() => {
     locale === 'ar' ? setMargin({marginRight : "-70px"}) : setMargin({marginLeft : "10px"});
     locale === 'ar' ? setmarginsection({ marginTop: "-10px", marginBottom: "-100px",marginLeft:"90px",width:"1400px"}) : setmarginsection({ marginTop: "-10px", marginBottom: "-100px",marginLeft:"-100px"});

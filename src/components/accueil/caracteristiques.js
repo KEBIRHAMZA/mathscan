@@ -15,6 +15,7 @@ export default function Caracteristiques() {
   const locale = intl.locale;
   const direction = locale === 'ar' ? 'rtl' : 'ltr';
 
+  //des styles Selon la langue
   React.useEffect(() => {
     setAdditionalClass(locale === 'ar' ? "large-screen-carc" : "");
     setStyle(locale === 'ar' ? "container-arabe-caracter" : "container-caracteristiques-etranger");
@@ -90,7 +91,7 @@ export default function Caracteristiques() {
   );
 }
 
-
+//le composant qui represente chaque Carte
 function DynamicComponent({ iconUrl, showen, hiden }) {
   const intl = useIntl();
   const locale = intl.locale;

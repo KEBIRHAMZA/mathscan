@@ -13,6 +13,7 @@ export default function Ecole() {
   const locale = intl.locale;
   const direction = locale === 'ar' ? 'rtl' : 'ltr';
 
+  //le style selon la langue
   React.useEffect(() => {
     locale === 'ar' ? setMargin({marginRight : "10%"}) : setMargin({});
   }, [direction]);
@@ -23,20 +24,20 @@ export default function Ecole() {
         <div style={margin} className="lg:w-1/2 flex flex-col justify-center items-center lg:items-start lg:justify-start">
 
           {/* Hero title 1 */}
-          <h1 dir={direction} style={{color: "#FF64B1", marginBottom: "20px" }} className='titre-one'>
+          <h1 dir={direction} style={locale=="ar" ? {color: "#FF64B1", marginBottom: "20px",fontSize:"60px" } :{color: "#FF64B1", marginBottom: "20px" }} className='titre-one'>
             {intl.formatMessage({ id: "schoolSectionTitle" })}
           </h1>
 
           {/* Hero Paragraph */}
-          <p dir={direction} className='titre-two-school'>
+          <p dir={direction} className='titre-two-school' style={locale=="ar" ? { fontSize:"45px" } :{}}>
             {intl.formatMessage({ id: "schoolSectionSubtitle" })} <span style={{ color: '#FF64B1' }}>{intl.formatMessage({ id: "schoolSectionHours" })}</span> {intl.formatMessage({ id: "schoolSectionSubtitlePart2" })}
           </p>
 
           {/* Les niveaux */}
-          <p dir={direction} className='text-school'>
+          <p dir={direction} className='text-school' style={locale=="ar" ? { fontSize:"25px" } :{}}>
             {intl.formatMessage({ id: "schoolSectionDescription1" })}
           </p>
-          <p dir={direction} className='text-school'>
+          <p dir={direction} className='text-school' style={locale=="ar" ? { fontSize:"25px" } :{}}>
             {intl.formatMessage({ id: "schoolSectionDescription2" })}
           </p>
 
@@ -50,7 +51,7 @@ export default function Ecole() {
         </div>
 
         {/* L'image de Hero */}
-        <div className="lg:w-1/2 lg:pl-12 mt-8 lg:mt-0 flex justify-center">
+        <div className="lg:w-1/2 lg:pl-12 mt-8 lg:mt-0 flex justify-center" style={locale=="ar" ? { marginRight:"100px" } :{}}>
           <StaticImage
             src="../../images/accueil-images/for-schools.png"
             alt="Hero image"

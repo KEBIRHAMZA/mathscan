@@ -8,6 +8,7 @@ export default function Footer() {
 
   const intl = useIntl();
   const locale = intl.locale;
+  //changement de langue
   const direction = locale === 'ar' ? 'rtl' : 'ltr';
 
   return (
@@ -15,6 +16,7 @@ export default function Footer() {
     <div dir={direction} className="mx-auto max-w-screen-xl">
       <div className="content-container md:flex md:justify-between">
         <div className="mb-6 md:mb-0">
+          {/* le Logo de mathscan */}
           <Link style={locale=="ar" ?{ marginLeft:"200px" }:{}} to="/" className="flex items-center">
                   <StaticImage
                       src="../../images/accueil-images/new-logo-light.png"
@@ -33,9 +35,10 @@ export default function Footer() {
             </h2>
             <ul className="dark:text-gray-400">
               <li>
+                {/* l'icone de l'adresse */}
                   <StaticImage
                       src="../../images/accueil-images/footer-icons/icon-map.png"
-                      alt="Flowbite Logo"
+                      alt="adress"
                       style={{ 
                           width: "24px"
                       }}
@@ -43,9 +46,10 @@ export default function Footer() {
                 {intl.formatMessage({ id: 'address' })}
               </li>
               <li>
+                {/* l'icone de l'email */}
                   <StaticImage
                       src="../../images/accueil-images/footer-icons/icon-mail.png"
-                      alt="Flowbite Logo"
+                      alt="email"
                       style={{ 
                           width: "24px"
                       }}
@@ -53,9 +57,10 @@ export default function Footer() {
                   contact@mathscan.net
               </li>
               <li>
+                {/* l'icone de telephone */}
                   <StaticImage
                       src="../../images/accueil-images/footer-icons/icon-phone.png"
-                      alt="Flowbite Logo"
+                      alt="Logo"
                       style={{ 
                           width: "24px"
                       }}
@@ -63,6 +68,7 @@ export default function Footer() {
                   {intl.formatMessage({ id: 'tel1' })}
               </li>
               <li>
+                {/* l'icone de telephone */}
                   <StaticImage
                       src="../../images/accueil-images/footer-icons/icons-whatsapp.png"
                       alt="Flowbite Logo"
@@ -74,6 +80,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
+          {/* les liens UTILES*/}
           <div style={{ marginRight:"200px",width:"300px" }} class='liens-footer'>
             <h2 className="titres-footer mb-6 text-sm font-semibold uppercase dark:text-white">
             {intl.formatMessage({ id: 'lienUtiles' })}
@@ -112,6 +119,7 @@ export default function Footer() {
         </div>
       </div>
     </div>
+    {/* le copyright avec les icons des reseaux sociaux */}
     <div className="top-footer sm:flex sm:items-center sm:justify-between">
         <span className="copyright text-sm sm:text-center dark:text-gray-400">
           Copyright © 2022 Mathscan
