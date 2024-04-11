@@ -46,7 +46,7 @@ export default function Hero() {
 
                         {/* la button d'inscription */}
                         <div className="text-center">
-                            <Link to='/inscription' className="hero-button text-white py-2 px-4 border rounded inline-block mt-4">
+                            <Link to='/inscription' style={{ backgroundColor:'#57bef9' }} className="hero-button text-white py-2 px-4 border rounded inline-block mt-4">
                                 {intl.formatMessage({ id: "createAccountButton" })}
                             </Link>
                         </div>

@@ -95,12 +95,16 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <Link to="/connection" className="text-white hero-button hover:bg-blue-400 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
-                {intl.formatMessage({ id: "signIn" })}
-              </Link>
+            <Link 
+              to="/connection" 
+              className="text-blue-500 font-bold underline focus:underline focus:ring-4 focus:ring-blue-300 rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:text-blue-300 dark:hover:text-blue-400 focus:outline-none dark:focus:ring-blue-800"
+              style={{ fontSize: "20px", color: "#57bef9", fontWeight: "600" }}
+            >
+              {intl.formatMessage({ id: "signIn" })}
+            </Link>
             </li>
             <li>
-              <Link to='/inscription' className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+              <Link to='/inscription' style={{ marginTop:'-2px' }} className="hero-button text-white py-2 px-4 border rounded inline-block mt-4">
                 {intl.formatMessage({ id: "createAccount" })}
               </Link>
             </li>

@@ -104,6 +104,9 @@ id="style-ftIj6"
 {intl.formatMessage({ id: 'lientBesoin' })} <Link to="/inscription">{intl.formatMessage({ id: 'lientCreer' })}</Link>
 </p>
 </div>
+<select>
+  <option value=""></option>
+</select>
 
             <div className="relative h-64 w-full sm:h-96 lg:h-full lg:w-1/2">
                 <StaticImage

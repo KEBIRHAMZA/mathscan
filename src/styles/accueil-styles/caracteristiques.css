@@ -90,6 +90,7 @@ span {
     width: 300px;
     margin-left: 250px;
     height: 300px;
+    background-color: rgb(247, 247, 247);
 }
 
 .card{
@@ -98,6 +99,10 @@ span {
 
 .cards:hover .hidden-content{
     display: block;
+    
+}
+.color-hidden{
+    color:#57bef9
 }
 
 .cards:hover .shoen-content{
