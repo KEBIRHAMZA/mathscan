@@ -111,7 +111,7 @@ export default function Navbar({page}) {
             </Link>
             </li>
             <li>
-            <Link to='/inscription' style={{ marginTop:'-2px' }} className="hero-button text-center text-white py-2 px-4 border rounded inline-block mt-4">
+            <Link to='/inscription' style={{ marginTop:'-2px',backgroundColor: "#57bef9" }} className="hero-button text-center text-white py-2 px-4 border rounded inline-block mt-4">
                 {intl.formatMessage({ id: "createAccount" })}
               </Link>
             </li>

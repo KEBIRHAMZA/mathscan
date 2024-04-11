@@ -34,7 +34,7 @@ const Partner = () => {
             </div>
           ))}
         </div>
-        <Link to='/inscription' className="hero-button text-white py-2 px-4 border rounded inline-block mt-4">
+        <Link to='/inscription' className="hero-button text-white py-2 px-4 border rounded inline-block mt-4" style={{ backgroundColor: "#57bef9" }}>
                                 {intl.formatMessage({ id: "createAccountButton" })}
                             </Link>
       </section>

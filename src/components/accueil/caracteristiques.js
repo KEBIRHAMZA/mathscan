@@ -43,8 +43,8 @@ export default function Caracteristiques() {
           <p className='titre-three' style={locale=="ar" ? { fontSize:"25px" } :{}}>{intl.formatMessage({ id: "progress" })}</p><br/>
 
           {/* La button d'inscription */}
-          <div className={`${locale == "ar" ? `flex justify-center sm:justify-end text-center` : `flex justify-center text-center`} `}>
-              <Link to='/inscription' className="hero-button text-white py-2 px-4 border rounded inline-block mt-4">
+          <div className={`${locale == "ar" ? `flex justify-center sm:justify-end text-center` : `flex justify-center text-center`} `} >
+              <Link to='/inscription' className="hero-button text-white py-2 px-4 border rounded inline-block mt-4" style={{ backgroundColor: "#57bef9" }}>
                   {intl.formatMessage({ id: "createAccountButton" })}
               </Link>
             </div>

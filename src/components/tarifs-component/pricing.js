@@ -33,7 +33,7 @@ export default function Pricing() {
                     <span className="text-4xl text-gray-400">{intl.formatMessage({ id: 'duration1' })}</span>
                   </div>
                   <div className="text-center">
-                    <Link to='/inscription' className="hero-button py-2.5 px-5 bg-indigo-50 shadow-sm rounded-full transition-all duration-500 text-base text-white font-semibold text-center w-fit mx-auto group-hover:bg-blue-200 group-hover:text-blue-500">
+                    <Link to='/inscription' className="hero-button py-2.5 px-5 bg-indigo-50 shadow-sm rounded-full transition-all duration-500 text-base text-white font-semibold text-center w-fit mx-auto group-hover:bg-blue-900 group-hover:text-white" style={{ backgroundColor: "#57bef9" }}>
                         {intl.formatMessage({ id: "buttonPrice" })}
                     </Link>
                   </div>
@@ -50,7 +50,7 @@ export default function Pricing() {
                     <span className="text-4xl text-gray-400">{intl.formatMessage({ id: 'duration2' })}</span>
                   </div>
                   <div className="text-center">
-                    <Link to='/inscription' className="hero-button py-2.5 px-5 bg-indigo-50 shadow-sm rounded-full transition-all duration-500 text-base text-white font-semibold text-center w-fit mx-auto group-hover:bg-blue-200 group-hover:text-blue-500">
+                    <Link to='/inscription' className="hero-button py-2.5 px-5 bg-indigo-50 shadow-sm rounded-full transition-all duration-500 text-base text-white font-semibold text-center w-fit mx-auto group-hover:bg-blue-200 group-hover:text-WHITE" style={{ backgroundColor: "#57bef9" }}>
                         {intl.formatMessage({ id: "buttonPrice" })}
                     </Link>
                   </div>
@@ -67,7 +67,7 @@ export default function Pricing() {
                     <span className="text-4xl text-gray-400">{intl.formatMessage({ id: 'duration3' })}</span>
                   </div>
                   <div className="text-center">
-                    <Link to='/inscription' className="hero-button py-2.5 px-5 bg-indigo-50 shadow-sm rounded-full transition-all duration-500 text-base text-white font-semibold text-center w-fit mx-auto group-hover:bg-blue-200 group-hover:text-blue-500">
+                    <Link to='/inscription' className="hero-button py-2.5 px-5 bg-indigo-50 shadow-sm rounded-full transition-all duration-500 text-base text-white font-semibold text-center w-fit mx-auto group-hover:bg-blue-200 group-hover:text-white" style={{ backgroundColor: "#57bef9" }}>
                         {intl.formatMessage({ id: "buttonPrice" })}
                     </Link>
                   </div>

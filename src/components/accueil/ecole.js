@@ -45,6 +45,7 @@ export default function Ecole() {
           <Link
             to="/"
             className="flex justify-center btn-school"
+            style={{ backgroundColor: "#57bef9" }}
           >
             {intl.formatMessage({ id: "schoolSectionButton" })}
           </Link>
