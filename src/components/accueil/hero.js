@@ -14,7 +14,7 @@ export default function Hero() {
     const direction = locale === 'ar' ? 'rtl' : 'ltr';
 
     React.useEffect(() => {
-        locale === 'ar' ? setMargin({marginRight : ""}) : setMargin({});
+        locale === 'ar' ? setMargin({marginRight : "20px"}) : setMargin({});
     }, [direction]);
 
     return (
