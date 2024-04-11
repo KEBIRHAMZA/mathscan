@@ -42,7 +42,7 @@ export default function Formules() {
         </div>
 
         {/* L'image de Hero */}
-        <div className="images-container-pricing"style={{ marginRight:"-30px" }}>
+        <div className="images-container-pricing"style={{ marginLeft:"400px" }}>
                  <StaticImage
                      src="../../images/tarifs-images/pricing-cover.png"
                      alt=""
