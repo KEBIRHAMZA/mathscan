@@ -14,7 +14,7 @@ import Temoignagevideo from "../components/accueil/temoignagevideo"
 
 export default function Parents() {
   return (
-    <Layout>
+    <Layout page="parents">
       <Exceller/>
       <Cardsparent/>
       <Temoignagevideo/>

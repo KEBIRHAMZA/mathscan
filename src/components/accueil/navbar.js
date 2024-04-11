@@ -3,9 +3,10 @@ import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import { useIntl, changeLocale } from 'gatsby-plugin-intl'; 
 
-export default function Navbar() {
+export default function Navbar({page}) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [margin,setMargin] = useState({})
+  const [pageActuelle,setPage] = useState()
 
   const intl = useIntl();
 
@@ -19,6 +20,10 @@ export default function Navbar() {
   const handleLanguageChange = (language) => {
     changeLocale(language); 
   };
+
+  useEffect(() => {
+    setPage(page)
+  }, [page]);
 
   useEffect(() => {
     setMargin(intl.locale === 'ar' ? { 
@@ -67,20 +72,21 @@ export default function Navbar() {
         >
           <ul className="font-medium flex flex-col items-center md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
-              <Link
-                to="/"
-                activeClassName="active"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                style={margin}
-              >
-                {intl.formatMessage({ id: "home" })}
-              </Link>
+            <Link
+  to="/"
+  activeClassName="active"
+  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+  style={pageActuelle === "accueil" ? { color: "#57bef9", borderBottom: "2px solid #57bef9", ...margin } : { ...margin }}
+>
+  {intl.formatMessage({ id: "home" })}
+</Link>
             </li>
             <li>
               <Link
                 to="/parents/"
                 activeClassName="active"
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+  style={pageActuelle === "parents" ? { color: "#57bef9", borderBottom: "2px solid #57bef9", ...margin } : { ...margin }}
               >
                 {intl.formatMessage({ id: "parents" })}
               </Link>
@@ -90,6 +96,7 @@ export default function Navbar() {
                 to="/tarifs/"
                 activeClassName="active"
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+  style={pageActuelle === "pricing" ? { color: "#57bef9", borderBottom: "2px solid #57bef9", ...margin } : { ...margin }}
               >
                 {intl.formatMessage({ id: "pricing" })}
               </Link>
@@ -104,7 +111,7 @@ export default function Navbar() {
             </Link>
             </li>
             <li>
-              <Link to='/inscription' style={{ marginTop:'-2px' }} className="hero-button text-white py-2 px-4 border rounded inline-block mt-4">
+            <Link to='/inscription' style={{ marginTop:'-2px' }} className="hero-button text-white py-2 px-4 border rounded inline-block mt-4">
                 {intl.formatMessage({ id: "createAccount" })}
               </Link>
             </li>

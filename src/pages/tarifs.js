@@ -11,7 +11,7 @@ import Media from '../components/accueil/media'
 
 export default function Tarifs() {
   return (
-    <Layout>
+    <Layout page='pricing'>
         <Formules/>
         <Pricing/>
         <Partner/>

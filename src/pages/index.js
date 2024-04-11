@@ -15,7 +15,7 @@ import Temoignagevideo from "../components/accueil/temoignagevideo"
 
 
 const IndexPage = () => (
-  <Layout>
+  <Layout  page='accueil'>
     <Hero/>
     <Statistique/>
     <Caracteristiques/>
