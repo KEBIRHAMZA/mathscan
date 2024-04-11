@@ -21,7 +21,7 @@ export default function Caracteristiques() {
   }, [direction]);
 
   return (
-    <div dir={direction} className={`${arabeStyle} ${additionalClass} grid gap-2 grid-cols-2`}>
+    <div dir={direction} style={{ marginRight:'80px' }} className={`${arabeStyle} ${additionalClass} grid gap-2 grid-cols-2`}>
 
       {/* Le text de cette composant */}
       <div className="text-container">
