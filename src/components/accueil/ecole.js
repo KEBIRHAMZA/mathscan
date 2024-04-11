@@ -15,7 +15,7 @@ export default function Ecole() {
 
   //le style selon la langue
   React.useEffect(() => {
-    locale === 'ar' ? setMargin({marginRight : "10%"}) : setMargin({});
+    locale === 'ar' ? setMargin({}) : setMargin({});
   }, [direction]);
 
   return (
@@ -51,7 +51,7 @@ export default function Ecole() {
         </div>
 
         {/* L'image de Hero */}
-        <div className="lg:w-1/2 lg:pl-12 mt-8 lg:mt-0 flex justify-center" style={locale=="ar" ? { marginRight:"100px" } :{}}>
+        <div className="lg:w-1/2 lg:pl-12 mt-8 lg:mt-0 flex justify-center" style={locale=="ar" ? { marginRight:"150px" } :{}}>
           <StaticImage
             src="../../images/accueil-images/for-schools.png"
             alt="Hero image"

@@ -15,7 +15,7 @@ export default function Formules() {
     const direction = locale === 'ar' ? 'rtl' : 'ltr';
 
     React.useEffect(() => {
-        locale === 'ar' ? setMargin({marginRight : "300px", marginTop: "50px", marginBottom: "-100px"}) : setMargin({marginLeft : "250px"});
+        locale === 'ar' ? setMargin({marginRight : "300px", marginTop: "50px", marginBottom: "-100px"}) : setMargin({marginLeft : "px"});
     }, [direction]);
 
   return (
@@ -42,7 +42,7 @@ export default function Formules() {
         </div>
 
         {/* L'image de Hero */}
-        <div className="images-container-pricing">
+        <div className="images-container-pricing"style={{ marginRight:"-30px" }}>
                  <StaticImage
                      src="../../images/tarifs-images/pricing-cover.png"
                      alt=""
