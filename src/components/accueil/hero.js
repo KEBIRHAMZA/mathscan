@@ -14,7 +14,7 @@ export default function Hero() {
     const direction = locale === 'ar' ? 'rtl' : 'ltr';
 
     React.useEffect(() => {
-        locale === 'ar' ? setMargin({marginRight : "10%"}) : setMargin({});
+        locale === 'ar' ? setMargin({marginRight : ""}) : setMargin({});
     }, [direction]);
 
     return (
@@ -24,17 +24,17 @@ export default function Hero() {
                     <div style={margin} className="lg:w-1/2">
 
                         {/* Hero title 1 */}
-                        <h1 className="titre-hero text-3xl md:text-4xl xl:text-5xl font-extrabold tracking-tight leading-tight md:leading-tight dark:text-white">
+                        <h1 className="titre-hero text-3xl md:text-4xl xl:text-5xl font-extrabold tracking-tight leading-tight md:leading-tight dark:text-white" style={locale=="ar" ? { fontSize:"55px",width:"600px" } :{}}>
                             {intl.formatMessage({ id: "heroTitle" })}
                         </h1>
 
                         {/* Hero Paragraph */}
-                        <p className="desc-hero max-w-xl mt-4 text-base md:text-lg lg:text-xl font-light text-gray-500 md:mb-6 lg:mb-8 dark:text-gray-400">
+                        <p className="desc-hero max-w-xl mt-4 text-base md:text-lg lg:text-xl font-light text-gray-500 md:mb-6 lg:mb-8 dark:text-gray-400" style={locale=="ar" ? { fontSize:"23px" } :{}}>
                             {intl.formatMessage({ id: "heroDescription" })}
                         </p>
 
                         {/* Les niveaux */}
-                        <p className="max-w-xl mb-6 text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"> 
+                        <p className="max-w-xl mb-6 text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400" style={locale=="ar" ? { fontSize:"23px" } :{}}> 
                             <span className='span-niveau' style={{ color: '#f1bf5b' }}>
                                 {intl.formatMessage({ id: "primary" })}    
                             </span> - <span className='span-niveau' style={{ color: '#f4876a' }}>
@@ -57,6 +57,7 @@ export default function Hero() {
                         <StaticImage
                             src="../../images/accueil-images/header.png"
                             alt="Hero image"
+                            style={locale=="ar" ? { width:"600px" } :{}}
                         />
                     </div>
                 </div>

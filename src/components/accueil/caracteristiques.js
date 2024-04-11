@@ -30,16 +30,16 @@ export default function Caracteristiques() {
         <div>
 
           {/* Le premier titre */}
-          <p className='titre-one'>{intl.formatMessage({ id: "title" })}</p> <br />
+          <p className='titre-one' style={locale=="ar" ? { fontSize:"60px" } :{}}>{intl.formatMessage({ id: "title" })}</p> <br />
 
           {/* Le dexieme titre */}
-          <p className='titre-two'>
+          <p className='titre-two' style={locale=="ar" ? { fontSize:"45px" } :{}}>
             {intl.formatMessage({ id: "improvementOne" })} <span>30%</span> {intl.formatMessage({ id: "to" })} <span>40%</span> {intl.formatMessage({ id: "improvementTwo" })}
           </p> 
           <br />
 
           {/* paragraph de cette composant */}
-          <p className='titre-three'>{intl.formatMessage({ id: "progress" })}</p><br/>
+          <p className='titre-three' style={locale=="ar" ? { fontSize:"25px" } :{}}>{intl.formatMessage({ id: "progress" })}</p><br/>
 
           {/* La button d'inscription */}
           <div className={`${locale == "ar" ? `flex justify-center sm:justify-end text-center` : `flex justify-center text-center`} `}>
@@ -98,7 +98,7 @@ function DynamicComponent({ iconUrl, showen, hiden }) {
     <div className="cards group relative cursor-pointer overflow-hidden px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10" style={{ width:"350px" }}>
       <span className="absolute top-10 z-0 h-20 w-20 rounded-full transition-all duration-300 group-hover:scale-[15]"></span>
       <div className="relative z-10 mx-auto max-w-md">
-        <span style={{ marginLeft:'93px' }} className="grid h-20 w-20 place-items-center rounded-full bg-gray-500 transition-all duration-300 group-hover:bg-gray-500">
+        <span style={locale == "ar" ? {marginRight:"90px"} : {marginLeft:'93px' }} className="grid h-20 w-20 place-items-center rounded-full bg-gray-500 transition-all duration-300 group-hover:bg-gray-500">
           {iconUrl}
         </span>
         <div className="space-y-6 pt-5 text-base leading-7 text-gray-600 transition-all duration-300 group-hover:text-white/90">
