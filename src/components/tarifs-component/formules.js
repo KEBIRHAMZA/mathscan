@@ -15,7 +15,7 @@ export default function Formules() {
     const direction = locale === 'ar' ? 'rtl' : 'ltr';
 
     React.useEffect(() => {
-        locale === 'ar' ? setMargin({marginRight : "300px", marginTop: "50px", marginBottom: "-100px"}) : setMargin({marginLeft : "px"});
+        locale === 'ar' ? setMargin({marginRight : "50px", marginTop: "50px", marginBottom: "-100px"}) : setMargin({marginLeft : "px"});
     }, [direction]);
 
   return (
@@ -24,12 +24,12 @@ export default function Formules() {
         <div className="lg:w-1/2 flex flex-col justify-center items-center lg:items-start lg:justify-start">
 
             {/* Hero title 1 */}
-            <p className='titre-two-astuces'>
+            <p className='titre-two-astuces' style={locale=="ar" ?{ width:"500px" } :{  }}>
             {intl.formatMessage({ id: 'titrformule' })} <span>{intl.formatMessage({ id: 'spanformule' })}</span>
             </p>
 
             {/* Hero Paragraph */}
-            <p className='text-astuces'>
+            <p className='text-astuces' style={locale=="ar" ?{ width:"500px" } :{  }}>
             {intl.formatMessage({ id: 'textformule' })}
             </p>
 
@@ -42,7 +42,7 @@ export default function Formules() {
         </div>
 
         {/* L'image de Hero */}
-        <div className="images-container-pricing"style={{ marginLeft:"400px" }}>
+        <div className="images-container-pricing" style={locale=="ar" ?{ marginRight:"400px" } :{ marginLeft:"400px" }} >
                  <StaticImage
                      src="../../images/tarifs-images/pricing-cover.png"
                      alt=""
