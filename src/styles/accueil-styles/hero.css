@@ -15,6 +15,11 @@
     width: 340px;
   }
 }
+@media (max-width: 700px) {
+  .hero_image_ar{
+    width: 400px;
+  }
+}
 
 
 .titre-hero{
