@@ -8,6 +8,7 @@ export default function Hero() {
     const intl = useIntl(); 
 
     const [margin,setMargin] = React.useState({})
+    const [titleStyle,setTitleStyle] = React.useState({})
 
     // Changer la direction du composant quand la langue est l'arabe
     const locale = intl.locale;
@@ -15,6 +16,7 @@ export default function Hero() {
 
     React.useEffect(() => {
         locale === 'ar' ? setMargin({marginRight : "20px"}) : setMargin({});
+        locale === 'ar' ? setTitleStyle("hero_size_ar hero_size_ar") : setTitleStyle({});
     }, [direction]);
 
     return (
@@ -24,7 +26,7 @@ export default function Hero() {
                     <div style={margin} className="lg:w-1/2">
 
                         {/* Hero title 1 */}
-                        <h1 className="titre-hero text-3xl md:text-4xl xl:text-5xl font-extrabold tracking-tight leading-tight md:leading-tight dark:text-white" style={locale=="ar" ? { fontSize:"55px",width:"600px" } :{}}>
+                        <h1 className={`titre-hero text-3xl md:text-4xl xl:text-5xl font-extrabold tracking-tight leading-tight md:leading-tight dark:text-white ${locale == "ar" ? titleStyle : ''} `}>
                             {intl.formatMessage({ id: "heroTitle" })}
                         </h1>
 
@@ -57,7 +59,7 @@ export default function Hero() {
                         <StaticImage
                             src="../../images/accueil-images/header.png"
                             alt="Hero image"
-                            style={locale=="ar" ? { width:"600px" } :{}}
+                            className={`${locale=="ar"?'hero_image_ar':''}`}
                         />
                     </div>
                 </div>

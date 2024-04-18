@@ -1,8 +1,26 @@
+.hero_size_ar{
+  font-size: 55px;
+}
+
+.hero_width_ar{
+  width: 600px;
+}
+
+.hero_image_ar{
+  width: 600px;
+}
+
+@media (max-width: 600px) {
+  .hero_image_ar{
+    width: 340px;
+  }
+}
+
+
 .titre-hero{
     line-height: 1.2;
     font-weight: 600;
     color: #3E3E3E;
-    font-size : 48px
 }
 
 .hero-section{

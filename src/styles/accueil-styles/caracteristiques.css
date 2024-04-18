@@ -1,3 +1,7 @@
+.titre-two-size{
+    font-size: 45px;
+}
+
 .container-arabe-caracter{
     margin-right: auto;
     padding: 20px;
@@ -126,7 +130,7 @@ span {
     width: 47px;
 }
 
-.text-container{
+.text-container-caracteristiques{
     width: 1500px;
 }
 
@@ -143,10 +147,23 @@ span {
 }
 
 
+.titre-one-size{
+    font-size: 60px;
+}
+
+
 @media (max-width: 768px) { 
     .container-caracteristiques {
         flex-direction: column;
         margin: 50px auto;
+    }
+
+    .caracteristique_conatianer{
+        display: block;
+    }
+
+    .text-container{
+        width: 500px;
     }
 
     .cards-position {
@@ -159,6 +176,12 @@ span {
 
     .card {
         width: auto; 
+    }
+    .titre-one{
+        font-size: 40px;
+    }
+    .titre-two-size{
+        font-size: 25px;
     }
 }
 
@@ -178,6 +201,10 @@ span {
         line-height: 50px;
     }
 
+    .text-container-caracteristiques{
+        width: 300px;
+    }
+
     .titre-three{
         color: rgb(108, 117, 125);
         font-family: 'DM Sans', sans-serif;
@@ -187,7 +214,39 @@ span {
         width: 100%; 
         margin: 10px 0; 
     }
+    .titre-one{
+        font-size: 40px;
+    }
+    .titre-two-size{
+        font-size: 25px;
+    }
 }
+
+
+@media (max-width: 600px) { 
+    .text-container-caracteristiques{
+        width: 300px;
+    }
+    .titre-one{
+        font-size: 40px;
+    }
+    .titre-two-size{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1200px) { 
+    .text-container-caracteristiques{
+        width: 300px;
+    }
+    .titre-one{
+        font-size: 40px;
+    }
+    .titre-two-size{
+        font-size: 30px;
+    }
+}
+
 /* @media only screen and (max-width: 600px) {
     .container-caracteristiques {
         margin:auto; 

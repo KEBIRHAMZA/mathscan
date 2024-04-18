@@ -61,22 +61,11 @@ function Temoignages() {
               style={styleCard}
               className="flex justify-center items-start flex-col p-5 bg-white hover:shadow-indigo-300 hover:shadow-lg rounded-lg border relative"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={50}
-                height={50}
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                className="icon icon-tabler icon-tabler-quote rotate-180 text-sky-500"
-                viewBox="0 0 24 24"
-                style={{ color: "#f59e0b",marginBottom:"20px" }}
-              >
-                <path stroke="none" d="M0 0h24v24H0z" />
-                <path d="M10 11H6a1 1 0 01-1-1V7a1 1 0 011-1h3a1 1 0 011 1v6c0 2.667-1.333 4.333-4 5M19 11h-4a1 1 0 01-1-1V7a1 1 0 011-1h3a1 1 0 011 1v6c0 2.667-1.333 4.333-4 5"></path>
-              </svg>
+              <StaticImage
+                            src="../../images/accueil-images/temoignage_icone.png"
+                            alt="Hero image"
+                            style={{ width:"200px",marginBottom:"20px" }}
+                        />
               <div className="flex flex-col gap-2 flex-grow">
                 <p dir={direction} className="text-sm md:text-base">
                   {testimonial.content}

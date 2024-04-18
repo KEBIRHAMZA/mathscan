@@ -10,6 +10,9 @@ module.exports = {
         sans: ['Montserrat', 'sans-serif'],
         'readex-pro': ['"Readex Pro"', 'sans-serif'],
       },
+      width: {
+        '800': '1600px',
+      },
     },
   },
   plugins: [],

@@ -22,19 +22,15 @@ export default function Caracteristiques() {
   }, [direction]);
 
   return (
-    <div dir={direction} style={locale=="ar" ? { marginRight:'90px' } :{}} className={`${arabeStyle} ${additionalClass} grid gap-2 grid-cols-2`}>
+    <div dir={direction} style={locale=="ar" ? { marginRight:'90px' } :{}} className={`caracteristique_conatianer ${arabeStyle} ${additionalClass} grid gap-2 grid-cols-2`}>
 
       {/* Le text de cette composant */}
-      <div className="text-container">
-
-        {/* la description de cette composant */}
-        <div>
-
+      <div className="text-container-caracteristiques">
           {/* Le premier titre */}
-          <p className='titre-one' style={locale=="ar" ? { fontSize:"60px" } :{}}>{intl.formatMessage({ id: "title" })}</p> <br />
+          <p className={`titre-one ${locale == "ar" ? 'titre-one-size' : ''}`}>{intl.formatMessage({ id: "title" })}</p> <br />
 
           {/* Le dexieme titre */}
-          <p className='titre-two' style={locale=="ar" ? { fontSize:"45px" } :{}}>
+          <p className={`titre-two ${locale == "ar" ? 'titre-two-size' : ''}`}>
             {intl.formatMessage({ id: "improvementOne" })} <span>30%</span> {intl.formatMessage({ id: "to" })} <span>40%</span> {intl.formatMessage({ id: "improvementTwo" })}
           </p> 
           <br />
@@ -48,10 +44,6 @@ export default function Caracteristiques() {
                   {intl.formatMessage({ id: "createAccountButton" })}
               </Link>
             </div>
-
-        </div>
-
-
       </div>
 
       {/* Les cartes */}

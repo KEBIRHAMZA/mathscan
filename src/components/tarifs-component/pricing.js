@@ -23,23 +23,23 @@ export default function Pricing() {
             >
               <div className="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-8 lg:space-y-0">
                 {/*Pricing Card*/}
+                {/*Pricing Card*/}
                 <div className="group relative flex flex-col mx-auto w-full max-w-sm text-gray-900 rounded-2xl border border-solid border-gray-300 text-center transition-all duration-300 p-6 xl:p-15 hover:border-indigo-600">
                   <h3 className="font-manrope text-2xl font-bold mb-6"></h3>
                   <div className="mb-20 flex flex-col">
                     <span className="font-manrope text-4xl font-semibold mb-2">
-                      <span dir={direction}>{intl.formatMessage({ id: 'price1' })}</span>
-                      <span dir={direction} className="text-red-500 ml-2 line-through text-2xl">{intl.formatMessage({ id: 'compaireprice1' })}</span>
+                      <span dir={direction}>{intl.formatMessage({ id: 'price3' })}</span>
+                      <span dir={direction} className="text-red-500 ml-2 line-through text-2xl">{intl.formatMessage({ id: 'compaireprice3' })}</span>
                     </span>
-                    <span className="text-4xl text-gray-400">{intl.formatMessage({ id: 'duration1' })}</span>
+                    <span className="text-4xl text-gray-400">{intl.formatMessage({ id: 'duration3' })}</span>
                   </div>
                   <div className="text-center">
-                    <Link to='/inscription' className="hero-button py-2.5 px-5 bg-indigo-50 shadow-sm rounded-full transition-all duration-500 text-base text-white font-semibold text-center w-fit mx-auto group-hover:bg-blue-900 group-hover:text-white" style={{ backgroundColor: "#57bef9" }}>
+                    <Link to='/inscription' className="hero-button py-2.5 px-5 bg-indigo-50 shadow-sm rounded-full transition-all duration-500 text-base text-white font-semibold text-center w-fit mx-auto group-hover:bg-blue-200 group-hover:text-white" style={{ backgroundColor: "#57bef9" }}>
                         {intl.formatMessage({ id: "buttonPrice" })}
                     </Link>
                   </div>
                   {/*List End*/}
                 </div>
-                {/*Pricing Card*/}
                 <div className="group relative flex flex-col mx-auto w-full max-w-sm text-gray-900 rounded-2xl border border-solid border-gray-300 text-center transition-all duration-300 p-6 xl:p-15 hover:border-indigo-600">
                   <h3 className="font-manrope text-2xl font-bold mb-6"></h3>
                   <div className="mb-20 flex flex-col">
@@ -61,13 +61,13 @@ export default function Pricing() {
                   <h3 className="font-manrope text-2xl font-bold mb-6"></h3>
                   <div className="mb-20 flex flex-col">
                     <span className="font-manrope text-4xl font-semibold mb-2">
-                      <span dir={direction}>{intl.formatMessage({ id: 'price3' })}</span>
-                      <span dir={direction} className="text-red-500 ml-2 line-through text-2xl">{intl.formatMessage({ id: 'compaireprice3' })}</span>
+                      <span dir={direction}>{intl.formatMessage({ id: 'price1' })}</span>
+                      <span dir={direction} className="text-red-500 ml-2 line-through text-2xl">{intl.formatMessage({ id: 'compaireprice1' })}</span>
                     </span>
-                    <span className="text-4xl text-gray-400">{intl.formatMessage({ id: 'duration3' })}</span>
+                    <span className="text-4xl text-gray-400">{intl.formatMessage({ id: 'duration1' })}</span>
                   </div>
                   <div className="text-center">
-                    <Link to='/inscription' className="hero-button py-2.5 px-5 bg-indigo-50 shadow-sm rounded-full transition-all duration-500 text-base text-white font-semibold text-center w-fit mx-auto group-hover:bg-blue-200 group-hover:text-white" style={{ backgroundColor: "#57bef9" }}>
+                    <Link to='/inscription' className="hero-button py-2.5 px-5 bg-indigo-50 shadow-sm rounded-full transition-all duration-500 text-base text-white font-semibold text-center w-fit mx-auto group-hover:bg-blue-900 group-hover:text-white" style={{ backgroundColor: "#57bef9" }}>
                         {intl.formatMessage({ id: "buttonPrice" })}
                     </Link>
                   </div>
