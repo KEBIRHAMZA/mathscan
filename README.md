@@ -45,7 +45,7 @@ Pour démarrer avec ce projet Gatsby, assurez-vous d'avoir [Node.js](https://nod
 
 Pour personnaliser ou modifier le contenu textuel de l'application selon la langue, vous Recherchez ce que vous voulez modifier en copiant l'id comme illustre l'image.
 
-![rechercher](src/images/rechercher_proprieter.png.PNG)
+![rechercher](src/images/rechercher_proprieter.PNG)
 
 Aprés vous devez accéder aux fichiers JSON spécifiques à chaque langue. Voici les étapes à suivre pour chaque langue prise en charge par l'application :
 
