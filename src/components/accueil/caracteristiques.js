@@ -22,7 +22,7 @@ export default function Caracteristiques() {
   }, [direction]);
 
   return (
-    <div dir={direction} style={locale=="ar" ? { marginRight:'90px' } :{}} className={`caracteristique_conatianer ${arabeStyle} ${additionalClass} grid gap-2 grid-cols-2`}>
+    <div dir={direction} style={locale=="ar" ? { marginRight:'90px',marginBottom:"-500px" } :{}} className={`caracteristique_conatianer ${arabeStyle} ${additionalClass} grid gap-2 grid-cols-2`}>
 
       {/* Le text de cette composant */}
       <div className="text-container-caracteristiques">
