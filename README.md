@@ -43,12 +43,16 @@ Pour démarrer avec ce projet Gatsby, assurez-vous d'avoir [Node.js](https://nod
 
 ### Modification du contenu de l'application
 
-Pour personnaliser ou modifier le contenu textuel de l'application selon la langue, vous devez accéder aux fichiers JSON spécifiques à chaque langue. Voici les étapes à suivre pour chaque langue prise en charge par l'application :
+Pour personnaliser ou modifier le contenu textuel de l'application selon la langue, vous Recherchez ce que vous voulez modifier en copiant l'id comme illustre l'image.
+
+![rechercher](src/images/rechercher_proprieter.png.PNG)
+
+Aprés vous devez accéder aux fichiers JSON spécifiques à chaque langue. Voici les étapes à suivre pour chaque langue prise en charge par l'application :
 
 - **Arabe** : Naviguez vers `src/intl/ar.json` pour modifier le contenu en langue arabe.
 - **Français** : Pour ajuster le contenu en français, allez à `src/intl/fr.json`.
 - **Anglais** : Si vous souhaitez changer le texte en anglais, visitez `src/intl/en.json`.
 
-Une fois dans le fichier de langue approprié, vous pouvez localiser rapidement le texte spécifique à modifier en utilisant la fonction de recherche de votre éditeur de texte (généralement accessible via `Ctrl+F`). Recherchez le terme `component-{nom du composant}`, où `{nom du composant}` est le nom du composant dont vous souhaitez modifier le contenu.
+Une fois dans le fichier de langue approprié, vous pouvez localiser rapidement le texte spécifique à modifier en utilisant la fonction de recherche de votre éditeur de texte (généralement accessible via `Ctrl+F`).
 
-![Utiliser Ctrl+F pour rechercher](src/images/recherche.PNG)
+![Utiliser Ctrl+F pour rechercher](src/images/trouver.PNG)
