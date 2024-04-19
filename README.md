@@ -113,5 +113,4 @@ Aprés vous devez accéder aux fichiers JSON spécifiques à chaque langue. Voic
 
 Une fois dans le fichier de langue approprié, vous pouvez localiser rapidement le texte spécifique à modifier en utilisant la fonction de recherche de votre éditeur de texte (généralement accessible via `Ctrl+F`).
 
->>>>>>> origin/KEBIR
 ![Utiliser Ctrl+F pour rechercher](src/images/trouver.PNG)
