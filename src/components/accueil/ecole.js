@@ -29,7 +29,7 @@ export default function Ecole() {
           </h1>
 
           {/* Hero Paragraph */}
-          <p dir={direction} className='titre-two-school' style={locale=="ar" ? { fontSize:"45px" } :{}}>
+          <p dir={direction} className='titre-two-school'>
             {intl.formatMessage({ id: "schoolSectionSubtitle" })} <span style={{ color: '#FF64B1' }}>{intl.formatMessage({ id: "schoolSectionHours" })}</span> {intl.formatMessage({ id: "schoolSectionSubtitlePart2" })}
           </p>
 
@@ -52,7 +52,7 @@ export default function Ecole() {
         </div>
 
         {/* L'image de Hero */}
-        <div className="lg:w-1/2 lg:pl-12 mt-8 lg:mt-0 flex justify-center" style={locale=="ar" ? { marginRight:"150px" } :{}}>
+        <div className="lg:w-1/2 lg:pl-12 mt-8 lg:mt-0 flex justify-center">
           <StaticImage
             src="../../images/accueil-images/for-schools.png"
             alt="Hero image"

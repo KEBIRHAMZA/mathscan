@@ -76,3 +76,12 @@
     margin-right: 5px;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 768px) {
+    .video-silder-container-mb{
+        
+    width: 303px;
+    HEIGHT: 200px;
+    margin-top: 85px;
+    }
+}
