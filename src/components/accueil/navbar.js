@@ -104,7 +104,7 @@ export default function Navbar({page}) {
             <li>
             <Link 
               to="/connection" 
-              className="text-blue-500 font-bold underline focus:underline focus:ring-4 focus:ring-blue-300 rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:text-blue-300 dark:hover:text-blue-400 focus:outline-none dark:focus:ring-blue-800"
+              className="text-blue-500 font-bold focus:underline focus:ring-4 focus:ring-blue-300 rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:text-blue-300 dark:hover:text-blue-400 focus:outline-none dark:focus:ring-blue-800"
               style={{ fontSize: "20px", color: "#57bef9", fontWeight: "600" }}
             >
               {intl.formatMessage({ id: "signIn" })}

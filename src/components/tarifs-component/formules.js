@@ -33,12 +33,6 @@ export default function Formules() {
             {intl.formatMessage({ id: 'textformule' })}
             </p>
 
-            {/* la button d'inscription */}
-            <div className="text-center">
-                <Link to='/inscription' className="hero-button text-white py-2 px-4 border rounded inline-block mt-4" style={{ backgroundColor: "#57bef9" }}>
-                    {intl.formatMessage({ id: "createAccount" })}
-                </Link>
-            </div>
         </div>
 
         {/* L'image de Hero */}
