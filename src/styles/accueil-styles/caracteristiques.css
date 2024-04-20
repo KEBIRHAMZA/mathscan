@@ -2,6 +2,8 @@
     font-size: 45px;
 }
 
+
+
 .container-arabe-caracter{
     margin-right: auto;
     padding: 20px;
@@ -155,11 +157,19 @@ span {
 @media (max-width: 768px) { 
     .container-caracteristiques {
         flex-direction: column;
-        margin: 50px auto;
     }
 
     .caracteristique_conatianer{
         display: block;
+    }
+    .caracteristique_conatianer_auto{
+        margin: auto;
+    }
+    .cards-container-margin{
+        margin-right:-34px
+    }
+    .cards-container-margin-fr{
+        margin-left: -16px;
     }
 
     .text-container{

@@ -25,7 +25,7 @@ export default function Caracteristiques() {
 
 
   return (
-    <div dir={direction} style={locale=="ar" ? { marginRight:'90px',marginBottom:"50px" } :{}} className={`caracteristique_conatianer ${arabeStyle} ${additionalClass} ${hidden} grid gap-2 grid-cols-2`}>
+    <div dir={direction} style={locale=="ar" ? { marginRight:'90px',marginBottom:"50px" } :{}} className={`caracteristique_conatianer ${arabeStyle} ${additionalClass} ${hidden} ${locale=='ar' ? '':'caracteristique_conatianer_auto'} grid gap-2 grid-cols-2`}>
 
       {/* Le text de cette composant */}
       <div className="text-container-caracteristiques">
@@ -50,7 +50,7 @@ export default function Caracteristiques() {
       </div>
 
       {/* Les cartes */}
-      <div className='cards-container'>
+      <div className={`cards-container ${locale==="ar" ? 'cards-container-margin':'cards-container-margin-fr'}`}>
         <div className="grid gap-4 grid-cols-2 cards-position">
           <div className="card" >
             <DynamicComponent
