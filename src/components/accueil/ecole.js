@@ -19,7 +19,7 @@ export default function Ecole() {
   }, [direction]);
 
   return (
-    <section dir={direction} style={{ marginTop: "550px",marginBottom:"-80px"}} className="container-for-school bg-white dark:bg-gray-900">
+    <section dir={direction} style={{marginBottom:"-80px"}} className="container-for-school bg-white dark:bg-gray-900">
       <div className="max-w-screen-xl px-4 py-8 mx-auto lg:py-16 flex flex-col items-center lg:flex-row">
         <div style={margin} className="lg:w-1/2 flex flex-col justify-center items-center lg:items-start lg:justify-start">
 

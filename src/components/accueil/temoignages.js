@@ -33,14 +33,14 @@ function Temoignages() {
       title: intl.formatMessage({ id: 'testimonialRole1' }),
       content: intl.formatMessage({ id: 'testimonialOneContent1' }),
       imageSrc: "../../images/accueil-images/default-avatar.jpg",
-      margin: locale === 'ar' ? { marginTop: '10px' } : { marginTop: '28px' }
+      margin: locale === 'ar' ? { marginTop: '10px' } : { marginTop: '45px' }
     },
     {
       name: intl.formatMessage({ id: 'testimonialOneName2' }),
       title: intl.formatMessage({ id: 'testimonialRole2' }),
       content: intl.formatMessage({ id: 'testimonialOneContent2' }),
       imageSrc: "../../images/accueil-images/default-avatar.jpg",
-      margin: locale === 'ar' ? { marginTop: '35px' } : { marginTop: '100px' }
+      margin: locale === 'ar' ? { marginTop: '60px' } : { marginTop: '100px' }
     },
     {
       name: intl.formatMessage({ id: 'testimonialOneName3' }),
@@ -56,7 +56,7 @@ function Temoignages() {
       <h2 className="text-4xl font-bold my-6"></h2>
       <div className="flex flex-wrap justify-center">
         {testimonials.map((testimonial, index) => (
-          <div key={index} className="flex flex-col flex-grow w-full md:w-1/2 lg:w-1/3 px-2 mb-4" style={{ width:"400px" }}>
+          <div key={index} className="flex flex-col flex-grow w-full md:w-1/2 lg:w-1/3 px-2 mb-4" style={{ width:"460px" }}>
             <div
               style={styleCard}
               className="flex justify-center items-start flex-col p-5 bg-white hover:shadow-indigo-300 hover:shadow-lg rounded-lg border relative"
@@ -78,7 +78,7 @@ function Temoignages() {
                   />
                   <div>
                     <h3 className="text-base font-semibold">{testimonial.name}</h3>
-                    <p className="text-xs">{testimonial.title}</p>
+                    <p style={{ color:"#f98c06" }} className="text-xs">{testimonial.title}</p>
                   </div>
                 </div>
               </div>

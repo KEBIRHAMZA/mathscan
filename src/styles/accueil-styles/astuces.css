@@ -1,4 +1,6 @@
-
+.astuces_image{
+    width: 1600px;
+}
 .conatiner-for-astuces{
     margin: 0 auto; /* Centers the container */
     padding-top: 30px;
