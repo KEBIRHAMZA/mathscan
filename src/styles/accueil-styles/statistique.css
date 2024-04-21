@@ -67,23 +67,27 @@
 }
 
 .statistics-content{
-    margin-right: 80px;
+    margin-left: 50px;
 }
 
 .first{
     margin-top: 20px;
 }
 
+.cantainer-two-margin{
+    margin-right: 80px;
+}
+
 
 @media only screen and (max-width: 600px){
     .container-statistique {
         height: 380px;
-        width: 300px;
+        width: 280px;
         margin-left: auto;
         margin-right: auto;
     }
     .statistics-content{
-        margin: auto;
+        margin-left: 30px;
     }
     .first{
         margin-top: 35px;
@@ -101,21 +105,18 @@
         font-size: 16px;
         margin-left: -45px;
         margin-top: -10px;
-    }
-    .image-container-certificate,.image-container-student,.image-container-teacher{
-        margin-right: 40%;
     }
 }
 
 @media only screen and (max-width: 600px){
     .container-statistique {
         height: 380px;
-        width: 300px;
+        width: 280px;
         margin-left: auto;
         margin-right: auto;
     }
     .statistics-content{
-        margin: auto;
+        margin-left: 30px;
     }
     .first{
         margin-top: 35px;
@@ -134,26 +135,32 @@
         margin-left: -45px;
         margin-top: -10px;
     }
-    .image-container-certificate{
-        width: 20px;
+    .cantainer-two-margin{
+        margin-right: 30px;
     }
-    .image-container-certificate,.image-container-student,.image-container-teacher{
-        margin-right: 40%;
+    .text-margin-cara{
+        margin-left: 4px;
+    }
+    .container-sat-fr{
+        height: 420px;
+        width: 320px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
 @media only screen and (min-width: 768px){
     .container-statistique {
         height: 380px;
-        width: 300px;
+        width: 280px;
         margin-left: auto;
         margin-right: auto;
     }
+    .statistics-content{
+        margin-left: 30px;
+    }
     .first{
         margin-top: 35px;
-    }
-    .statistics-content{
-        margin: auto;
     }
     .container-statistique .number {
         font-weight: bold;
@@ -168,24 +175,18 @@
         font-size: 16px;
         margin-left: -45px;
         margin-top: -10px;
-    }
-    .image-container-certificate{
-        width: 20px;
-    }
-    .image-container-certificate,.image-container-student,.image-container-teacher{
-        margin-right: 40%;
     }
 }
 
 @media only screen and (min-width: 992px){
     .container-statistique {
-        height: 130px;
-        width: 900px;
+        height: 380px;
+        width: 280px;
         margin-left: auto;
         margin-right: auto;
     }
     .statistics-content{
-        margin: auto;
+        margin-left: 30px;
     }
     .first{
         margin-top: 35px;
@@ -204,13 +205,10 @@
         margin-left: -45px;
         margin-top: -10px;
     }
-    .image-container-certificate{
-        width: 20px;
-    }
-    .image-container-certificate,.image-container-student,.image-container-teacher{
-        margin-right: 40%;
-    }
+   
 }
+
+
 
 
 @media only screen and (min-width: 1200px) {
@@ -223,7 +221,7 @@
         border-radius: 60px 60px 0 0;
     }
     .statistics-content{
-        margin: auto;
+        margin-left: 50px;
     }
     .first{
         margin-top: 20px;
@@ -241,9 +239,6 @@
         font-size: 16px;
         margin-left: -45px;
         margin-top: -10px;
-    }
-    .statistics-content{
-        margin-right: 80px;
     }
 }
 
