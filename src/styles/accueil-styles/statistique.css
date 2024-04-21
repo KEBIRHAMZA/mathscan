@@ -67,7 +67,7 @@
 }
 
 .statistics-content{
-    margin-left: 50px;
+    margin-right: 80px;
 }
 
 .first{
@@ -78,12 +78,12 @@
 @media only screen and (max-width: 600px){
     .container-statistique {
         height: 380px;
-        width: 370px;
+        width: 300px;
         margin-left: auto;
         margin-right: auto;
     }
     .statistics-content{
-        margin-left: 30px;
+        margin: auto;
     }
     .first{
         margin-top: 35px;
@@ -101,18 +101,21 @@
         font-size: 16px;
         margin-left: -45px;
         margin-top: -10px;
+    }
+    .image-container-certificate,.image-container-student,.image-container-teacher{
+        margin-right: 40%;
     }
 }
 
 @media only screen and (max-width: 600px){
     .container-statistique {
         height: 380px;
-        width: 370px;
+        width: 300px;
         margin-left: auto;
         margin-right: auto;
     }
     .statistics-content{
-        margin-left: 30px;
+        margin: auto;
     }
     .first{
         margin-top: 35px;
@@ -130,21 +133,27 @@
         font-size: 16px;
         margin-left: -45px;
         margin-top: -10px;
+    }
+    .image-container-certificate{
+        width: 20px;
+    }
+    .image-container-certificate,.image-container-student,.image-container-teacher{
+        margin-right: 40%;
     }
 }
 
 @media only screen and (min-width: 768px){
     .container-statistique {
         height: 380px;
-        width: 370px;
+        width: 300px;
         margin-left: auto;
         margin-right: auto;
     }
-    .statistics-content{
-        margin-left: 30px;
-    }
     .first{
         margin-top: 35px;
+    }
+    .statistics-content{
+        margin: auto;
     }
     .container-statistique .number {
         font-weight: bold;
@@ -159,6 +168,12 @@
         font-size: 16px;
         margin-left: -45px;
         margin-top: -10px;
+    }
+    .image-container-certificate{
+        width: 20px;
+    }
+    .image-container-certificate,.image-container-student,.image-container-teacher{
+        margin-right: 40%;
     }
 }
 
@@ -170,7 +185,7 @@
         margin-right: auto;
     }
     .statistics-content{
-        margin-left: 30px;
+        margin: auto;
     }
     .first{
         margin-top: 35px;
@@ -188,6 +203,12 @@
         font-size: 16px;
         margin-left: -45px;
         margin-top: -10px;
+    }
+    .image-container-certificate{
+        width: 20px;
+    }
+    .image-container-certificate,.image-container-student,.image-container-teacher{
+        margin-right: 40%;
     }
 }
 
@@ -202,7 +223,7 @@
         border-radius: 60px 60px 0 0;
     }
     .statistics-content{
-        margin-left: 50px;
+        margin: auto;
     }
     .first{
         margin-top: 20px;
@@ -220,6 +241,9 @@
         font-size: 16px;
         margin-left: -45px;
         margin-top: -10px;
+    }
+    .statistics-content{
+        margin-right: 80px;
     }
 }
 

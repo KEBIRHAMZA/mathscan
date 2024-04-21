@@ -11,14 +11,11 @@ export default function Statistique() {
     const locale = intl.locale;
     const direction = locale === 'ar' ? 'rtl' : 'ltr';
 
-    const [margin,setMargin] = useState()
-    useEffect(() => {
-        locale === 'ar' ? setMargin({marginRight:"80px"}) : setMargin({})
-    }, [locale]);
+    
 
     return (
-        <div dir={direction} className='container-statistique'>
-            <div style={margin} className="statistics-content grid grid-cols-1 lg:grid-cols-3 gap-3">
+        <div dir={direction} className='container-statistique' style={{ margin:"auto" }}>
+            <div className="statistics-content grid grid-cols-1 lg:grid-cols-3 gap-3">
                 <div className="lg:col-span-1 first">
 
                     {/* Exercices et problèmes mathématiques ludiques */}

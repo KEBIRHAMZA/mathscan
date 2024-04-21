@@ -54,7 +54,8 @@
     }
 
     .titre-two-astuces, .text-astuces {
-        text-align: center; /* Centers text on smaller screens */
+        text-align: center;
+        font-size: 20px; /* Centers text on smaller screens */
     }
 
     .image-for-astuces {
@@ -65,5 +66,9 @@
 @media only screen and (max-width: 600px) {
     .titre-two-astuces {
         font-size: 1.75rem; /* Adjusts font size for smaller screens */
+    }
+    .titre-two-astuces, .text-astuces {
+        text-align: center;
+        font-size: 20px; /* Centers text on smaller screens */
     }
 }

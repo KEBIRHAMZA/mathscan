@@ -17,13 +17,13 @@ export default function Astuces() {
 
   //des styles selon la langue
   React.useEffect(() => {
-    locale === 'ar' ? setMargin({marginRight : "-70px"}) : setMargin({marginLeft : "10px"});
+    locale === 'ar' ? setMargin({margin : "auto"}) : setMargin({margin : "auto"});
     locale === 'ar' ? setmarginsection({ margin:"auto"}) : setmarginsection({ margin:"auto"});
   }, [direction]);
   
   
   return (
-    <section dir={direction} style={marginsection} className="bg-white dark:bg-gray-900 astuce-section">
+    <section dir={direction} style={marginsection} className="bg-white dark:bg-gray-900 astuce-section" >
       <div className="max-w-screen-xl px-4 py-8 mx-auto lg:py-16 flex flex-col items-center lg:flex-row">
         <div dir={entidirection} style={margin} className="lg:w-1/2 flex flex-col justify-center items-center lg:items-start lg:justify-start">
 
