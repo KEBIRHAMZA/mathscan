@@ -77,6 +77,10 @@
     cursor: pointer;
 }
 
+.tem_cards_cont{
+    margin-top: -100px;
+}
+
 @media only screen and (max-width: 768px) {
     .video-silder-container-mb{
         
@@ -84,4 +88,12 @@
     HEIGHT: 200px;
     margin-top: 85px;
     }
+    .slider-card{
+        margin: 2px;
+    }
+    .tem_cards_cont{
+        margin-top: -200px;
+    }
+    
 }
+

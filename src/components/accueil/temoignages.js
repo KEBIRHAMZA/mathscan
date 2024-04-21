@@ -52,11 +52,11 @@ function Temoignages() {
   ];
 
   return (
-    <div className="flex flex-col items-center" style={{ marginTop: '-100px' }}>
+    <div className="flex flex-col items-center tem_cards_cont" >
       <h2 className="text-4xl font-bold my-6"></h2>
       <div className="flex flex-wrap justify-center">
         {testimonials.map((testimonial, index) => (
-          <div key={index} className="flex flex-col flex-grow w-full md:w-1/2 lg:w-1/3 px-2 mb-4" style={{ width:"460px" }}>
+          <div key={index} className="flex flex-col flex-grow w-full md:w-1/2 lg:w-460 px-2 mb-4 card_tem_mb">
             <div
               style={styleCard}
               className="flex justify-center items-start flex-col p-5 bg-white hover:shadow-indigo-300 hover:shadow-lg rounded-lg border relative"
