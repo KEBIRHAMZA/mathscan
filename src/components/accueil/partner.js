@@ -23,7 +23,7 @@ const Partner = () => {
   return (
     <div className="container-partner my-24 mx-auto md:px-6">
       <section className="mb-32 text-center">
-        <h2 style={{ fontSize:"36px",color:"#3E3E3E",marginBottom:"-10px" }} className="mb-16 text-3xl font-bold">
+        <h2 className="mb-16 text-3xl font-bold partener-title">
           {intl.formatMessage({ id: 'partnersSectionTitle' })}
         </h2>
 

@@ -17,3 +17,21 @@
     box-sizing: border-box;
     margin-top: 50px;
 }
+
+/* {{ fontSize:"36px",color:"#3E3E3E",marginBottom:"-10px" }} */
+.partener-title{
+    font-size: 36px;
+    color: #3E3E3E;
+    margin-bottom: -10px;
+}
+.container-partner{
+    margin-top: -20px;
+}
+
+@media (max-width: 600px){
+    .partener-title{
+        font-size: 25px;
+        color: #3E3E3E;
+        margin-bottom: 40px;
+    }
+}
