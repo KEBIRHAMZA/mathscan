@@ -28,13 +28,13 @@ export default function Footer() {
           {intl.formatMessage({ id: 'textfooter' })}
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-2">
-          <div style={locale == "ar" ?{ marginRight:"100px",height:"50px",width:"300px" }:{}} class='contacter'>
+        <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-2 info-container" >
+          <div className="contacter">
             <h2 className="titres-footer mb-6 text-sm font-semibold uppercase dark:text-white">
             {intl.formatMessage({ id: 'contacter' })}
             </h2>
             <ul className="dark:text-gray-400">
-              <li>
+              <li className='adresse'>
                 {/* l'icone de l'adresse */}
                   <StaticImage
                       src="../../images/accueil-images/footer-icons/icon-map.png"
@@ -81,7 +81,7 @@ export default function Footer() {
             </ul>
           </div>
           {/* les liens UTILES*/}
-          <div style={{ marginRight:"200px",width:"300px" }} class='liens-footer'>
+          <div class='liens-footer'>
             <h2 className="titres-footer mb-6 text-sm font-semibold uppercase dark:text-white">
             {intl.formatMessage({ id: 'lienUtiles' })}
             </h2>
