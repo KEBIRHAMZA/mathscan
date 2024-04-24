@@ -89,11 +89,13 @@
     margin-top: 85px;
     }
     .slider-card{
-        margin: 2px;
+        margin-left: 3px;
     }
-    .tem_cards_cont{
-        margin-top: -200px;
+    #slider{
+        margin-left:6px;
     }
-    
+    .titre-video{
+        margin-bottom: -50px;
+    }
 }
 

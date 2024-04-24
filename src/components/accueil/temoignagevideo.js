@@ -20,7 +20,7 @@ const ReactCardSlider =(props)=>{
     return(
         <>
         <div className="flex justify-center" style={{ marginTop:"150px",marginBottom:"50px" }}>
-            <h1 className='text-5xl font-bold'>{ intl.formatMessage({ id: 'titleTestimonials' }) }</h1>
+            <h1 className='text-5xl font-bold titre-video'>{ intl.formatMessage({ id: 'titleTestimonials' }) }</h1>
         </div>
         <div id="main-slider-container" style={{ margin:'auto' }}>
             <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev onClick={slideRight}>
