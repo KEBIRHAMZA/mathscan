@@ -1,3 +1,9 @@
+.image-inscription-fr{
+    width: 100px;
+    margin-left: 200px;
+    margin-bottom: 70px;
+}
+
 body.my-inscription {  
     font-family:var(--bs-body-font-family);
     font-size:var(--bs-body-font-size);
@@ -161,6 +167,8 @@ body.my-inscription {
 
 .my-inscription img { 
     vertical-align: middle;
+    width: 300px;
+    margin: auto;
 } 
 
 .my-inscription .form-goa-inscription .logo-odi  { 
@@ -387,4 +395,18 @@ body.my-inscription {
 }  
 #style-BhTIz.style-BhTIz {  
    display: none;  
+}
+.connexion-qst{
+    margin-left: 200px;
+    width: 400px;
+}
+
+@media only screen and (max-width: 600px) {
+    .question-inscription{
+        font-size: 15px;
+    }
+    .connexion-qst{
+        margin-left: 2%;
+        width: 300px;
+    }
 }

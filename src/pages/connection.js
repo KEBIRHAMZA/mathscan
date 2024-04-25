@@ -30,8 +30,6 @@ id="style-ftIj6"
   <img
     src="https://mathscan.net/img/new-logo.png"
     width={100}
-    style={{ width:"300px",marginLeft:"200px",marginBottom:"70px" }}
-    className="logo-odi"
   />
 </a>
 </p>
@@ -100,7 +98,7 @@ id="style-ftIj6"
   </form>
 </div>
 </div>
-<p className="my-5xe" style={{ marginLeft:'200px',width:"400px" }}>
+<p className="my-5xe question-inscription connexion-qst">
 {intl.formatMessage({ id: 'lientBesoin' })} <Link to="/inscription">{intl.formatMessage({ id: 'lientCreer' })}</Link>
 </p>
 </div>

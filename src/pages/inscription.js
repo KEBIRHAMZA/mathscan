@@ -21,8 +21,6 @@ export default function Inscription() {
       <img
         src="https://mathscan.net/img/new-logo.png"
         width={100}
-        style={{ width:"300px",marginLeft:"200px",marginBottom:"70px" }}
-        className="logo-odi"
       />
     </a>
   </p>
@@ -144,7 +142,7 @@ export default function Inscription() {
         {/* Other form elements */}
         <hr />
         <div className="footer-zwx">
-          <p className="my-5xe">
+          <p className="my-5xe question-inscription">
           {intl.formatMessage({ id: 'question' })}
             <a href="https://mathscan.net/login">{intl.formatMessage({ id: 'lienInscription' })}</a>
           </p>
@@ -167,7 +165,7 @@ export default function Inscription() {
             <iframe className="style-BhTIz" id="style-BhTIz"></iframe>
           </div>
           <div className="footer-zwx">
-            <p className="my-5xe">
+            <p className="my-5xe question-inscription">
             {intl.formatMessage({ id: 'question' })} <Link to="/connection">{intl.formatMessage({ id: 'lienInscription' })}</Link>
             </p>
             <button type="submit" className="btn-rz3 btn-primary-3wk">
