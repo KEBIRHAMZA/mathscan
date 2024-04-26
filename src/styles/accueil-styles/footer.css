@@ -35,8 +35,15 @@ li{
     margin-left: 150px;
 }
 
+.contacter-ar{
+}
+
+
 .liens-footer{
     margin-left: 150px;
+}
+.liens-footer-ar{
+    margin-right: 150px;
 }
 
 .top-footer{
@@ -65,23 +72,31 @@ li{
         width: 100%;
     }
 
-    .logo-footer, .social-media-icons {
+    .social-media-icons {
         width: 50%; 
         max-width: 100px; 
     }
+    .logo-footer{
+        width: 200px;
+        margin: auto;
+    }
 
-    .text-desc, .contacter, .liens-footer {
+    .text-desc, .contacter, .liens-footer,.liens-footer-ar ,.contacter-ar{
         font-size: 15px; 
         margin: 10px 0; 
         width: auto; 
         text-align: center; 
     }
+    
 
-    .content-container, .contacter, .liens-footer {
+    .content-container, .contacter, .liens-footer ,.liens-footer-ar,.contacter-ar{
         margin-left: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .liens-footer,.liens-footer-ar{
+        margin-top: 80px;
     }
 
     .top-footer, .social-media {

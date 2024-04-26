@@ -2,6 +2,11 @@
 
 .images-pricing{
     width: 250px;
+    margin-right: -300px;
+}
+.images-pricing-ar{
+    width: 250px;
+    margin-right: 300px;
 }
 
 .images-container-pricing{
@@ -65,6 +70,12 @@
         margin-top: -80px;
         width: 86px;
     }
+
+    .images-pricing,.images-pricing-ar{
+        margin-right: 0px;
+    }
+
+    
 
     .text-tarifs{
         width: 250px;

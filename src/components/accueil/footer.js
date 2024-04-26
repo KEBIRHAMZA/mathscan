@@ -17,7 +17,7 @@ export default function Footer() {
       <div className="content-container md:flex md:justify-between">
         <div className="mb-6 md:mb-0">
           {/* le Logo de mathscan */}
-          <Link style={locale=="ar" ?{ marginLeft:"200px" }:{}} to="/" className="flex items-center">
+          <Link to="/" className="flex items-center">
                   <StaticImage
                       src="../../images/accueil-images/new-logo-light.png"
                       alt="Mathscan Logo"
@@ -29,7 +29,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-2 info-container" >
-          <div className="contacter">
+          <div className={`${locale=="ar" ? 'contacter-ar':'contacter'}`}>
             <h2 className="titres-footer mb-6 text-sm font-semibold uppercase dark:text-white">
             {intl.formatMessage({ id: 'contacter' })}
             </h2>
@@ -81,7 +81,7 @@ export default function Footer() {
             </ul>
           </div>
           {/* les liens UTILES*/}
-          <div class='liens-footer'>
+          <div className={`${locale=="ar" ? 'liens-footer-ar':'liens-footer'}`}>
             <h2 className="titres-footer mb-6 text-sm font-semibold uppercase dark:text-white">
             {intl.formatMessage({ id: 'lienUtiles' })}
             </h2>
