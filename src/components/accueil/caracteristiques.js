@@ -21,28 +21,28 @@ export default function Caracteristiques() {
     setAdditionalClass(locale === 'ar' ? "large-screen-carc" : "");
     setStyle(locale === 'ar' ? "container-arabe-caracter" : "container-caracteristiques-etranger");
     setHidden('')
-  }, [direction]);
+  }, [locale]);
 
 
   return (
-    <div dir={direction} style={locale=="ar" ? { marginRight:'90px',marginBottom:"50px" } :{}} className={`caracteristique_conatianer ${arabeStyle} ${additionalClass} ${hidden} ${locale=='ar' ? '':'caracteristique_conatianer_auto'} grid gap-2 grid-cols-2`}>
+    <div dir={direction} style={locale==="ar" ? { marginRight:'90px',marginBottom:"50px" } :{}} className={`caracteristique_conatianer ${arabeStyle} ${additionalClass} ${hidden} ${locale==='ar' ? '':'caracteristique_conatianer_auto'} grid gap-2 grid-cols-2`}>
 
       {/* Le text de cette composant */}
       <div className="text-container-caracteristiques">
           {/* Le premier titre */}
-          <p className={`titre-one ${locale == "ar" ? 'titre-one-size' : ''}`}>{intl.formatMessage({ id: "title" })}</p> <br />
+          <p className={`titre-one ${locale === "ar" ? 'titre-one-size' : ''}`}>{intl.formatMessage({ id: "title" })}</p> <br />
 
           {/* Le dexieme titre */}
-          <p className={`titre-two ${locale == "ar" ? 'titre-two-size' : ''}`}>
+          <p className={`titre-two ${locale === "ar" ? 'titre-two-size' : ''}`}>
             {intl.formatMessage({ id: "improvementOne" })} <span>30%</span> {intl.formatMessage({ id: "to" })} <span>40%</span> {intl.formatMessage({ id: "improvementTwo" })}
           </p> 
           <br />
 
           {/* paragraph de cette composant */}
-          <p className='titre-three' style={locale=="ar" ? { fontSize:"25px" } :{}}>{intl.formatMessage({ id: "progress" })}</p><br/>
+          <p className='titre-three' style={locale==="ar" ? { fontSize:"25px" } :{}}>{intl.formatMessage({ id: "progress" })}</p><br/>
 
           {/* La button d'inscription */}
-          <div className={`${locale == "ar" ? `flex justify-center sm:justify-end text-center` : `flex justify-center text-center`} `} >
+          <div className={`${locale === "ar" ? `flex justify-center sm:justify-end text-center` : `flex justify-center text-center`} `} >
               <Link to='/inscription' className="hero-button text-white py-2 px-4 border rounded inline-block mt-4" style={{ backgroundColor: "#57bef9" }}>
                   {intl.formatMessage({ id: "createAccountButton" })}
               </Link>
@@ -94,15 +94,15 @@ function DynamicComponent({ iconUrl, showen, hiden }) {
     <div className="cards group relative cursor-pointer overflow-hidden px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10" style={{ width:"350px" }}>
       <span className="absolute top-10 z-0 h-20 w-20 rounded-full transition-all duration-300 group-hover:scale-[15]"></span>
       <div className="relative z-10 mx-auto max-w-md">
-        <span style={locale == "ar" ? {marginRight:"90px"} : {marginLeft:'93px' }} className="grid h-20 w-20 place-items-center rounded-full bg-gray-500 transition-all duration-300 group-hover:bg-gray-500">
+        <span style={locale === "ar" ? {marginRight:"90px"} : {marginLeft:'93px' }} className="grid h-20 w-20 place-items-center rounded-full bg-gray-500 transition-all duration-300 group-hover:bg-gray-500">
           {iconUrl}
         </span>
         <div className="space-y-6 pt-5 text-base leading-7 text-gray-600 transition-all duration-300 group-hover:text-white/90">
           {/* Styling the first 'showen' */}
           <p className='shoen-content text-lg text-center'>{showen}</p>
           {/* Styling the second 'showen' as a title */}
-          <p className='hidden-content color-hidden text-center font-bold' style={locale == "ar" ? { fontSize : "25px" }:{fontSize : "25px",width:"250px",marginLeft:"10px"}}>{showen}</p>
-          <p className="hidden-content text-center" style={locale == "ar" ? { fontSize : "20px" }:{}}>{hiden}</p> 
+          <p className='hidden-content color-hidden text-center font-bold' style={locale === "ar" ? { fontSize : "25px" }:{fontSize : "25px",width:"250px",marginLeft:"10px"}}>{showen}</p>
+          <p className="hidden-content text-center" style={locale === "ar" ? { fontSize : "20px" }:{}}>{hiden}</p> 
         </div>
         {/* Blue band at the bottom */}
       </div>

@@ -9,9 +9,6 @@ export default function Exceller() {
 
   const intl = useIntl(); 
 
-  const [margin,setMargin] = React.useState({})
-  const [marginsection,setmarginsection] = React.useState({});
-
   // Change the direction of the component when the language is Arabic
   const locale = intl.locale;
   const direction = locale === 'ar' ? 'rtl' : 'ltr';
@@ -19,7 +16,7 @@ export default function Exceller() {
   return (
     <section dir={direction} className={`bg-white dark:bg-gray-900 ${locale==="ar" ? 'arabe-style-exceller':'fr-style-exceller'}`}>
       <div className="max-w-screen-xl px-4 py-8 mx-auto lg:py-16 flex flex-col items-center lg:flex-row">
-        <div style={margin} className={`lg:w-1/2 flex flex-col justify-center items-center lg:items-start lg:justify-start exceller-text ${locale==="ar" ? 'arabe-margin-exceller':'fr-margin-exceller'}`}>
+        <div className={`lg:w-1/2 flex flex-col justify-center items-center lg:items-start lg:justify-start exceller-text ${locale==="ar" ? 'arabe-margin-exceller':'fr-margin-exceller'}`}>
 
           {/* Hero title 1 */}
           <p className='titre-two-astuces'>

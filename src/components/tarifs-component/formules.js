@@ -2,7 +2,6 @@ import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import '../../styles/tarifs-styles/formules.css'
 import { useIntl } from 'gatsby-plugin-intl'; 
-import { Link } from 'gatsby';
 
 export default function Formules() {
 
@@ -35,7 +34,7 @@ export default function Formules() {
           <StaticImage
             src="../../images/tarifs-images/pricing-cover.png"
             alt="Hero image"
-            className={`${locale=="ar" ? 'images-pricing-ar':'images-pricing'}`}
+            className={`${locale==="ar" ? 'images-pricing-ar':'images-pricing'}`}
           />
         </div>
         </div>

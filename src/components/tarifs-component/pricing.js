@@ -25,7 +25,6 @@ export default function Pricing() {
                 {/*Pricing Card*/}
                 {/*Pricing Card*/}
                 <div className="group relative flex flex-col mx-auto w-full max-w-sm text-gray-900 rounded-2xl border border-solid border-gray-300 text-center transition-all duration-300 p-6 xl:p-15 hover:border-indigo-600">
-                  <h3 className="font-manrope text-2xl font-bold mb-6"></h3>
                   <div className="mb-20 flex flex-col">
                     <span className="font-manrope text-4xl font-semibold mb-2">
                       <span dir={direction}>{intl.formatMessage({ id: 'price3' })}</span>
@@ -41,7 +40,6 @@ export default function Pricing() {
                   {/*List End*/}
                 </div>
                 <div className="group relative flex flex-col mx-auto w-full max-w-sm text-gray-900 rounded-2xl border border-solid border-gray-300 text-center transition-all duration-300 p-6 xl:p-15 hover:border-indigo-600">
-                  <h3 className="font-manrope text-2xl font-bold mb-6"></h3>
                   <div className="mb-20 flex flex-col">
                     <span className="font-manrope text-4xl font-semibold mb-2">
                       <span dir={direction}>{intl.formatMessage({ id: 'price2' })}</span>
@@ -58,7 +56,6 @@ export default function Pricing() {
                 </div>
                 {/*Pricing Card*/}
                 <div className="group relative flex flex-col mx-auto w-full max-w-sm text-gray-900 rounded-2xl border border-solid border-gray-300 text-center transition-all duration-300 p-6 xl:p-15 hover:border-indigo-600">
-                  <h3 className="font-manrope text-2xl font-bold mb-6"></h3>
                   <div className="mb-20 flex flex-col">
                     <span className="font-manrope text-4xl font-semibold mb-2">
                       <span dir={direction}>{intl.formatMessage({ id: 'price1' })}</span>

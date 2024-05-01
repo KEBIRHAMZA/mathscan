@@ -29,7 +29,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-2 info-container" >
-          <div className={`${locale=="ar" ? 'contacter-ar':'contacter'}`}>
+          <div className={`${locale==="ar" ? 'contacter-ar':'contacter'}`}>
             <h2 className="titres-footer mb-6 text-sm font-semibold uppercase dark:text-white">
             {intl.formatMessage({ id: 'contacter' })}
             </h2>
@@ -81,7 +81,7 @@ export default function Footer() {
             </ul>
           </div>
           {/* les liens UTILES*/}
-          <div className={`${locale=="ar" ? 'liens-footer-ar':'liens-footer'}`}>
+          <div className={`${locale==="ar" ? 'liens-footer-ar':'liens-footer'}`}>
             <h2 className="titres-footer mb-6 text-sm font-semibold uppercase dark:text-white">
             {intl.formatMessage({ id: 'lienUtiles' })}
             </h2>
@@ -129,6 +129,7 @@ export default function Footer() {
             href="https://www.facebook.com/Mathscanner/"
             className="hover dark:hover:text-white"
             target='_blank'
+            rel="noopener noreferrer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -144,6 +145,7 @@ export default function Footer() {
           <a
             href="https://api.whatsapp.com/send/?phone=212623467615&text=Bonjour+%21+Je+suis+int%C3%A9ress%C3%A9+par+MATHSCAN+%21&type=phone_number&app_absent=0"
             target='_blank'
+            rel="noopener noreferrer"
             className="hover dark:hover:text-white"
           >
             <svg
@@ -158,7 +160,8 @@ export default function Footer() {
           </a>
           <a
             href="https://www.linkedin.com/company/mathscan"
-            target='blank'
+            target='_blank'
+            rel="noopener noreferrer"
             className="hover dark:hover:text-white"
           >
             <svg
@@ -174,6 +177,7 @@ export default function Footer() {
           <a
             href="https://www.instagram.com/math_scan"
             target="_blank"
+            rel="noopener noreferrer"
             className="hover dark:hover:text-white"
           >
             <svg
@@ -191,6 +195,7 @@ export default function Footer() {
           <a
             href="https://www.youtube.com/channel/UCCrA4JZvHOumvZhCveWihPg"
             target="_blank"
+            rel="noopener noreferrer"
             className="hover dark:hover:text-white"
           >
             <svg

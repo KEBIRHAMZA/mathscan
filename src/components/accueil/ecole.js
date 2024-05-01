@@ -16,7 +16,7 @@ export default function Ecole() {
   //le style selon la langue
   React.useEffect(() => {
     locale === 'ar' ? setMargin({}) : setMargin({});
-  }, [direction]);
+  }, [locale]);
 
   return (
     <section dir={direction} style={{marginBottom:"-80px"}} className="container-for-school bg-white dark:bg-gray-900">
@@ -24,7 +24,7 @@ export default function Ecole() {
         <div style={margin} className="lg:w-1/2 flex flex-col justify-center items-center lg:items-start lg:justify-start">
 
           {/* Hero title 1 */}
-          <h1 dir={direction} style={locale=="ar" ? {color: "#FF64B1", marginBottom: "20px",fontSize:"60px" } :{color: "#FF64B1", marginBottom: "20px" }} className='titre-one'>
+          <h1 dir={direction} style={locale==="ar" ? {color: "#FF64B1", marginBottom: "20px",fontSize:"60px" } :{color: "#FF64B1", marginBottom: "20px" }} className='titre-one'>
             {intl.formatMessage({ id: "schoolSectionTitle" })}
           </h1>
 
@@ -34,10 +34,10 @@ export default function Ecole() {
           </p>
 
           {/* Les niveaux */}
-          <p dir={direction} className='text-school' style={locale=="ar" ? { fontSize:"25px" } :{}}>
+          <p dir={direction} className='text-school' style={locale==="ar" ? { fontSize:"25px" } :{}}>
             {intl.formatMessage({ id: "schoolSectionDescription1" })}
           </p>
-          <p dir={direction} className='text-school' style={locale=="ar" ? { fontSize:"25px" } :{}}>
+          <p dir={direction} className='text-school' style={locale==="ar" ? { fontSize:"25px" } :{}}>
             {intl.formatMessage({ id: "schoolSectionDescription2" })}
           </p>
 

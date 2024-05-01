@@ -17,7 +17,7 @@ export default function Hero() {
     React.useEffect(() => {
         locale === 'ar' ? setMargin({marginRight : "20px"}) : setMargin({});
         locale === 'ar' ? setTitleStyle("hero_size_ar hero_size_ar") : setTitleStyle({});
-    }, [direction]);
+    }, [locale]);
 
     return (
         <section dir={direction} className="hero-section bg-white dark:bg-gray-900">
@@ -26,17 +26,17 @@ export default function Hero() {
                     <div style={margin} className="lg:w-1/2">
 
                         {/* Hero title 1 */}
-                        <h1 className={`titre-hero text-3xl md:text-4xl xl:text-5xl font-extrabold tracking-tight leading-tight md:leading-tight dark:text-white ${locale == "ar" ? titleStyle : ''} `}>
+                        <h1 className={`titre-hero text-3xl md:text-4xl xl:text-5xl font-extrabold tracking-tight leading-tight md:leading-tight dark:text-white ${locale === "ar" ? titleStyle : ''} `}>
                             {intl.formatMessage({ id: "heroTitle" })}
                         </h1>
 
                         {/* Hero Paragraph */}
-                        <p className="desc-hero max-w-xl mt-4 text-base md:text-lg lg:text-xl font-light text-gray-500 md:mb-6 lg:mb-8 dark:text-gray-400" style={locale=="ar" ? { fontSize:"23px" } :{}}>
+                        <p className="desc-hero max-w-xl mt-4 text-base md:text-lg lg:text-xl font-light text-gray-500 md:mb-6 lg:mb-8 dark:text-gray-400" style={locale==="ar" ? { fontSize:"23px" } :{}}>
                             {intl.formatMessage({ id: "heroDescription" })}
                         </p>
 
                         {/* Les niveaux */}
-                        <p className="max-w-xl mb-6 text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400" style={locale=="ar" ? { fontSize:"23px" } :{}}> 
+                        <p className="max-w-xl mb-6 text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400" style={locale==="ar" ? { fontSize:"23px" } :{}}> 
                             <span className='span-niveau' style={{ color: '#f1bf5b' }}>
                                 {intl.formatMessage({ id: "primary" })}    
                             </span> - <span className='span-niveau' style={{ color: '#f4876a' }}>
@@ -59,7 +59,7 @@ export default function Hero() {
                         <StaticImage
                             src="../../images/accueil-images/header.png"
                             alt="Hero image"
-                            className={`${locale=="ar"?'hero_image_ar':''}`}
+                            className={`${locale==="ar"?'hero_image_ar':''}`}
                         />
                     </div>
                 </div>

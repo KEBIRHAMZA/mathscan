@@ -29,7 +29,7 @@ export default function Navbar({page}) {
     setMargin(intl.locale === 'ar' ? { 
       marginLeft : "40px"
      } : {})
-  }, [direction]);
+  }, [intl.locale]);
 
   return (
     <nav dir={direction} className="bg-white border-gray-200 dark:bg-gray-900">
