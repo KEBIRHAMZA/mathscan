@@ -21,6 +21,7 @@ id="style-ftIj6"
     width={100}
     style={{ width:"300px",marginLeft:"200px",marginBottom:"70px" }}
     className="logo-odi"
+    alt="mathscan"
   />
 </a>
 </p>
@@ -78,7 +79,6 @@ id="style-ftIj6"
          
          
         </div>
-        <iframe className="style-BhTIz" id="style-BhTIz"></iframe>
       </div>
       <div className="footer-zwx">
         <button type="submit" className="btn-rz3 btn-primary-3wk" style={{ width:"150px" }} dir={direction} >

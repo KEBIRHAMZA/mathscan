@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Seo from "../components/seo";
 import { StaticImage } from 'gatsby-plugin-image';
 import { useIntl } from 'gatsby-plugin-intl';
@@ -21,6 +21,7 @@ export default function Inscription() {
       <img
         src="https://mathscan.net/img/new-logo.png"
         width={100}
+        alt='mathscan'
       />
     </a>
   </p>
@@ -150,6 +151,7 @@ export default function Inscription() {
             <div className="style-tIc5t" id="style-tIc5t">
               <div>
                 <iframe
+                  title="title1"
                   width={256}
                   height={60}
                   src="https://www.google.com/recaptcha/api2/anchor?ar=1&k=6Lf_-OEcAAAAAFWDHhC5rpaifU6wY-aqhxV8139r&co=aHR0cHM6Ly9tYXRoc2Nhbi5uZXQ6NDQz&hl=fr&v=rz4DvU-cY2JYCwHSTck0_qm-&size=invisible&sa=submit&cb=sgkxre29atu3"
@@ -162,7 +164,6 @@ export default function Inscription() {
                 defaultValue={"              "}
               />
             </div>
-            <iframe className="style-BhTIz" id="style-BhTIz"></iframe>
           </div>
           <div className="footer-zwx">
             <p className="my-5xe question-inscription">

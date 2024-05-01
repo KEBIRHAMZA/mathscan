@@ -15,9 +15,9 @@ export default function Connection() {
     const [stylelb,setstylelb] = useState({})
 
     useEffect(() => {
-        locale == 'ar' ? setstylein({ marginLeft:'440px',width:"40px" }) : setstylein({ marginRight:'-200px',width:"40px" })
-        locale == 'ar' ? setstylelb({ marginLeft:"-200px",width:"150px" }) : setstylelb({ marginLeft:"200px",width:"150px" })
-    }, [direction]);
+        locale === 'ar' ? setstylein({ marginLeft:'440px',width:"40px" }) : setstylein({ marginRight:'-200px',width:"40px" })
+        locale === 'ar' ? setstylelb({ marginLeft:"-200px",width:"150px" }) : setstylelb({ marginLeft:"200px",width:"150px" })
+    }, [locale]);
 
     return (
         <section style={{ marginBottom: "10%" }} className="relative flex flex-wrap lg:h-screen lg:items-center">
@@ -30,6 +30,7 @@ id="style-ftIj6"
   <img
     src="https://mathscan.net/img/new-logo.png"
     width={100}
+    alt='mathscan logo'
   />
 </a>
 </p>
@@ -87,7 +88,6 @@ id="style-ftIj6"
          
          
         </div>
-        <iframe className="style-BhTIz" id="style-BhTIz"></iframe>
       </div>
       <div className="footer-zwx">
         <button type="submit" className="btn-rz3 btn-primary-3wk" style={{ width:"150px" }} dir={direction} >
