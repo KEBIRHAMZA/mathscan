@@ -102,18 +102,18 @@ export default function Navbar({page}) {
               </Link>
             </li>
             <li>
-            <Link 
-              to="https://www.mathscan.net/login" 
+            <a 
+              href="https://www.mathscan.net/login" 
               className="text-blue-500 font-bold focus:underline focus:ring-4 focus:ring-blue-300 rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:text-blue-300 dark:hover:text-blue-400 focus:outline-none dark:focus:ring-blue-800"
               style={{ fontSize: "20px", color: "#57bef9", fontWeight: "600" }}
             >
               {intl.formatMessage({ id: "signIn" })}
-            </Link>
+            </a>
             </li>
             <li>
-            <Link to='https://www.mathscan.net/register' style={{ marginTop:'-2px',backgroundColor: "#57bef9" }} className="hero-button text-center text-white py-2 px-4 border rounded inline-block mt-4">
+            <a href='https://www.mathscan.net/register' style={{ marginTop:'-2px',backgroundColor: "#57bef9" }} className="hero-button text-center text-white py-2 px-4 border rounded inline-block mt-4">
                 {intl.formatMessage({ id: "createAccount" })}
-              </Link>
+              </a>
             </li>
             <li>
             <div className="ml-auto">

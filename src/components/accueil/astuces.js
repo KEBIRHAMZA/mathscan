@@ -19,7 +19,7 @@ export default function Astuces() {
   React.useEffect(() => {
     locale === 'ar' ? setMargin({margin : "auto"}) : setMargin({margin : "auto"});
     locale === 'ar' ? setmarginsection({ margin:"auto"}) : setmarginsection({ margin:"auto"});
-  }, [direction]);
+  }, [locale]);
   
   
   return (
